@@ -1,0 +1,258 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/Architecture/practice vhdl/trianing/lab3
+Ealu
+Z0 w1680991754
+Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z2 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 70
+Z3 dD:/Architecture/practice vhdl/AluProject
+Z4 8D:/Architecture/practice vhdl/AluProject/Alu.vhd
+Z5 FD:/Architecture/practice vhdl/AluProject/Alu.vhd
+l0
+L4 1
+VLL5bSZV;F9>I3f^]8_bJ51
+!s100 QmLe_K7H=<hH==Qjl>=4@2
+Z6 OV;C;2020.1;71
+33
+Z7 !s110 1680991761
+!i10b 1
+Z8 !s108 1680991761.000000
+Z9 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|D:/Architecture/practice vhdl/AluProject/Alu.vhd|
+Z10 !s107 D:/Architecture/practice vhdl/AluProject/Alu.vhd|
+!i113 1
+Z11 o-work work -2008 -explicit
+Z12 tExplicit 1 CvgOpt 0
+Aaluimp
+R1
+R2
+DEx4 work 3 alu 0 22 LL5bSZV;F9>I3f^]8_bJ51
+!i122 70
+l42
+L17 55
+VOl3mQ0F=ce1Na1Y?l16Uf3
+!s100 Z`[PTOg`Dj[6TaTe2hK0d2
+R6
+33
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Earithmaticpart
+Z13 w1680990388
+R1
+R2
+!i122 72
+R3
+Z14 8D:/Architecture/practice vhdl/AluProject/ArithmaticPart.vhd
+Z15 FD:/Architecture/practice vhdl/AluProject/ArithmaticPart.vhd
+l0
+L4 1
+V_ZW3c4Z?YAe6E[fgT;1M03
+!s100 hg_[J<2kzm2=RoVNeajlz3
+R6
+32
+R7
+!i10b 1
+R8
+Z16 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Architecture/practice vhdl/AluProject/ArithmaticPart.vhd|
+Z17 !s107 D:/Architecture/practice vhdl/AluProject/ArithmaticPart.vhd|
+!i113 1
+Z18 o-work work -2002 -explicit
+R12
+Apartaimp
+R1
+R2
+Z19 DEx4 work 14 arithmaticpart 0 22 _ZW3c4Z?YAe6E[fgT;1M03
+!i122 72
+l27
+Z20 L14 26
+Z21 Vinc74fKJ>8RlB1c0AL2aj3
+Z22 !s100 CO_z1zVJFkM0D9PcD4g>72
+R6
+32
+R7
+!i10b 1
+R8
+R16
+R17
+!i113 1
+R18
+R12
+Elogicpart
+Z23 w1680983912
+R1
+R2
+!i122 71
+R3
+Z24 8D:/Architecture/practice vhdl/AluProject/Logicpart.vhd
+Z25 FD:/Architecture/practice vhdl/AluProject/Logicpart.vhd
+l0
+L4 1
+V>2RmO@0>`2a@l3^:@BJa?0
+!s100 AkDIcQ;e@fC6]Og>0FF9U2
+R6
+32
+R7
+!i10b 1
+R8
+Z26 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Architecture/practice vhdl/AluProject/Logicpart.vhd|
+Z27 !s107 D:/Architecture/practice vhdl/AluProject/Logicpart.vhd|
+!i113 1
+R18
+R12
+Alogicpartimp
+R1
+R2
+DEx4 work 9 logicpart 0 22 >2RmO@0>`2a@l3^:@BJa?0
+!i122 71
+l14
+L13 8
+V164_8A0X0eSbGklkhVY9n1
+!s100 =ef2ZYNeb0AWcR<_0?J?c1
+R6
+32
+R7
+!i10b 1
+R8
+R26
+R27
+!i113 1
+R18
+R12
+Emy_adder
+Z28 w1677101900
+R1
+R2
+!i122 67
+R3
+Z29 8D:/Architecture/practice vhdl/AluProject/my_adder.vhd
+Z30 FD:/Architecture/practice vhdl/AluProject/my_adder.vhd
+l0
+L4 1
+VFjlMaf=9aFlNWPMnMXH?k3
+!s100 A5lJZfMh@V_I]hj`4ZSML1
+R6
+32
+Z31 !s110 1680991760
+!i10b 1
+Z32 !s108 1680991760.000000
+Z33 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Architecture/practice vhdl/AluProject/my_adder.vhd|
+Z34 !s107 D:/Architecture/practice vhdl/AluProject/my_adder.vhd|
+!i113 1
+R18
+R12
+Aa_my_adder
+R1
+R2
+DEx4 work 8 my_adder 0 22 FjlMaf=9aFlNWPMnMXH?k3
+!i122 67
+l10
+L9 7
+VEOP9;;8K^;kWb:D@aED0N1
+!s100 GNi^[i0bJH4Ed:4A3E4hd2
+R6
+32
+R31
+!i10b 1
+R32
+R33
+R34
+!i113 1
+R18
+R12
+Emy_nadder
+R28
+R1
+R2
+!i122 68
+R3
+Z35 8D:/Architecture/practice vhdl/AluProject/my_nadder.vhd
+Z36 FD:/Architecture/practice vhdl/AluProject/my_nadder.vhd
+l0
+L4 1
+V=][h<nF1PHmQi5T3P<4730
+!s100 c4^Xj=;G0[gJ;zX<Wc5N91
+R6
+32
+R31
+!i10b 1
+R32
+Z37 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Architecture/practice vhdl/AluProject/my_nadder.vhd|
+Z38 !s107 D:/Architecture/practice vhdl/AluProject/my_nadder.vhd|
+!i113 1
+R18
+R12
+Aa_my_adder
+R1
+R2
+DEx4 work 9 my_nadder 0 22 =][h<nF1PHmQi5T3P<4730
+!i122 68
+l19
+L12 15
+VniRk;BmlJ88aTo?TfE=HE1
+!s100 IGJSVa3JiZZfD3f?51nCY3
+R6
+32
+R31
+!i10b 1
+R32
+R37
+R38
+!i113 1
+R18
+R12
+Eselect_adder
+Z39 w1680986108
+R1
+R2
+!i122 69
+R3
+Z40 8D:/Architecture/practice vhdl/AluProject/select_adder.vhd
+Z41 FD:/Architecture/practice vhdl/AluProject/select_adder.vhd
+l0
+L4 1
+VN4fB7VkRo_GRUQ]^2ZZ5H0
+!s100 iLDGe:IR6i1jW3>6`0OZ70
+R6
+32
+R7
+!i10b 1
+R8
+Z42 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Architecture/practice vhdl/AluProject/select_adder.vhd|
+Z43 !s107 D:/Architecture/practice vhdl/AluProject/select_adder.vhd|
+!i113 1
+R18
+R12
+Aa_my_adder
+R1
+R2
+DEx4 work 12 select_adder 0 22 N4fB7VkRo_GRUQ]^2ZZ5H0
+!i122 69
+l23
+L12 21
+VefE`U]<>`W4g6KTUaZh3i2
+!s100 l=A30nUK0Hl0GKCZ_lXdS1
+R6
+32
+R7
+!i10b 1
+R8
+R42
+R43
+!i113 1
+R18
+R12

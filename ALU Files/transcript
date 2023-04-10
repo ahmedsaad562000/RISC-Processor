@@ -1,0 +1,355 @@
+vlog -work {D:/Architecture/practice vhdl/AluProject/work} -refresh -force_refresh
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:21:17 on Apr 08,2023
+# vlog -reportprogress 300 -work D:/Architecture/practice vhdl/AluProject/work -refresh -force_refresh 
+# End time: 21:21:17 on Apr 08,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -work {D:/Architecture/practice vhdl/AluProject/work} -refresh -force_refresh
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:21:17 on Apr 08,2023
+# vcom -reportprogress 300 -work D:/Architecture/practice vhdl/AluProject/work -refresh -force_refresh 
+# End time: 21:21:17 on Apr 08,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Compile of my_adder.vhd was successful.
+# Compile of my_nadder.vhd was successful.
+# Compile of select_adder.vhd was successful.
+# Compile of Parta.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+# Compile of Parta.vhd was successful.
+# Compile of my_adder.vhd was successful.
+# Compile of my_nadder.vhd was successful.
+# Compile of select_adder.vhd was successful.
+# Compile of Parta.vhd was successful.
+# Compile of Partb.vhd was successful.
+# 5 compiles, 0 failed with no errors.
+# Compile of my_adder.vhd was successful.
+# Compile of my_nadder.vhd was successful.
+# Compile of select_adder.vhd was successful.
+# Compile of Parta.vhd was successful.
+# Compile of Partb.vhd was successful.
+# Compile of Alu.vhd failed with 2 errors.
+# 6 compiles, 1 failed with 2 errors.
+# Compile of Alu.vhd failed with 2 errors.
+# Compile of Alu.vhd failed with 1 errors.
+# Compile of my_adder.vhd was successful.
+# Compile of my_nadder.vhd was successful.
+# Compile of select_adder.vhd was successful.
+# Compile of Parta.vhd was successful.
+# Compile of Partb.vhd was successful.
+# Compile of Alu.vhd was successful.
+# 6 compiles, 0 failed with no errors.
+# Compile of my_adder.vhd was successful.
+# Compile of my_nadder.vhd was successful.
+# Compile of select_adder.vhd was successful.
+# Compile of Parta.vhd was successful.
+# Compile of Partb.vhd was successful.
+# Compile of Alu.vhd was successful.
+# 6 compiles, 0 failed with no errors.
+# Compile of my_adder.vhd was successful.
+# Compile of my_nadder.vhd was successful.
+# Compile of select_adder.vhd was successful.
+# Compile of Parta.vhd was successful.
+# Compile of Partb.vhd was successful.
+# Compile of Alu.vhd was successful.
+# 6 compiles, 0 failed with no errors.
+vsim -gui work.alu
+# vsim -gui work.alu 
+# Start time: 23:03:55 on Apr 08,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.alu(aluimp)
+# Loading work.arithmaticpart(partaimp)
+# Loading work.select_adder(a_my_adder)
+# Loading work.my_nadder(a_my_adder)
+# Loading work.my_adder(a_my_adder)
+# Loading work.logicpart(logicpartimp)
+add wave -position end  sim:/alu/sel
+add wave -position end  sim:/alu/inpA
+add wave -position end  sim:/alu/inpB
+add wave -position end  sim:/alu/cout
+add wave -position end  sim:/alu/zerof
+add wave -position end  sim:/alu/NegF
+add wave -position end  sim:/alu/coutWE
+add wave -position end  sim:/alu/zerofWe
+add wave -position end  sim:/alu/NegFWe
+add wave -position end  sim:/alu/OUT1
+force -freeze sim:/alu/sel 'b111 0
+force -freeze sim:/alu/inpA 'x0005 0
+# Invalid radix for based number: x.
+# ** UI-Msg: (vsim-4011) Invalid force value: 'x0005 0.
+# 
+force -freeze sim:/alu/inpB 'x0005 0
+# Invalid radix for based number: x.
+# ** UI-Msg: (vsim-4011) Invalid force value: 'x0005 0.
+# 
+force -freeze sim:/alu/cout U 0
+force -freeze sim:/alu/zerof U 0
+force -freeze sim:/alu/NegF U 0
+force -freeze sim:/alu/coutWE U 0
+force -freeze sim:/alu/zerofWe U 0
+force -freeze sim:/alu/NegFWe U 0
+force -freeze sim:/alu/OUT1 UUUUUUUUUUUUUUUU 0
+run
+force -freeze sim:/alu/inpA 000f 0
+# Value length (4) does not equal array index length (16).
+# ** UI-Msg: (vsim-4011) Invalid force value: 000f 0.
+# 
+force -freeze sim:/alu/inpA ffff 0
+# Value length (4) does not equal array index length (16).
+# ** UI-Msg: (vsim-4011) Invalid force value: ffff 0.
+# 
+force -freeze sim:/alu/inpA 'xffff 0
+# Invalid radix for based number: x.
+# ** UI-Msg: (vsim-4011) Invalid force value: 'xffff 0.
+# 
+force -freeze sim:/alu/inpA {'x ffff} 0
+# Invalid radix for based number: x.
+# ** UI-Msg: (vsim-4011) Invalid force value: {'x ffff} 0.
+# 
+force -freeze sim:/alu/inpA 'b111 0
+run
+force -freeze sim:/alu/inpA 'x\"ffff\" 0
+# Invalid radix for based number: x.
+# ** UI-Msg: (vsim-4011) Invalid force value: 'x\"ffff\" 0.
+# 
+force -freeze sim:/alu/inpA x\"ffff\" 0
+force -freeze sim:/alu/inpA 'x\"ffff\" 0
+# Invalid radix for based number: x.
+# ** UI-Msg: (vsim-4011) Invalid force value: 'x\"ffff\" 0.
+# 
+force -freeze sim:/alu/inpA x\"ffff\" 0
+force -freeze sim:/alu/inpB {"0001"} 0
+# Value length (6) does not equal array index length (16).
+# ** UI-Msg: (vsim-4011) Invalid force value: {"0001"} 0.
+# 
+force -freeze sim:/alu/inpB x\"0001\" 0
+force -freeze sim:/alu/sel b001 0
+# Value length (4) does not equal array index length (3).
+# ** UI-Msg: (vsim-4011) Invalid force value: b001 0.
+# 
+force -freeze sim:/alu/sel 'b001 0
+run
+run
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+force -freeze sim:/alu/sel 001 0
+force -freeze sim:/alu/inpA 0001 0
+# Value length (4) does not equal array index length (16).
+# ** UI-Msg: (vsim-4011) Invalid force value: 0001 0.
+# 
+force -freeze sim:/alu/inpA x\"0001\" 0
+run
+force -freeze sim:/alu/inpB x\"0001\" 0
+force -freeze sim:/alu/sel 000 0
+run
+force -freeze sim:/alu/inpB 0000000000000002 0
+# ** UI-Msg: (vsim-4026) Value "'2'" does not represent a literal of the enumeration type.
+# ** UI-Msg: (vsim-4011) Invalid force value: 0000000000000002 0.
+# 
+force -freeze sim:/alu/inpB x\"0003\" 0
+run
+force -freeze sim:/alu/sel 010 0
+run
+force -freeze sim:/alu/sel 011 0
+run
+run
+add wave -position 5  sim:/alu/NegF
+# Compile of my_adder.vhd was successful.
+# Compile of my_nadder.vhd was successful.
+# Compile of select_adder.vhd was successful.
+# Compile of Parta.vhd was successful.
+# Compile of Partb.vhd was successful.
+# Compile of Alu.vhd was successful.
+# 6 compiles, 0 failed with no errors.
+# Compile of my_adder.vhd was successful.
+# Compile of my_nadder.vhd was successful.
+# Compile of select_adder.vhd was successful.
+# Compile of Parta.vhd was successful.
+# Compile of Partb.vhd was successful.
+# Compile of Alu.vhd was successful.
+# 6 compiles, 0 failed with no errors.
+vsim -gui work.alu
+# End time: 23:36:06 on Apr 08,2023, Elapsed time: 0:32:11
+# Errors: 0, Warnings: 3
+# vsim -gui work.alu 
+# Start time: 23:36:06 on Apr 08,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.alu(aluimp)
+# Loading work.arithmaticpart(partaimp)
+# Loading work.select_adder(a_my_adder)
+# Loading work.my_nadder(a_my_adder)
+# Loading work.my_adder(a_my_adder)
+# Loading work.logicpart(logicpartimp)
+# WARNING: No extended dataflow license exists
+# WARNING: No extended dataflow license exists
+# WARNING: No extended dataflow license exists
+add wave -position end  sim:/alu/sel
+add wave -position end  sim:/alu/inpA
+add wave -position end  sim:/alu/inpB
+add wave -position end  sim:/alu/cout
+add wave -position end  sim:/alu/zerof
+add wave -position end  sim:/alu/NegF
+add wave -position end  sim:/alu/coutWE
+add wave -position end  sim:/alu/zerofWe
+add wave -position end  sim:/alu/NegFWe
+add wave -position end  sim:/alu/OUT1
+force -freeze sim:/alu/sel x'0000 0
+# Invalid (0-size) sized constant.
+# ** UI-Msg: (vsim-4011) Invalid force value: x'0000 0.
+# 
+force -freeze sim:/alu/sel x\"000\" 0
+force -freeze sim:/alu/inpA x\"0001\" 0
+force -freeze sim:/alu/inpB 'b0 0
+run
+vsim -gui work.arithmaticpart
+# End time: 23:42:21 on Apr 08,2023, Elapsed time: 0:06:15
+# Errors: 0, Warnings: 1
+# vsim -gui work.arithmaticpart 
+# Start time: 23:42:21 on Apr 08,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.arithmaticpart(partaimp)
+# Loading work.select_adder(a_my_adder)
+# Loading work.my_nadder(a_my_adder)
+# Loading work.my_adder(a_my_adder)
+add wave -position end  sim:/arithmaticpart/sel
+add wave -position end  sim:/arithmaticpart/a
+add wave -position end  sim:/arithmaticpart/b
+add wave -position end  sim:/arithmaticpart/s
+add wave -position end  sim:/arithmaticpart/cout
+force -freeze sim:/arithmaticpart/sel 'x\"00\" 0
+# Invalid radix for based number: x.
+# ** UI-Msg: (vsim-4011) Invalid force value: 'x\"00\" 0.
+# 
+force -freeze sim:/arithmaticpart/sel 'b00 0
+force -freeze sim:/arithmaticpart/a 'x\"0001\" 0
+# Invalid radix for based number: x.
+# ** UI-Msg: (vsim-4011) Invalid force value: 'x\"0001\" 0.
+# 
+force -freeze sim:/arithmaticpart/a x\"0001\" 0
+force -freeze sim:/arithmaticpart/b x\"0001\" 0
+# Compile of my_adder.vhd was successful.
+# Compile of my_nadder.vhd was successful.
+# Compile of select_adder.vhd was successful.
+# Compile of Parta.vhd was successful.
+# Compile of Partb.vhd was successful.
+# Compile of Alu.vhd was successful.
+# 6 compiles, 0 failed with no errors.
+vsim -gui work.alu
+# End time: 23:46:53 on Apr 08,2023, Elapsed time: 0:04:32
+# Errors: 0, Warnings: 2
+# vsim -gui work.alu 
+# Start time: 23:46:53 on Apr 08,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.alu(aluimp)
+# Loading work.arithmaticpart(partaimp)
+# Loading work.select_adder(a_my_adder)
+# Loading work.my_nadder(a_my_adder)
+# Loading work.my_adder(a_my_adder)
+# Loading work.logicpart(logicpartimp)
+add wave -position end  sim:/alu/sel
+add wave -position end  sim:/alu/inpA
+add wave -position end  sim:/alu/inpB
+add wave -position end  sim:/alu/cout
+add wave -position end  sim:/alu/zerof
+add wave -position end  sim:/alu/NegF
+add wave -position end  sim:/alu/coutWE
+add wave -position end  sim:/alu/zerofWe
+add wave -position end  sim:/alu/NegFWe
+add wave -position end  sim:/alu/OUT1
+force -freeze sim:/alu/sel 'b\"000\" 0
+# Invalid binary digit: \.
+# ** UI-Msg: (vsim-4011) Invalid force value: 'b\"000\" 0.
+# 
+force -freeze sim:/alu/sel 'b000 0
+force -freeze sim:/alu/inpA x\"0001\" 0
+force -freeze sim:/alu/inpB x\"0000\" 0
+run
+force -freeze sim:/alu/inpA 0000000000000000 0
+run
+force -freeze sim:/alu/inpA x\"ffff\" 0
+force -freeze sim:/alu/inpB x\"0001\" 0
+run
+force -freeze sim:/alu/inpB 0000000000000000 0
+run
+force -freeze sim:/alu/sel 001 0
+run
+force -freeze sim:/alu/sel 010 0
+run
+force -freeze sim:/alu/inpB 0000000000000001 0
+run
+force -freeze sim:/alu/sel 011 0
+run
+force -freeze sim:/alu/sel 100 0
+run
+force -freeze sim:/alu/inpA 'b0 0
+run
+force -freeze sim:/alu/sel 101 0
+run
+force -freeze sim:/alu/sel 110 0
+run
+force -freeze sim:/alu/inpA 0000000000000011 0
+run
+force -freeze sim:/alu/sel 111 0
+run
+# Compile of Logicpart.vhd was successful.
+# Compile of my_adder.vhd was successful.
+# Compile of my_nadder.vhd was successful.
+# Compile of select_adder.vhd was successful.
+# Compile of Alu.vhd was successful.
+# Compile of Logicpart.vhd was successful.
+# Compile of ArithmaticPart.vhd was successful.
+# 6 compiles, 0 failed with no errors.
+vsim -gui work.alu
+# End time: 00:04:50 on Apr 09,2023, Elapsed time: 0:17:57
+# Errors: 0, Warnings: 6
+# vsim -gui work.alu 
+# Start time: 00:04:50 on Apr 09,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.alu(aluimp)
+# Loading work.arithmaticpart(partaimp)
+# Loading work.select_adder(a_my_adder)
+# Loading work.my_nadder(a_my_adder)
+# Loading work.my_adder(a_my_adder)
+# Loading work.logicpart(logicpartimp)
+# WARNING: No extended dataflow license exists
+add wave -position end  sim:/alu/sel
+add wave -position end  sim:/alu/inpA
+add wave -position end  sim:/alu/inpB
+add wave -position end  sim:/alu/cout
+add wave -position end  sim:/alu/zerof
+add wave -position end  sim:/alu/NegF
+add wave -position end  sim:/alu/coutWE
+add wave -position end  sim:/alu/zerofWe
+add wave -position end  sim:/alu/NegFWe
+add wave -position end  sim:/alu/OUT1
+force -freeze sim:/alu/sel 'b000 0
+force -freeze sim:/alu/sel 000 0
+force -freeze sim:/alu/inpA x\"0001\" 0
+force -freeze sim:/alu/inpB x\"0001\" 0
+# Load canceled
+run
+# Compile of my_adder.vhd was successful.
+# Compile of my_nadder.vhd was successful.
+# Compile of select_adder.vhd was successful.
+# Compile of Alu.vhd was successful.
+# Compile of Logicpart.vhd was successful.
+# Compile of ArithmaticPart.vhd was successful.
+# 6 compiles, 0 failed with no errors.
+# Compile of my_adder.vhd was successful.
+# Compile of my_nadder.vhd was successful.
+# Compile of select_adder.vhd was successful.
+# Compile of Alu.vhd was successful.
+# Compile of Logicpart.vhd was successful.
+# Compile of ArithmaticPart.vhd was successful.
+# 6 compiles, 0 failed with no errors.
+# End time: 00:09:29 on Apr 09,2023, Elapsed time: 0:04:39
+# Errors: 0, Warnings: 3

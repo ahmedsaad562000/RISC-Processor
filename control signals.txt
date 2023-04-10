@@ -1,0 +1,71 @@
+IS IN INSTRUCTION :
+
+	= ~bit[31] and bit[30] and bit[20] and bit[18]
+
+
+Is MEM : instructions that read or write from memory (PUSH , POP , LDD , STD , CALL , RET , RTI)
+	
+	= (~bit[31] and bit[30] and ~bit[19] and bit[18])
+	or (bit[31] and ~bit[30] and bit[19] and bit[18] and ~bit[17])
+	or (~bit[31] and ~bit[30] and bit[19] and ~bit[18])
+	or (~bit[31] and bit[30] and bit[19] and bit[18])
+
+USES_IMM :  (IADD or LDM)
+
+	= bit[31] and bit[17]
+
+
+Is RET/RTI : to be used 
+
+JMP FLAG : 
+
+	= (~bit[31] and bit[30] and bit[19] and ~bit[18]) 
+		and  (( bit[17] or CF) and (bit[16] or ZF))
+ 
+call : is call instruction
+	=  (~bit[31] and bit[30] and bit[19] and bit[18])
+
+
+memToReg : is 1 only with instructions pop&LDD
+
+WB:  
+	= (bit[31] and bit[30]) 
+	or (bit[31] and ~bit[30] and ( ( ~bit[20] and bit[19] and bit[18] )  or ( bit[19] nand bit[18] ))  )
+	or (pop instruction)
+
+
+Mem_src : (PUSH , POP , CALL , RET , RTI) 
+
+	= (~bit[31] and bit[30] and ~bit[19] and bit[18])
+	or (~bit[31] and ~bit[30] and bit[19] and ~bit[18])
+	or (~bit[31] and bit[30] and bit[19] and bit[18])
+	
+OUT_Signal: is out instruction
+
+SET/CLR[1:0]:
+	SET/CLR[0] == flag_write_enable = ~bit[31] and ~bit[30] and ~bit[19] and bit [18]
+	SET/CLR[1] = SET/CLR[0] and bit[20]
+
+Cin : 
+	is LDM
+
+sp_inc : 
+	Is (RET/RTI) or pop
+
+sp_dec : (PUSH, CALL)
+	= ~bit[31] and bit[30] and ~bit[20] and bit[18]
+	
+MEM_W : (call, std, push)
+
+
+ALU_SRC : (IN , IADD , LDM)
+
+	(bit[31] and bit[17]) and  (IN_INSTRUCTION)
+	
+ALU_OP[2:0] :
+	map opcodes of R-type instructions to alu operations
+		else mov
+	
+	
+
+	

@@ -1,0 +1,71 @@
+Library ieee;
+Use ieee.std_logic_1164.all;
+
+ENTITY Alu IS
+ generic (n: integer := 16);
+PORT (  sel: IN std_logic_vector(2 downto 0);
+        inpA,inpB: IN std_logic_vector(n-1 downto 0);
+        cout :OUT std_logic;
+        zerof:OUT std_logic;
+        NegF:OUT std_logic;
+        coutWE:OUT std_logic;
+        zerofWe:OUT std_logic;
+        NegFWe:OUT std_logic;
+        OUT1 : OUT std_logic_vector(n-1 downto 0)
+);
+END ENTITY Alu;
+ARCHITECTURE AluImp OF Alu IS
+
+
+component ArithmaticPart IS
+    generic (n: integer := 16);
+    PORT (
+        sel  : IN  std_logic_vector(1 downto 0);
+        a, b : IN  std_logic_vector(n-1 downto 0);
+        s    : OUT std_logic_vector(n-1 downto 0);
+        cout : OUT std_logic
+    );
+END component ;
+
+component Logicpart IS
+ generic (n: integer := 16);
+PORT (  sel: IN std_logic_vector(1 downto 0);
+        inpA,inpB: IN std_logic_vector(n-1 downto 0);
+        cout :OUT std_logic;    
+        OUT1 : OUT std_logic_vector(n-1 downto 0)
+);
+END component Logicpart;
+
+--h3ml signals 34an out bta3 kolw he3de 3la mux.
+signal ca,cb:std_logic;
+signal outa,outb,outAlu:std_logic_vector(n-1 downto 0);
+BEGIN
+u1: ArithmaticPart generic map(16) port map(sel(1 downto 0),inpA,inpB,outa,ca);
+u2: Logicpart generic map(16) port map(sel(1 downto 0),inpA,inpB,cb,outb);
+
+
+    --outsignal
+    OUTAlu <= outa WHEN sel(2) = '0'
+    ELSE outb ;
+   --flags 
+    cout <= ca WHEN sel(2) = '0'
+    ELSE cb ;
+      
+   Negf <= outAlu(n-1);
+    
+    zerof <='1' WHEN OUTalu=x"0000"  
+    ELSE '0' ;
+    --out
+    out1<=OUTALU;    
+   --write enable 
+   coutWe <= '1' WHEN sel(2) = '0'
+    ELSE '0' ;
+ 
+   NegfWe <= '0' WHEN sel(2 downto 0) = "100"
+    ELSE '1' ;
+
+   zerofWe <= '0' WHEN sel(2 downto 0 ) = "100"
+    ELSE '1' ;
+    
+   
+END AluImp;
