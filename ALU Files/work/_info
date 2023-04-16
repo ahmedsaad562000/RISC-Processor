@@ -11,38 +11,38 @@ z2
 cModel Technology
 dD:/Architecture/practice vhdl/trianing/lab3
 Ealu
-Z0 w1680991754
+Z0 w1681680455
 Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z2 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
-!i122 70
-Z3 dD:/Architecture/practice vhdl/AluProject
-Z4 8D:/Architecture/practice vhdl/AluProject/Alu.vhd
-Z5 FD:/Architecture/practice vhdl/AluProject/Alu.vhd
+!i122 86
+Z3 dD:/Computer arch/Project/ALU Files
+Z4 8D:/Computer arch/Project/ALU Files/Alu.vhd
+Z5 FD:/Computer arch/Project/ALU Files/Alu.vhd
 l0
 L4 1
-VLL5bSZV;F9>I3f^]8_bJ51
+V@:kLcBn1Q3FfhiVzNaTFg2
 !s100 QmLe_K7H=<hH==Qjl>=4@2
 Z6 OV;C;2020.1;71
-33
-Z7 !s110 1680991761
+32
+Z7 !s110 1681686038
 !i10b 1
-Z8 !s108 1680991761.000000
-Z9 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|D:/Architecture/practice vhdl/AluProject/Alu.vhd|
-Z10 !s107 D:/Architecture/practice vhdl/AluProject/Alu.vhd|
+Z8 !s108 1681686038.000000
+Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Computer arch/Project/ALU Files/Alu.vhd|
+Z10 !s107 D:/Computer arch/Project/ALU Files/Alu.vhd|
 !i113 1
-Z11 o-work work -2008 -explicit
+Z11 o-work work -2002 -explicit
 Z12 tExplicit 1 CvgOpt 0
 Aaluimp
 R1
 R2
-DEx4 work 3 alu 0 22 LL5bSZV;F9>I3f^]8_bJ51
-!i122 70
+DEx4 work 3 alu 0 22 @:kLcBn1Q3FfhiVzNaTFg2
+!i122 86
 l42
 L17 55
-VOl3mQ0F=ce1Na1Y?l16Uf3
-!s100 Z`[PTOg`Dj[6TaTe2hK0d2
+V<A`?5TQ?1:>3JU<[LcQz?0
+!s100 EOhhfDl]2E^VW^[KURcaW3
 R6
-33
+32
 R7
 !i10b 1
 R8
@@ -55,10 +55,10 @@ Earithmaticpart
 Z13 w1680990388
 R1
 R2
-!i122 72
+!i122 87
 R3
-Z14 8D:/Architecture/practice vhdl/AluProject/ArithmaticPart.vhd
-Z15 FD:/Architecture/practice vhdl/AluProject/ArithmaticPart.vhd
+Z14 8D:/Computer arch/Project/ALU Files/ArithmaticPart.vhd
+Z15 FD:/Computer arch/Project/ALU Files/ArithmaticPart.vhd
 l0
 L4 1
 V_ZW3c4Z?YAe6E[fgT;1M03
@@ -68,20 +68,20 @@ R6
 R7
 !i10b 1
 R8
-Z16 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Architecture/practice vhdl/AluProject/ArithmaticPart.vhd|
-Z17 !s107 D:/Architecture/practice vhdl/AluProject/ArithmaticPart.vhd|
+Z16 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Computer arch/Project/ALU Files/ArithmaticPart.vhd|
+Z17 !s107 D:/Computer arch/Project/ALU Files/ArithmaticPart.vhd|
 !i113 1
-Z18 o-work work -2002 -explicit
+R11
 R12
 Apartaimp
 R1
 R2
-Z19 DEx4 work 14 arithmaticpart 0 22 _ZW3c4Z?YAe6E[fgT;1M03
-!i122 72
+DEx4 work 14 arithmaticpart 0 22 _ZW3c4Z?YAe6E[fgT;1M03
+!i122 87
 l27
-Z20 L14 26
-Z21 Vinc74fKJ>8RlB1c0AL2aj3
-Z22 !s100 CO_z1zVJFkM0D9PcD4g>72
+L14 26
+Vinc74fKJ>8RlB1c0AL2aj3
+!s100 CO_z1zVJFkM0D9PcD4g>72
 R6
 32
 R7
@@ -90,16 +90,100 @@ R8
 R16
 R17
 !i113 1
-R18
+R11
 R12
-Elogicpart
-Z23 w1680983912
+Econtrolller
+Z18 w1681678993
 R1
 R2
-!i122 71
+!i122 88
 R3
-Z24 8D:/Architecture/practice vhdl/AluProject/Logicpart.vhd
-Z25 FD:/Architecture/practice vhdl/AluProject/Logicpart.vhd
+Z19 8D:/Computer arch/Project/ALU Files/Controller.vhd
+Z20 FD:/Computer arch/Project/ALU Files/Controller.vhd
+l0
+L4 1
+VZ^535P6Uf=`AK:T0F<Y6Z0
+!s100 V2T18jD;<MJK838M`NPP>1
+R6
+32
+R7
+!i10b 1
+R8
+Z21 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Computer arch/Project/ALU Files/Controller.vhd|
+Z22 !s107 D:/Computer arch/Project/ALU Files/Controller.vhd|
+!i113 1
+R11
+R12
+Acontrolller_arch
+R1
+R2
+DEx4 work 11 controlller 0 22 Z^535P6Uf=`AK:T0F<Y6Z0
+!i122 88
+l16
+L15 98
+VbUA2`9O;8R^?QNC9Dz[>n0
+!s100 J00`QeJ?`>m;JSRHAiBD02
+R6
+32
+R7
+!i10b 1
+R8
+R21
+R22
+!i113 1
+R11
+R12
+Efetch_stage
+Z23 w1681685999
+Z24 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+R1
+R2
+!i122 96
+R3
+Z25 8D:/Computer arch/Project/ALU Files/fetch_stage.vhd
+Z26 FD:/Computer arch/Project/ALU Files/fetch_stage.vhd
+l0
+L5 1
+V@3ONJl`f:GM8MVYc_IIgF3
+!s100 zOk7h=fKSmQO0k7mMFWma3
+R6
+32
+Z27 !s110 1681686039
+!i10b 1
+Z28 !s108 1681686039.000000
+Z29 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Computer arch/Project/ALU Files/fetch_stage.vhd|
+Z30 !s107 D:/Computer arch/Project/ALU Files/fetch_stage.vhd|
+!i113 1
+R11
+R12
+Afetch_stage_arch
+R24
+R1
+R2
+Z31 DEx4 work 11 fetch_stage 0 22 @3ONJl`f:GM8MVYc_IIgF3
+!i122 96
+l113
+Z32 L23 114
+Z33 VKK5[nj?O_26@]joUb9FiN0
+Z34 !s100 3RACFg5@;g9Egc^Poo1ST2
+R6
+32
+R27
+!i10b 1
+R28
+R29
+R30
+!i113 1
+R11
+R12
+Elogicpart
+Z35 w1681680439
+R1
+R2
+!i122 89
+R3
+Z36 8D:/Computer arch/Project/ALU Files/Logicpart.vhd
+Z37 FD:/Computer arch/Project/ALU Files/Logicpart.vhd
 l0
 L4 1
 V>2RmO@0>`2a@l3^:@BJa?0
@@ -109,16 +193,16 @@ R6
 R7
 !i10b 1
 R8
-Z26 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Architecture/practice vhdl/AluProject/Logicpart.vhd|
-Z27 !s107 D:/Architecture/practice vhdl/AluProject/Logicpart.vhd|
+Z38 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Computer arch/Project/ALU Files/Logicpart.vhd|
+Z39 !s107 D:/Computer arch/Project/ALU Files/Logicpart.vhd|
 !i113 1
-R18
+R11
 R12
 Alogicpartimp
 R1
 R2
 DEx4 work 9 logicpart 0 22 >2RmO@0>`2a@l3^:@BJa?0
-!i122 71
+!i122 89
 l14
 L13 8
 V164_8A0X0eSbGklkhVY9n1
@@ -128,124 +212,44 @@ R6
 R7
 !i10b 1
 R8
-R26
-R27
-!i113 1
-R18
-R12
-Emy_adder
-Z28 w1677101900
-R1
-R2
-!i122 67
-R3
-Z29 8D:/Architecture/practice vhdl/AluProject/my_adder.vhd
-Z30 FD:/Architecture/practice vhdl/AluProject/my_adder.vhd
-l0
-L4 1
-VFjlMaf=9aFlNWPMnMXH?k3
-!s100 A5lJZfMh@V_I]hj`4ZSML1
-R6
-32
-Z31 !s110 1680991760
-!i10b 1
-Z32 !s108 1680991760.000000
-Z33 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Architecture/practice vhdl/AluProject/my_adder.vhd|
-Z34 !s107 D:/Architecture/practice vhdl/AluProject/my_adder.vhd|
-!i113 1
-R18
-R12
-Aa_my_adder
-R1
-R2
-DEx4 work 8 my_adder 0 22 FjlMaf=9aFlNWPMnMXH?k3
-!i122 67
-l10
-L9 7
-VEOP9;;8K^;kWb:D@aED0N1
-!s100 GNi^[i0bJH4Ed:4A3E4hd2
-R6
-32
-R31
-!i10b 1
-R32
-R33
-R34
-!i113 1
-R18
-R12
-Emy_nadder
-R28
-R1
-R2
-!i122 68
-R3
-Z35 8D:/Architecture/practice vhdl/AluProject/my_nadder.vhd
-Z36 FD:/Architecture/practice vhdl/AluProject/my_nadder.vhd
-l0
-L4 1
-V=][h<nF1PHmQi5T3P<4730
-!s100 c4^Xj=;G0[gJ;zX<Wc5N91
-R6
-32
-R31
-!i10b 1
-R32
-Z37 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Architecture/practice vhdl/AluProject/my_nadder.vhd|
-Z38 !s107 D:/Architecture/practice vhdl/AluProject/my_nadder.vhd|
-!i113 1
-R18
-R12
-Aa_my_adder
-R1
-R2
-DEx4 work 9 my_nadder 0 22 =][h<nF1PHmQi5T3P<4730
-!i122 68
-l19
-L12 15
-VniRk;BmlJ88aTo?TfE=HE1
-!s100 IGJSVa3JiZZfD3f?51nCY3
-R6
-32
-R31
-!i10b 1
-R32
-R37
 R38
+R39
 !i113 1
-R18
+R11
 R12
-Eselect_adder
-Z39 w1680986108
+Emux_2x1
+R18
+R24
 R1
 R2
-!i122 69
+!i122 90
 R3
-Z40 8D:/Architecture/practice vhdl/AluProject/select_adder.vhd
-Z41 FD:/Architecture/practice vhdl/AluProject/select_adder.vhd
+Z40 8D:/Computer arch/Project/ALU Files/MUX_2X1.vhd
+Z41 FD:/Computer arch/Project/ALU Files/MUX_2X1.vhd
 l0
-L4 1
-VN4fB7VkRo_GRUQ]^2ZZ5H0
-!s100 iLDGe:IR6i1jW3>6`0OZ70
+L5 1
+V8dH7MNzGIL@3PR8Xzh9]@2
+!s100 XTE4oQdDj7Qj7`6>SjiD`3
 R6
 32
 R7
 !i10b 1
 R8
-Z42 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Architecture/practice vhdl/AluProject/select_adder.vhd|
-Z43 !s107 D:/Architecture/practice vhdl/AluProject/select_adder.vhd|
+Z42 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Computer arch/Project/ALU Files/MUX_2X1.vhd|
+Z43 !s107 D:/Computer arch/Project/ALU Files/MUX_2X1.vhd|
 !i113 1
-R18
+R11
 R12
-Aa_my_adder
+Amux_2x1_arch
+R24
 R1
 R2
-DEx4 work 12 select_adder 0 22 N4fB7VkRo_GRUQ]^2ZZ5H0
-!i122 69
-l23
-L12 21
-VefE`U]<>`W4g6KTUaZh3i2
-!s100 l=A30nUK0Hl0GKCZ_lXdS1
+DEx4 work 7 mux_2x1 0 22 8dH7MNzGIL@3PR8Xzh9]@2
+!i122 90
+l15
+L14 5
+VYVndg3VMim:nQK?dc<[Jn3
+!s100 ja<QcB8ZhlQ@=CC5K`c5B0
 R6
 32
 R7
@@ -254,5 +258,214 @@ R8
 R42
 R43
 !i113 1
-R18
+R11
+R12
+Emy_adder
+Z44 w1677101900
+R1
+R2
+!i122 91
+R3
+Z45 8D:/Computer arch/Project/ALU Files/my_adder.vhd
+Z46 FD:/Computer arch/Project/ALU Files/my_adder.vhd
+l0
+L4 1
+VFjlMaf=9aFlNWPMnMXH?k3
+!s100 A5lJZfMh@V_I]hj`4ZSML1
+R6
+32
+R27
+!i10b 1
+R8
+Z47 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Computer arch/Project/ALU Files/my_adder.vhd|
+Z48 !s107 D:/Computer arch/Project/ALU Files/my_adder.vhd|
+!i113 1
+R11
+R12
+Aa_my_adder
+R1
+R2
+DEx4 work 8 my_adder 0 22 FjlMaf=9aFlNWPMnMXH?k3
+!i122 91
+l10
+L9 7
+VEOP9;;8K^;kWb:D@aED0N1
+!s100 GNi^[i0bJH4Ed:4A3E4hd2
+R6
+32
+R27
+!i10b 1
+R8
+R47
+R48
+!i113 1
+R11
+R12
+Emy_nadder
+R44
+R1
+R2
+!i122 92
+R3
+Z49 8D:/Computer arch/Project/ALU Files/my_nadder.vhd
+Z50 FD:/Computer arch/Project/ALU Files/my_nadder.vhd
+l0
+L4 1
+V=][h<nF1PHmQi5T3P<4730
+!s100 c4^Xj=;G0[gJ;zX<Wc5N91
+R6
+32
+R27
+!i10b 1
+R28
+Z51 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Computer arch/Project/ALU Files/my_nadder.vhd|
+Z52 !s107 D:/Computer arch/Project/ALU Files/my_nadder.vhd|
+!i113 1
+R11
+R12
+Aa_my_adder
+R1
+R2
+DEx4 work 9 my_nadder 0 22 =][h<nF1PHmQi5T3P<4730
+!i122 92
+l19
+L12 15
+VniRk;BmlJ88aTo?TfE=HE1
+!s100 IGJSVa3JiZZfD3f?51nCY3
+R6
+32
+R27
+!i10b 1
+R28
+R51
+R52
+!i113 1
+R11
+R12
+Epc
+Z53 w1681683657
+R24
+R1
+R2
+!i122 93
+R3
+Z54 8D:/Computer arch/Project/ALU Files/PC.vhd
+Z55 FD:/Computer arch/Project/ALU Files/PC.vhd
+l0
+L5 1
+V=kEU64i_ALEN255R>HFo40
+!s100 k^DRMRL3d<PULNTLCk0ch0
+R6
+32
+R27
+!i10b 1
+R28
+Z56 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Computer arch/Project/ALU Files/PC.vhd|
+Z57 !s107 D:/Computer arch/Project/ALU Files/PC.vhd|
+!i113 1
+R11
+R12
+Apc_arch
+R24
+R1
+R2
+DEx4 work 2 pc 0 22 =kEU64i_ALEN255R>HFo40
+!i122 93
+l31
+L14 36
+VK7e1<1VP;>?kMDzJ1UF:?2
+!s100 CB3Y?QYJL3HA902obe^mM2
+R6
+32
+R27
+!i10b 1
+R28
+R56
+R57
+!i113 1
+R11
+R12
+Eregisterbuffer
+Z58 w1681685824
+R24
+R1
+R2
+!i122 94
+R3
+Z59 8D:/Computer arch/Project/ALU Files/RegisterBuffer.vhd
+Z60 FD:/Computer arch/Project/ALU Files/RegisterBuffer.vhd
+l0
+L5 1
+VXWL;Ig5^i_gf4:HDzAzg20
+!s100 ZnAYBbE5D:RgHm1=73=I71
+R6
+32
+R27
+!i10b 1
+R28
+Z61 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Computer arch/Project/ALU Files/RegisterBuffer.vhd|
+Z62 !s107 D:/Computer arch/Project/ALU Files/RegisterBuffer.vhd|
+!i113 1
+R11
+R12
+Aregisterbuffer_arch
+R24
+R1
+R2
+DEx4 work 14 registerbuffer 0 22 XWL;Ig5^i_gf4:HDzAzg20
+!i122 94
+l16
+L15 11
+V3PeP;IfLj`HP1aL>=HZIc1
+!s100 l[hM]K4:V`NOM6I`IjgcH1
+R6
+32
+R27
+!i10b 1
+R28
+R61
+R62
+!i113 1
+R11
+R12
+Eselect_adder
+Z63 w1680986108
+R1
+R2
+!i122 95
+R3
+Z64 8D:/Computer arch/Project/ALU Files/select_adder.vhd
+Z65 FD:/Computer arch/Project/ALU Files/select_adder.vhd
+l0
+L4 1
+VN4fB7VkRo_GRUQ]^2ZZ5H0
+!s100 iLDGe:IR6i1jW3>6`0OZ70
+R6
+32
+R27
+!i10b 1
+R28
+Z66 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Computer arch/Project/ALU Files/select_adder.vhd|
+Z67 !s107 D:/Computer arch/Project/ALU Files/select_adder.vhd|
+!i113 1
+R11
+R12
+Aa_my_adder
+R1
+R2
+DEx4 work 12 select_adder 0 22 N4fB7VkRo_GRUQ]^2ZZ5H0
+!i122 95
+l23
+L12 21
+VefE`U]<>`W4g6KTUaZh3i2
+!s100 l=A30nUK0Hl0GKCZ_lXdS1
+R6
+32
+R27
+!i10b 1
+R28
+R66
+R67
+!i113 1
+R11
 R12
