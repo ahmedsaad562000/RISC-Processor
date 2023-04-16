@@ -65,7 +65,18 @@ ALU_SRC : (IN , IADD , LDM)
 ALU_OP[2:0] :
 	map opcodes of R-type instructions to alu operations
 		else mov
-	
-	
+
+
+
+ret/rti -> ~bit[31] and ~bit[30] and bit[19]
+pop -> ~bit[31] and bit[30] and bit[20] and bit[18]
+LDD -> bit[31] and ~bit[30] and bit[19] and bit[18] and ~bit[17] and ~bit[20]
+LDM -> bit[31] and ~bit[30] and bit[17]
+call-> ~bit[31] and bit[30] and bit[19] and bit[18]
+OUT -> ~bit[31] and bit[30] and ~bit[20] and ~bit[18] and ~bit[19]
+STD -> bit[31] and ~bit[30] and bit[19] and bit[18] and ~bit[17] and bit[20]
+PUSH ->~bit[31] and bit[30] and ~bit[20] and bit[18] and ~bit[19]
+
+
 
 	

@@ -1,34 +1,25 @@
 
 LIBRARY IEEE;
-USE IEEE.std_logic_1164.all;
+USE IEEE.std_logic_1164.ALL;
 
-ENTITY my_nDFF IS 
-GENERIC( n : integer := 10);
-	PORT ( clk, rst, en: IN std_logic;
-D : in std_logic_vector(n-1 downto 0);
-Q : out std_logic_vector(n-1 downto 0)
-);
+ENTITY my_nDFF IS
+	GENERIC (n : INTEGER := 10);
+	PORT (
+		clk, rst, en : IN STD_LOGIC;
+		D : IN STD_LOGIC_VECTOR(n - 1 DOWNTO 0);
+		Q : OUT STD_LOGIC_VECTOR(n - 1 DOWNTO 0)
+	);
 END my_nDFF;
-
-
-ARCHITECTURE dff OF my_nDFF is
+ARCHITECTURE dff OF my_nDFF IS
 BEGIN
-	Process(clk,rst)
-	Begin	
-if (rst = '1') then
-	Q <= (others =>'0');
-elsif (rising_edge(clk) and (en = '1') ) then
-	
-		Q <= D;
-	
-end if;
+	PROCESS (clk, rst)
+	BEGIN
+		IF (rst = '1') THEN
+			Q <= (OTHERS => '0');
+		ELSIF (rising_edge(clk) AND (en = '1')) THEN
 
+			Q <= D;
 
-end process;
-
-
-	
-
-
-	
+		END IF;
+	END PROCESS;
 END dff;
