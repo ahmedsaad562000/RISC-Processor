@@ -89,10 +89,10 @@ OUT_SIGNALS (5 DOWNTO 3) <= "000" when CAT(1)= '1' and CAT(0)= '1' and not(OP(3)
 else "001" when CAT(1)= '1' and not(CAT(0))= '1' and not(OP(4))= '1' and OP(3)= '1' and not(OP(2)) = '1' --INC
 else "010" when CAT(1)= '1' and not(CAT(0))= '1' and OP(4)= '1' and OP(3)= '1' and not(OP(2)) = '1' --DEC
 else "011" when CAT(1)= '1' and CAT(0)= '1' and not(OP(3))= '1' and OP(2) = '1' --SUB
-else "100" when CAT(1)= '1' and not(CAT(0))= '1' and not(OP(3))= '1' and not(OP(2)) = '1' --MOV
+else "111" when CAT(1)='1' and CAT(0)='1' and OP(3)='1' and OP(2)='1' --OR
 else "101" when CAT(1)= '1' and not(CAT(0))= '1' and not(OP(3))= '1' and OP(2)= '1' --NOT
 else "110" when CAT(1)= '1' and CAT(0)= '1' and OP(3)= '1' and not(OP(2))= '1'  --AND
-else "111"; --OR
+else "100"; --MOV
 --------------------------------------
 --CIN
 
