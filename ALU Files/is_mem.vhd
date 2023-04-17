@@ -8,7 +8,7 @@ PORT (  CAT : IN STD_LOGIC_VECTOR (1 DOWNTO 0);
 );
 END ENTITY is_mem;
 
-ARCHITECTURE Logicpartimp OF uses_imm IS
+ARCHITECTURE is_mem_arch OF is_mem IS
 BEGIN
 OUT_SIGNAL <= (not(CAT(1)) and CAT(0) and not(OP(3)) and OP(2)) or (CAT(1) and not(CAT(0)) and OP(3) and OP(2) and not(OP(1))) or (not(CAT(1)) and not(CAT(0)) and OP(3) and not(OP(2))) or (not(CAT(1)) and CAT(0) and OP(3) and OP(2));
-END Logicpartimp;
+END is_mem_arch;

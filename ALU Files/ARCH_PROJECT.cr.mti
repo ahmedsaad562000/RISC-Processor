@@ -1,4 +1,38 @@
-{D:/Computer arch/Project/ALU Files/my_adder.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Computer arch/Project/ALU Files/my_adder.vhd}
+{D:/Computer arch/Project/ALU Files/fetch_stage.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Computer arch/Project/ALU Files/fetch_stage.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity fetch_stage
+-- Compiling architecture fetch_stage_arch of fetch_stage
+
+} {} {}} {D:/Computer arch/Project/ALU Files/Alu.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Computer arch/Project/ALU Files/Alu.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Alu
+-- Compiling architecture AluImp of Alu
+
+} {} {}} {D:/Computer arch/Project/ALU Files/my_nadder.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Computer arch/Project/ALU Files/my_nadder.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity my_nadder
+-- Compiling architecture a_my_adder of my_nadder
+
+} {} {}} {D:/Computer arch/Project/ALU Files/MUX_2X1.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Computer arch/Project/ALU Files/MUX_2X1.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity MUX_2X1
+-- Compiling architecture MUX_2X1_arch of MUX_2X1
+
+} {} {}} {D:/Computer arch/Project/ALU Files/my_adder.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Computer arch/Project/ALU Files/my_adder.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -22,14 +56,6 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Compiling entity ArithmaticPart
 -- Compiling architecture partaimp of ArithmaticPart
 
-} {} {}} {D:/Computer arch/Project/ALU Files/Alu.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Computer arch/Project/ALU Files/Alu.vhd}
-Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity Alu
--- Compiling architecture AluImp of Alu
-
 } {} {}} {D:/Computer arch/Project/ALU Files/select_adder.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Computer arch/Project/ALU Files/select_adder.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
@@ -47,31 +73,38 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Compiling entity RegisterBuffer
 -- Compiling architecture RegisterBuffer_arch of RegisterBuffer
 
-} {} {}} {D:/Computer arch/Project/ALU Files/my_nadder.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Computer arch/Project/ALU Files/my_nadder.vhd}
+} {} {}} {D:/Computer arch/Project/ALU Files/is_in_instr.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Computer arch/Project/ALU Files/is_in_instr.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
--- Compiling entity my_nadder
--- Compiling architecture a_my_adder of my_nadder
+-- Compiling entity is_in_inst
+-- Compiling architecture is_in_inst_arch of is_in_inst
 
-} {} {}} {D:/Computer arch/Project/ALU Files/PC.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Computer arch/Project/ALU Files/PC.vhd}
+} {} {}} {D:/Computer arch/Project/ALU Files/uses_imm.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Computer arch/Project/ALU Files/uses_imm.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity uses_imm
+-- Compiling architecture Logicpartimp of uses_imm
+
+} {} {}} {D:/Computer arch/Project/ALU Files/is_mem.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Computer arch/Project/ALU Files/is_mem.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity is_mem
+-- Compiling architecture is_mem_arch of is_mem
+
+} {} {}} {D:/Computer arch/Project/ALU Files/InstCache.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Computer arch/Project/ALU Files/InstCache.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
 -- Loading package NUMERIC_STD
--- Compiling entity PC
--- Compiling architecture PC_arch of PC
-
-} {} {}} {D:/Computer arch/Project/ALU Files/MUX_2X1.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Computer arch/Project/ALU Files/MUX_2X1.vhd}
-Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package NUMERIC_STD
--- Compiling entity MUX_2X1
--- Compiling architecture MUX_2X1_arch of MUX_2X1
+-- Compiling entity inst_cache
+-- Compiling architecture inst_cach_arch of inst_cache
 
 } {} {}} {D:/Computer arch/Project/ALU Files/Controller.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Computer arch/Project/ALU Files/Controller.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020

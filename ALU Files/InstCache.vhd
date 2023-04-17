@@ -6,8 +6,8 @@ ENTITY inst_cache IS
 	PORT(
 		address : IN  std_logic_vector(15 DOWNTO 0);
 		dataout : OUT std_logic_vector(31 DOWNTO 0);
-		M0 : OUT std_logic_vector(7 DOWNTO 0);
-		M1 : OUT std_logic_vector(7 DOWNTO 0));
+		M0 : OUT std_logic_vector(15 DOWNTO 0);
+		M1 : OUT std_logic_vector(15 DOWNTO 0));
 END ENTITY inst_cache;
 
 ARCHITECTURE inst_cach_arch OF inst_cache IS

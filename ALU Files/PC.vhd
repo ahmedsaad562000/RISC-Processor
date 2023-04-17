@@ -33,10 +33,13 @@ begin
 MUX1_BOX : MUX_2X1 generic map(16) port map( PC_Plus1 ,  PC_Plus2 , sel1 , mux1_output);
 MUX2_BOX : MUX_2X1 generic map(16) port map( temp_address ,  jmp_value , sel2 , mux2_output);
 MUX3_BOX : MUX_2X1 generic map(16) port map( mux1_output ,  mux2_output , sel3 , mux3_output);
+
+PC_Plus1 <= std_logic_vector(unsigned(temp_address) + 1);
+PC_Plus2 <= std_logic_vector(unsigned(temp_address) + 2);
+
 Process(clk , rst , enable) is
 begin
-    PC_Plus1 <= std_logic_vector(unsigned(temp_address) + 1);
-    PC_Plus2 <= std_logic_vector(unsigned(temp_address) + 2);
+
     
     IF rst = '1' THEN
         temp_address <= (others => '0');

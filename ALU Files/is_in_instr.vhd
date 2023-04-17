@@ -8,7 +8,7 @@ PORT (  CAT : IN STD_LOGIC_VECTOR (1 DOWNTO 0);
 );
 END ENTITY is_in_inst;
 
-ARCHITECTURE Logicpartimp OF uses_imm IS
+ARCHITECTURE is_in_inst_arch OF is_in_inst IS
 BEGIN
 OUT_SIGNAL <= not(CAT(1)) and CAT(0) and OP(4) and OP(2);
-END Logicpartimp;
+END is_in_inst_arch;
