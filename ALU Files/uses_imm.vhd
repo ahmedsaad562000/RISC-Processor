@@ -8,7 +8,7 @@ PORT (  CAT : IN STD_LOGIC_VECTOR (1 DOWNTO 0);
 );
 END ENTITY uses_imm;
 
-ARCHITECTURE Logicpartimp OF uses_imm IS
+ARCHITECTURE uses_imm_arch OF uses_imm IS
 BEGIN
 OUT_SIGNAL <= CAT(1) and OP(1);
-END Logicpartimp;
+END architecture uses_imm_arch;

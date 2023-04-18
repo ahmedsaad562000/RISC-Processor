@@ -5,6 +5,7 @@ ENTITY Alu IS
  generic (n: integer := 16);
 PORT (  sel: IN std_logic_vector(2 downto 0);
         inpA,inpB: IN std_logic_vector(n-1 downto 0);
+        --need to add cin (if (cin = 1 and sel = mov) then OUT = inpB and NO FLAGS ARE changed)
         cout :OUT std_logic;
         zerof:OUT std_logic;
         NegF:OUT std_logic;
@@ -25,23 +26,23 @@ component ArithmaticPart IS
         s    : OUT std_logic_vector(n-1 downto 0);
         cout : OUT std_logic
     );
-END component ;
+END component ArithmaticPart;
 
-component uses_imm IS
+component Logicpart IS
  generic (n: integer := 16);
 PORT (  sel: IN std_logic_vector(1 downto 0);
         inpA,inpB: IN std_logic_vector(n-1 downto 0);
         cout :OUT std_logic;    
         OUT1 : OUT std_logic_vector(n-1 downto 0)
 );
-END component uses_imm;
+END component Logicpart;
 
 --h3ml signals 34an out bta3 kolw he3de 3la mux.
 signal ca,cb:std_logic;
 signal outa,outb,outAlu:std_logic_vector(n-1 downto 0);
 BEGIN
 u1: ArithmaticPart generic map(16) port map(sel(1 downto 0),inpA,inpB,outa,ca);
-u2: uses_imm generic map(16) port map(sel(1 downto 0),inpA,inpB,cb,outb);
+u2: Logicpart generic map(16) port map(sel(1 downto 0),inpA,inpB,cb,outb);
 
 
     --outsignal
