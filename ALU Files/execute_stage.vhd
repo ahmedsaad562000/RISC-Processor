@@ -2,7 +2,7 @@ LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
 USE ieee.numeric_std.ALL;
 
-ENTITY fetch_stage IS
+ENTITY execute_stage IS
     PORT (
         RST : IN STD_LOGIC;
         CLK : IN STD_LOGIC;
@@ -19,7 +19,7 @@ ENTITY fetch_stage IS
         RSRC1_ADD : OUT STD_LOGIC_VECTOR(2 DOWNTO 0);
         RSRC2_ADD : OUT STD_LOGIC_VECTOR(2 DOWNTO 0)
     );
-END fetch_stage;
+END execute_stage;
 
 ARCHITECTURE fetch_stage_arch OF execute_stage IS
     ------------------------------------PC_LOGIC---------------------------------------
