@@ -16,6 +16,15 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Compiling entity Execute_stage
 -- Compiling architecture Execute_stage_arch of Execute_stage
 
+} {} {}} {D:/Computer arch/Project/ALU Files/MEM_ONE.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Computer arch/Project/ALU Files/MEM_ONE.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity MEM_ONE
+-- Compiling architecture MEM_ONE_ARCH of MEM_ONE
+
 } {} {}} {D:/Computer arch/Project/ALU Files/Memory.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Computer arch/Project/ALU Files/Memory.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
@@ -92,6 +101,14 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Loading package std_logic_1164
 -- Compiling entity ArithmaticPart
 -- Compiling architecture partaimp of ArithmaticPart
+
+} {} {}} {D:/Computer arch/Project/ALU Files/WbRegister.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Computer arch/Project/ALU Files/WbRegister.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity WbRegister
+-- Compiling architecture WbRegister_arch of WbRegister
 
 } {} {}} {D:/Computer arch/Project/ALU Files/Decode_stage.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Computer arch/Project/ALU Files/Decode_stage.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
