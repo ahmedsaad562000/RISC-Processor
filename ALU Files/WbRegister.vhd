@@ -14,12 +14,14 @@ END WbRegister;
 
 Architecture WbRegister_arch OF WbRegister is
 
-component Mux2 IS 
-	Generic ( n : Integer:=10);
-	PORT ( in0,in1 : IN std_logic_vector (n-1 DOWNTO 0);
-			sel : in std_logic;
-			out1 : OUT std_logic_vector (n-1 DOWNTO 0));
-END component;
+	component MUX_2X1 is
+		Generic(N : Integer := 16);
+		port (
+			A , B : IN std_logic_vector(N - 1 downto 0);
+			Sel   : IN std_logic;
+			Output: OUT std_logic_vector(N - 1 downto 0)
+		);
+	end component MUX_2X1;
 
 signal Data_Signal : std_logic_vector(15 downto 0);
 ----------------------------------------------
@@ -27,9 +29,9 @@ signal Data_Signal : std_logic_vector(15 downto 0);
 ---------------------------------------------
 Begin 
 
-Mux2Dataout :Mux2 generic map(16) port map(memst1,memst2,M2R,Data_Signal);
+Mux2Dataout : MUX_2X1 generic map(16) port map(memst1,memst2,M2R,Data_Signal);
 Data<=Data_signal;
-Mux2outport :Mux2 generic map(16) port map((others => '0'),Data_signal,outen,outputport);
+Mux2outport :MUX_2X1 generic map(16) port map((others => '0'),Data_signal,outen,outputport);
 Wben<=Wb;
 Rsrc1out<=Rsrc1;
 Rsrc2out<=Rsrc2;

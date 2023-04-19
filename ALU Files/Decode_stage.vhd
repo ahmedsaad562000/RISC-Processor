@@ -86,7 +86,7 @@ Signal NOT_CLK                : std_logic;
 begin
 Decode_Buffer_IN <= Controller_Out_Signal(15 downto 14) & Controller_Out_Signal(12 downto 0) & PC_PLUS_ONE_IN & RSRC1_ADD & RSRC2_ADD & RDST_ADD & RSRC1_Value_Signal & RSRC2_Value_Signal & IMM_OR_INPUT;
 ----------------------------------------- BOXES ---------------------------------------------------------------------------------------------------------------------------------------------------
-REG_FILE       : RAM generic map(8 , 3) port map(CLK , RST , Write_back_Enable , Write_back_ADD , RSRC1_ADD , RSRC2_ADD , Write_back_value , RSRC1_Value_Signal , RSRC2_Value_Signal);
+REG_FILE       : RAM generic map(8 , 3) port map(CLK , Write_back_Enable, RST, Write_back_ADD , RSRC1_ADD , RSRC2_ADD , Write_back_value , RSRC1_Value_Signal , RSRC2_Value_Signal);
 Controller_BOX : Controlller port map(CAT_IN , OP_CODE , FLAGS , Controller_Out_Signal); 
 Decode_Buffer  : RegisterBuffer generic map(88) port map(NOT_CLK , RST , Decode_Buffer_IN , Decode_Buffer_OUT);
 ----------------------------------OUTPUTS----------------------------------------------------------------------------------------------------------------------------------------------------------
