@@ -31,9 +31,12 @@ END component;
 signal WbBufferin : std_logic_vector(43 downto 0);
 signal WbBufferout : std_logic_vector(43 downto 0);
 signal Data_Signal : std_logic_vector(15 downto 0);
+----------------------------------------------
+signal NOT_CLK : std_logic;
+---------------------------------------------
 Begin 
 WbBufferin<=wb&M2r&outEn&MemSt2&MemSt1&Rsrc1&Rsrc2&Rdst;
-Writeback_Buffer  : RegisterBuffer generic map(44) port map(CLK , RST , WbBufferin , WbBufferout);
+Writeback_Buffer  : RegisterBuffer generic map(44) port map(NOT_CLK , RST , WbBufferin , WbBufferout);
 Mux2Dataout :Mux2 generic map(16) port map(Wbbufferout(24 downto 9),Wbbufferout(40 downto 25),wbbufferout(42),Data_Signal);
 Data<=Data_signal;
 Mux2outport :Mux2 generic map(16) port map((others => '0'),Data_signal,wbbufferout(41),outputport);
@@ -41,4 +44,5 @@ Wben<=WbBufferout(43);
 Rsrc1out<=WbBufferout(8 downto 6);
 Rsrc2out<=WbBufferout(5 downto 3);
 Rdstout<=WbBufferout(2 downto 0);
+NOT_CLK <= not clk;
 End WbRegister_arch;

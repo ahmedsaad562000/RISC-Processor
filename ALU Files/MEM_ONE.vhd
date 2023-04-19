@@ -24,7 +24,6 @@ ENTITY MEM_ONE IS
 
         PC_PLUS_ONE_OUT : OUT STD_LOGIC_VECTOR (15 DOWNTO 0);
         WB_OUT : OUT STD_LOGIC;
-        MEM_SRC_OUT : OUT STD_LOGIC;
         SP_INC_OUT : OUT STD_LOGIC;
         SP_DEC_OUT : OUT STD_LOGIC;
         MEMW_OUT : OUT STD_LOGIC;
@@ -76,6 +75,9 @@ ARCHITECTURE MEM_ONE_ARCH OF MEM_ONE IS
     SIGNAL MEM_IN : STD_LOGIC_VECTOR (31 DOWNTO 0);
     SIGNAL BUFF_IN : STD_LOGIC_VECTOR (63 DOWNTO 0);
     SIGNAL BUFF_OUT : STD_LOGIC_VECTOR (63 DOWNTO 0);
+    ----------------------------------------
+    SIGNAL NOT_CLK : STD_LOGIC;
+    ---------------------------------------
 BEGIN
 --------------------------------------------BOXES----------------------------------------------
 SP_BOX : SP PORT MAP(CLK,RST,SP_INC_FORWARD,SP_DEC_FORWARD,SP_OUT);
@@ -83,7 +85,7 @@ MUX_SP : MUX_2X1 GENERIC MAP(16) PORT MAP(SP_OUT,SP_PLUS_ONE_OUT,SP_INC,MUX_SP_O
 MUX_READ_ADD : MUX_2X1 GENERIC MAP(16) PORT MAP(ALU_RESULT,MUX_SP_OUT,MEM_SRC,READ_ADDRESS_IN);
 MUX_WRITE_DATA : MUX_2X1 GENERIC MAP(16) PORT MAP(RSRC2_VAL,PC_PLUS_ONE,CALL_SIG,WRITE_DATA_IN);
 REG_MEM_ONE : RegisterBuffer GENERIC MAP(32) PORT MAP (CLK,RST,MEM_IN,MEM_OUT);
-MEM1_MEM2_BUFF : RegisterBuffer GENERIC MAP(64) PORT MAP (CLK,RST,BUFF_IN,BUFF_OUT);
+MEM1_MEM2_BUFF : RegisterBuffer GENERIC MAP(64) PORT MAP (NOT_CLK,RST,BUFF_IN,BUFF_OUT);
 --------------------------------------------LOGIC----------------------------------------------
 SP_PLUS_ONE_OUT <= STD_LOGIC_VECTOR(unsigned(SP_OUT) + 1);
 MEM_IN <=  READ_ADDRESS_IN & WRITE_DATA_IN;
@@ -102,4 +104,8 @@ WRITE_DATA_OUT <= BUFF_OUT (24 DOWNTO 9);
 RSRC1_ADD_OUT <=  BUFF_OUT(8 DOWNTO 6);
 RSRC2_ADD_OUT <=  BUFF_OUT(5 DOWNTO 3) ;
 RDST_ADD_OUT  <=  BUFF_OUT(2 DOWNTO 0);
+-------------------------------------------------------------------------------------------
+
+NOT_CLK <= NOT CLK;
+-------------------------------------------------------------------------------------------
 END MEM_ONE_ARCH;

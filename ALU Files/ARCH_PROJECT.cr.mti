@@ -16,6 +16,25 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Compiling entity Execute_stage
 -- Compiling architecture Execute_stage_arch of Execute_stage
 
+} {} {}} {D:/Computer arch/Project/ALU Files/MEM_ONE.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Computer arch/Project/ALU Files/MEM_ONE.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity MEM_ONE
+-- Compiling architecture MEM_ONE_ARCH of MEM_ONE
+
+} {} {}} {D:/Computer arch/Project/ALU Files/Memory.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Computer arch/Project/ALU Files/Memory.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package MATH_REAL
+-- Compiling entity Memory
+-- Compiling architecture Memory_arch of Memory
+
 } {} {}} {D:/Computer arch/Project/ALU Files/Alu.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Computer arch/Project/ALU Files/Alu.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
@@ -23,6 +42,15 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Loading package std_logic_1164
 -- Compiling entity Alu
 -- Compiling architecture AluImp of Alu
+
+} {} {}} {D:/Computer arch/Project/ALU Files/SP.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Computer arch/Project/ALU Files/SP.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity SP
+-- Compiling architecture SP_ARCH of SP
 
 } {} {}} {D:/Computer arch/Project/ALU Files/my_nadder.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Computer arch/Project/ALU Files/my_nadder.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
@@ -50,14 +78,6 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Compiling entity MUX_2X1
 -- Compiling architecture MUX_2X1_arch of MUX_2X1
 
-} {} {}} {D:/Computer arch/Project/ALU Files/Logicpart.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Computer arch/Project/ALU Files/Logicpart.vhd}
-Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity Logicpart
--- Compiling architecture Logicpartimp of Logicpart
-
 } {} {}} {D:/Computer arch/Project/ALU Files/my_adder.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Computer arch/Project/ALU Files/my_adder.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
@@ -65,6 +85,14 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Loading package std_logic_1164
 -- Compiling entity my_adder
 -- Compiling architecture a_my_adder of my_adder
+
+} {} {}} {D:/Computer arch/Project/ALU Files/Logicpart.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Computer arch/Project/ALU Files/Logicpart.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Logicpart
+-- Compiling architecture Logicpartimp of Logicpart
 
 } {} {}} {D:/Computer arch/Project/ALU Files/ArithmaticPart.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Computer arch/Project/ALU Files/ArithmaticPart.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
@@ -74,25 +102,22 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Compiling entity ArithmaticPart
 -- Compiling architecture partaimp of ArithmaticPart
 
-} {} {}} {D:/Computer arch/Project/ALU Files/WbRegister.vhd} {0 {vcom -work work -2002 -explicit -stats=none {D:/Computer arch/Project/ALU Files/WbRegister.vhd}
+} {} {}} {D:/Computer arch/Project/ALU Files/WbRegister.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Computer arch/Project/ALU Files/WbRegister.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
 -- Compiling entity WbRegister
 -- Compiling architecture WbRegister_arch of WbRegister
-** Error: D:/Computer arch/Project/ALU Files/WbRegister.vhd(37): Cannot read output "Data".
-	VHDL 2008 allows reading outputs.
-	This facility is enabled by compiling with -2008.
-** Note: D:/Computer arch/Project/ALU Files/WbRegister.vhd(40): VHDL Compiler exiting
 
-} {8.0 9.0} {}} {D:/Computer arch/Project/ALU Files/flag_reg.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Computer arch/Project/ALU Files/flag_reg.vhd}
+} {} {}} {D:/Computer arch/Project/ALU Files/Decode_stage.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Computer arch/Project/ALU Files/Decode_stage.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
--- Compiling entity flag_reg
--- Compiling architecture flag_reg_arch of flag_reg
+-- Loading package NUMERIC_STD
+-- Compiling entity Decode_stage
+-- Compiling architecture Decode_stage_arch of Decode_stage
 
 } {} {}} {D:/Computer arch/Project/ALU Files/select_adder.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Computer arch/Project/ALU Files/select_adder.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
@@ -111,14 +136,13 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Compiling entity RegisterBuffer
 -- Compiling architecture RegisterBuffer_arch of RegisterBuffer
 
-} {} {}} {D:/Computer arch/Project/ALU Files/Decode_stage.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Computer arch/Project/ALU Files/Decode_stage.vhd}
+} {} {}} {D:/Computer arch/Project/ALU Files/flag_reg.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Computer arch/Project/ALU Files/flag_reg.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
--- Loading package NUMERIC_STD
--- Compiling entity Decode_stage
--- Compiling architecture Decode_stage_arch of Decode_stage
+-- Compiling entity flag_reg
+-- Compiling architecture flag_reg_arch of flag_reg
 
 } {} {}} {D:/Computer arch/Project/ALU Files/RAM.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Computer arch/Project/ALU Files/RAM.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020

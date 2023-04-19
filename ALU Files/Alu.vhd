@@ -5,8 +5,8 @@ ENTITY Alu IS
  generic (n: integer := 16);
 PORT (  sel: IN std_logic_vector(2 downto 0);
         inpA,inpB: IN std_logic_vector(n-1 downto 0);
-        cout :OUT std_logic;
         cin :IN std_logic;
+        cout :OUT std_logic;
         zerof:OUT std_logic;
         NegF:OUT std_logic;
         coutWE:OUT std_logic;

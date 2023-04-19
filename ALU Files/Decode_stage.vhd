@@ -37,7 +37,11 @@ entity Decode_stage is
         RSRC2_ADD_OUT   : OUT std_logic_vector(2 downto 0);
         RDST_ADD_OUT    : OUT std_logic_vector(2 downto 0);
         IMM_OR_IN_OUT   : OUT std_logic_vector(15 downto 0);
-        JMP_FLAG        : OUT STD_LOGIC
+        JMP_FLAG        : OUT STD_LOGIC;
+        --FOR FETCH--------------------
+        OP_CODE_OUT    : OUT std_logic_vector(4 downto 0);
+        CAT_OUT        : OUT std_logic_vector(1 downto 0)
+        -------------------------------
     );
 end Decode_stage;
 
@@ -77,13 +81,14 @@ Signal RSRC2_Value_Signal     : std_logic_vector(15 downto 0);
 Signal Controller_Out_Signal  : std_logic_vector(19 downto 0);
 Signal Decode_Buffer_IN       : std_logic_vector(87 downto 0);
 Signal Decode_Buffer_OUT      : std_logic_vector(87 downto 0);
+Signal NOT_CLK                : std_logic;
 ---------------------------------------------------------------------------------
 begin
 Decode_Buffer_IN <= Controller_Out_Signal(15 downto 14) & Controller_Out_Signal(12 downto 0) & PC_PLUS_ONE_IN & RSRC1_ADD & RSRC2_ADD & RDST_ADD & RSRC1_Value_Signal & RSRC2_Value_Signal & IMM_OR_INPUT;
 ----------------------------------------- BOXES ---------------------------------------------------------------------------------------------------------------------------------------------------
 REG_FILE       : RAM generic map(8 , 3) port map(CLK , RST , Write_back_Enable , Write_back_ADD , RSRC1_ADD , RSRC2_ADD , Write_back_value , RSRC1_Value_Signal , RSRC2_Value_Signal);
 Controller_BOX : Controlller port map(CAT_IN , OP_CODE , FLAGS , Controller_Out_Signal); 
-Decode_Buffer  : RegisterBuffer generic map(88) port map(CLK , RST , Decode_Buffer_IN , Decode_Buffer_OUT);
+Decode_Buffer  : RegisterBuffer generic map(88) port map(NOT_CLK , RST , Decode_Buffer_IN , Decode_Buffer_OUT);
 ----------------------------------OUTPUTS----------------------------------------------------------------------------------------------------------------------------------------------------------
 JMP_FLAG        <= Controller_Out_Signal(13);
 SET_CLEAR       <= Decode_Buffer_OUT(87 downto 86);
@@ -105,4 +110,10 @@ RDST_ADD_OUT    <= Decode_Buffer_OUT(50 downto 48);
 RSRC1_Value     <= Decode_Buffer_OUT(47 downto 32);
 RSRC2_Value     <= Decode_Buffer_OUT(31 downto 16);
 IMM_OR_IN_OUT   <= Decode_Buffer_OUT(15 downto 0);
+NOT_CLK         <= not CLK;
+----------------------------------FOR FETCH----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+OP_CODE_OUT    <= OP_CODE;
+CAT_OUT        <= CAT_IN;
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 end architecture;

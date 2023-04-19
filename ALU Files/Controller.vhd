@@ -45,7 +45,9 @@ OUT_SIGNALS (14) <= not(CAT(1)) and not(CAT(0)) and not(OP(3)) and OP(2) and OP(
 
 --------------------------------------
 --JMP_FLAG
-
+--FLAGS(2) = Z
+--FLAGS(1) = C
+--FLAGS(0) = N
 OUT_SIGNALS (13) <= (not(CAT(1)) and CAT(0) and OP(3) and not(OP(2))) and  (( OP(1) or FLAGS(1)) and (OP(0) or FLAGS(2))) ;
 
 --------------------------------------
