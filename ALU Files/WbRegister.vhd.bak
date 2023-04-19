@@ -8,7 +8,7 @@ ENTITY WbRegister IS
 		Rsrc1,Rsrc2,Rdst : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
                        WbEn : out STD_LOGIC;
                  Data,outputport : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
-                   Rsrc1out,Rsrc2out,Rdstout : out STD_LOGIC_VECTOR(2 DOWNTO 0)
+                   Rdstout : out STD_LOGIC_VECTOR(2 DOWNTO 0)
 	);
 END WbRegister;
 
@@ -38,7 +38,5 @@ Mux2Dataout :Mux2 generic map(16) port map(Wbbufferout(24 downto 9),Wbbufferout(
 Data<=Data_signal;
 Mux2outport :Mux2 generic map(16) port map((others => '0'),Data_signal,wbbufferout(41),outputport);
 Wben<=WbBufferout(43);
-Rsrc1out<=WbBufferout(8 downto 6);
-Rsrc2out<=WbBufferout(5 downto 3);
 Rdstout<=WbBufferout(2 downto 0);
 End WbRegister_arch;

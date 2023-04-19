@@ -36,7 +36,8 @@ entity Decode_stage is
         RSRC1_ADD_OUT   : OUT std_logic_vector(2 downto 0);
         RSRC2_ADD_OUT   : OUT std_logic_vector(2 downto 0);
         RDST_ADD_OUT    : OUT std_logic_vector(2 downto 0);
-        IMM_OR_IN_OUT   : OUT std_logic_vector(15 downto 0)
+        IMM_OR_IN_OUT   : OUT std_logic_vector(15 downto 0);
+        JMP_FLAG        : OUT STD_LOGIC
     );
 end Decode_stage;
 
@@ -83,7 +84,8 @@ Decode_Buffer_IN <= Controller_Out_Signal(15 downto 14) & Controller_Out_Signal(
 REG_FILE       : RAM generic map(8 , 3) port map(CLK , RST , Write_back_Enable , Write_back_ADD , RSRC1_ADD , RSRC2_ADD , Write_back_value , RSRC1_Value_Signal , RSRC2_Value_Signal);
 Controller_BOX : Controlller port map(CAT_IN , OP_CODE , FLAGS , Controller_Out_Signal); 
 Decode_Buffer  : RegisterBuffer generic map(88) port map(CLK , RST , Decode_Buffer_IN , Decode_Buffer_OUT);
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------OUTPUTS----------------------------------------------------------------------------------------------------------------------------------------------------------
+JMP_FLAG        <= Controller_Out_Signal(13);
 SET_CLEAR       <= Decode_Buffer_OUT(87 downto 86);
 Write_back      <= Decode_Buffer_OUT(85);
 MEM_SRC         <= Decode_Buffer_OUT(84);
