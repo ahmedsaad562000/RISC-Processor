@@ -33,13 +33,13 @@ ARCHITECTURE fetch_stage_arch OF fetch_stage IS
     END COMPONENT;
 
     ------------------------------------IS_MEM---------------------------------------
-    COMPONENT flag_reg IS
+    COMPONENT is_mem IS
         PORT (
             CAT : IN STD_LOGIC_VECTOR (1 DOWNTO 0);
             OP : IN STD_LOGIC_VECTOR (4 DOWNTO 0);
             OUT_SIGNAL : OUT STD_LOGIC
         );
-    END COMPONENT flag_reg;
+    END COMPONENT is_mem;
 
     ------------------------------------USES_MEM---------------------------------------
 
@@ -116,8 +116,8 @@ BEGIN
     ------------------------------------COMPONENTS-----------------------------------
     PC_BOX : PC PORT MAP(CLK, RST, '1', USE_IMM_OUT, JMP_FLAG, OR1_OUT, JMP_VALUE, PC_OUT, PC_PLUS_ONE);
     INST_CACHE_BOX : inst_cache PORT MAP(PC_OUT, INST_CACHE_OUT, M0, M1);
-    IS_MEM1_BOX : flag_reg PORT MAP(CAT_DECODE_OUT, OP_CODE_DECODE_OUT, IS_MEM1_OUT);
-    IS_MEM2_BOX : flag_reg PORT MAP(INST_CACHE_OUT(31 DOWNTO 30), INST_CACHE_OUT(20 DOWNTO 16), IS_MEM2_OUT);
+    IS_MEM1_BOX : is_mem PORT MAP(CAT_DECODE_OUT, OP_CODE_DECODE_OUT, IS_MEM1_OUT);
+    IS_MEM2_BOX : is_mem PORT MAP(INST_CACHE_OUT(31 DOWNTO 30), INST_CACHE_OUT(20 DOWNTO 16), IS_MEM2_OUT);
     USE_IMM_BOX : uses_imm PORT MAP(INST_CACHE_OUT(31 DOWNTO 30), INST_CACHE_OUT(20 DOWNTO 16), USE_IMM_OUT);
     IS_IN_BOX : is_in_inst PORT MAP(INST_CACHE_OUT(31 DOWNTO 30), INST_CACHE_OUT(20 DOWNTO 16), IS_IN_OUT);
     MUX1 : MUX_2X1 GENERIC MAP(16) PORT MAP(INST_CACHE_OUT(15 DOWNTO 0), IN_PORT, IS_IN_OUT, MUX1_OUTPUT);

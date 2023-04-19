@@ -1,3 +1,6 @@
+# Compile of MemoryStage2.vhd was successful.
+# Compile of WbRegister.vhd was successful.
+# Compile of Pipelined_Processor.vhd was successful.
 # Compile of Alu.vhd was successful.
 # Compile of ArithmaticPart.vhd was successful.
 # Compile of Decode_stage.vhd was successful.
@@ -22,21 +25,33 @@
 # Compile of tb_Decode_stage.vhd was successful.
 # Compile of uses_imm.vhd was successful.
 # Compile of WbRegister.vhd was successful.
-# 24 compiles, 0 failed with no errors.
-# Compile of Alu.vhd was successful.
-# Compile of execute_stage.vhd was successful.
-# Compile of fetch_stage.vhd was successful.
-# Compile of Decode_stage.vhd was successful.
-# Compile of execute_stage.vhd was successful.
-# Compile of Decode_stage.vhd was successful.
-# Compile of MEM_ONE.vhd was successful.
-# Compile of MEM_ONE.vhd was successful.
-# Compile of MemoryStage2.vhd was successful.
-# Compile of WbRegister.vhd was successful.
-# 3 compiles, 0 failed with no errors.
-# Compile of uses_imm.vhd was successful.
+# Compile of Pipelined_Processor.vhd was successful.
+# 25 compiles, 0 failed with no errors.
+# Load canceled
+# Compile of Pipelined.vhd was successful.
+vsim -gui work.pipelined
+# vsim -gui work.pipelined 
+# Start time: 20:25:01 on Apr 19,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Loading work.pipelined(pipelined_arch)
+# Loading work.fetch_stage(fetch_stage_arch)
+# Loading work.pc(pc_arch)
+# Loading work.mux_2x1(mux_2x1_arch)
+# Loading work.inst_cache(inst_cach_arch)
+# Loading work.flag_reg(flag_reg_arch)
+# ** Fatal: (vsim-3817) Port "CLK" of entity "flag_reg" is not in the component being instantiated.
+#    Time: 0 ps  Iteration: 0  Instance: /pipelined/FETCH_STAGE_BOX/IS_MEM1_BOX File: D:/Computer arch/Project/ALU Files/flag_reg.vhd Line: 6
+# FATAL ERROR while loading design
+# Error loading design
+# End time: 20:25:02 on Apr 19,2023, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 9
 # Compile of Alu.vhd was successful.
 # Compile of ArithmaticPart.vhd was successful.
+# Compile of Controller.vhd was successful.
 # Compile of Decode_stage.vhd was successful.
 # Compile of execute_stage.vhd was successful.
 # Compile of fetch_stage.vhd was successful.
@@ -52,6 +67,7 @@
 # Compile of my_adder.vhd was successful.
 # Compile of my_nadder.vhd was successful.
 # Compile of PC.vhd was successful.
+# Compile of Pipelined.vhd was successful.
 # Compile of RAM.vhd was successful.
 # Compile of RegisterBuffer.vhd was successful.
 # Compile of select_adder.vhd was successful.
@@ -59,4 +75,92 @@
 # Compile of tb_Decode_stage.vhd was successful.
 # Compile of uses_imm.vhd was successful.
 # Compile of WbRegister.vhd was successful.
-# 24 compiles, 0 failed with no errors.
+# 26 compiles, 0 failed with no errors.
+vsim -gui work.pipelined
+# vsim -gui work.pipelined 
+# Start time: 20:27:48 on Apr 19,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Loading work.pipelined(pipelined_arch)
+# Loading work.fetch_stage(fetch_stage_arch)
+# Loading work.pc(pc_arch)
+# Loading work.mux_2x1(mux_2x1_arch)
+# Loading work.inst_cache(inst_cach_arch)
+# Loading work.flag_reg(flag_reg_arch)
+# ** Fatal: (vsim-3817) Port "CLK" of entity "flag_reg" is not in the component being instantiated.
+#    Time: 0 ps  Iteration: 0  Instance: /pipelined/FETCH_STAGE_BOX/IS_MEM1_BOX File: D:/Computer arch/Project/ALU Files/flag_reg.vhd Line: 6
+# FATAL ERROR while loading design
+# Error loading design
+# End time: 20:27:48 on Apr 19,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 5
+# Compile of Alu.vhd was successful.
+# Compile of ArithmaticPart.vhd was successful.
+# Compile of Controller.vhd was successful.
+# Compile of Decode_stage.vhd was successful.
+# Compile of execute_stage.vhd was successful.
+# Compile of fetch_stage.vhd was successful.
+# Compile of flag_reg.vhd was successful.
+# Compile of InstCache.vhd was successful.
+# Compile of is_in_instr.vhd was successful.
+# Compile of is_mem.vhd was successful.
+# Compile of Logicpart.vhd was successful.
+# Compile of MEM_ONE.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of MemoryStage2.vhd was successful.
+# Compile of MUX_2X1.vhd was successful.
+# Compile of my_adder.vhd was successful.
+# Compile of my_nadder.vhd was successful.
+# Compile of PC.vhd was successful.
+# Compile of Pipelined.vhd was successful.
+# Compile of RAM.vhd was successful.
+# Compile of RegisterBuffer.vhd was successful.
+# Compile of select_adder.vhd was successful.
+# Compile of SP.vhd was successful.
+# Compile of tb_Decode_stage.vhd was successful.
+# Compile of uses_imm.vhd was successful.
+# Compile of WbRegister.vhd was successful.
+# 26 compiles, 0 failed with no errors.
+# Compile of fetch_stage.vhd was successful.
+vsim -gui work.pipelined
+# vsim -gui work.pipelined 
+# Start time: 20:32:38 on Apr 19,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Loading work.pipelined(pipelined_arch)
+# Loading work.fetch_stage(fetch_stage_arch)
+# Loading work.pc(pc_arch)
+# Loading work.mux_2x1(mux_2x1_arch)
+# Loading work.inst_cache(inst_cach_arch)
+# Loading work.is_mem(is_mem_arch)
+# Loading work.uses_imm(uses_imm_arch)
+# Loading work.is_in_inst(is_in_inst_arch)
+# Loading work.registerbuffer(registerbuffer_arch)
+# Loading work.decode_stage(decode_stage_arch)
+# Loading work.ram(ram_arch)
+# Loading work.controlller(controlller_arch)
+# Loading work.execute_stage(execute_stage_arch)
+# Loading work.alu(aluimp)
+# Loading work.arithmaticpart(partaimp)
+# Loading work.select_adder(a_my_adder)
+# Loading work.my_nadder(a_my_adder)
+# Loading work.my_adder(a_my_adder)
+# Loading work.logicpart(logicpartimp)
+# Loading work.flag_reg(flag_reg_arch)
+# Loading work.mem_one(mem_one_arch)
+# Loading work.sp(sp_arch)
+# Loading work.memorystage2(memorystage2_arch)
+# Loading work.memory(memory_arch)
+# Loading work.wbregister(wbregister_arch)
+# ** Warning: (vsim-3473) Component instance "Mux2Dataout : Mux2" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /pipelined/WB_STAGE_BOX File: D:/Computer arch/Project/ALU Files/WbRegister.vhd
+# ** Warning: (vsim-3473) Component instance "Mux2outport : Mux2" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /pipelined/WB_STAGE_BOX File: D:/Computer arch/Project/ALU Files/WbRegister.vhd
+# ** Warning: (vsim-8684) No drivers exist on out port /pipelined/WB_STAGE_BOX/outputport, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /pipelined/OUT_PORT.
