@@ -35,9 +35,12 @@ dataout : OUT std_logic_vector(15 DOWNTO 0) );
 END component;
 signal Mem2WbBufferin : std_logic_vector(63 downto 0):=(others => '0');
 signal Mem2WbBufferout : std_logic_vector(63 downto 0):=(others => '0');
+----------------------------------------------
+signal NOT_CLK : std_logic;
+---------------------------------------------
 begin
 Mem2WbBufferin<=pc_plus_one&wb&M2r&Sp_inc&Sp_dec&Memw&OutEn&CallSignal&Read_Add_Data&Write_data&Rsrc1&Rsrc2&Rdst;
-The_Buffer: RegisterBuffer generic map(64) port map(CLK , RST , Mem2WbBufferin , Mem2WbBufferout);
+The_Buffer: RegisterBuffer generic map(64) port map(NOT_CLK , RST , Mem2WbBufferin , Mem2WbBufferout);
 The_Memory: Memory generic map(1024,10) port map(clk,Mem2WbBufferout(43),rst,Mem2WbBufferout(34 downto 25),Mem2WbBufferout(24 downto 9),Memory_out_data);
 wbout<=Mem2WbBufferout(47);
 M2ROut<=Mem2WbBufferout(46);
@@ -50,4 +53,7 @@ read_add_data_out<=Mem2WbBufferout(40 downto 25);
 Rsrc1_out<=Mem2WbBufferout(8 downto 6);
 Rsrc2_out<=Mem2WbBufferout(5 downto 3);
 Rdst_out<=Mem2WbBufferout(2 downto 0);
+---------------------------------------------
+NOT_CLK <= NOT CLK;
+---------------------------------------------
 END MemoryStage2_arch;

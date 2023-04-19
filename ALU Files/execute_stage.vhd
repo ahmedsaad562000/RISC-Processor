@@ -67,7 +67,7 @@ ARCHITECTURE Execute_stage_arch OF Execute_stage IS
         PORT (
             sel : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
             inpA, inpB : IN STD_LOGIC_VECTOR(n - 1 DOWNTO 0);
-            --need to add cin
+            cin :IN std_logic;
             cout : OUT STD_LOGIC;
             zerof : OUT STD_LOGIC;
             NegF : OUT STD_LOGIC;
@@ -115,7 +115,7 @@ ARCHITECTURE Execute_stage_arch OF Execute_stage IS
 BEGIN
     ----------------------------------------- BOXES ---------------------------------------------------------------------------------------------------------------------------------------------------
     MUX_2X1_BOX : MUX_2X1 GENERIC MAP(16) PORT MAP(RSRC2_Value, IMM_OR_IN, ALU_SRC, MUX_OUTPUT);
-    ALU_BOX : Alu GENERIC MAP(16) PORT MAP(ALU_Operation, RSRC1_Value, MUX_OUTPUT, CF_VALUE, ZF_VALUE, NF_VALUE, CF_WE, ZF_WE, NF_WE, ALU_RESULT);
+    ALU_BOX : Alu GENERIC MAP(16) PORT MAP(ALU_Operation, RSRC1_Value, MUX_OUTPUT, CIN_Signal , CF_VALUE, ZF_VALUE, NF_VALUE, CF_WE, ZF_WE, NF_WE, ALU_RESULT);
     ZF_BOX : flag_reg PORT MAP(CLK ,ZF_WE, ZF_VALUE, RST, ZF_OUT);
     CF_BOX : flag_reg PORT MAP(CLK ,CF_WE_OR_OUT, CF_VAL_OR_OUT, RST, CF_OUT);
     NF_BOX : flag_reg PORT MAP(CLK ,NF_WE, NF_VALUE, RST, NF_OUT);
