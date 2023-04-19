@@ -86,7 +86,7 @@ OUT_SIGNALS (7) <= not(CAT(1)) and CAT(0) and not(OP(4)) and not(OP(2)) and not(
 --------------------------------------
 --ALU_SRC
 
-OUT_SIGNALS (6) <= CAT(1) and OP(1) and  not(CAT(1)) and CAT(0) and OP(4) and not(OP(2));
+OUT_SIGNALS (6) <= (CAT(1) and OP(1)) or  (not(CAT(1)) and CAT(0) and OP(4) and not(OP(2)));
 
 --------------------------------------
 --ALU_OP
@@ -101,7 +101,7 @@ else "100"; --MOV
 --------------------------------------
 --CIN
 
-OUT_SIGNALS (2) <= CAT(1) and not(CAT(0)) and OP(1);
+OUT_SIGNALS (2) <= (CAT(1) and not(CAT(0)) and OP(1)) or (NOT(CAT(1)) AND CAT(0) AND OP(4) AND NOT(OP(3)) AND NOT(OP(2)));
 
 --------------------------------------
 --CALL
