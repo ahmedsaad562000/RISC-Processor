@@ -39,7 +39,7 @@ signal memBuffer : std_logic_vector(15 downto 0):=(others => '0');
 SIGNAL NOT_CLK : STD_LOGIC;
 begin
 NOT_CLK <= NOT CLK;
-The_Memory: Memory generic map(1024,10) port map( clk,MemW,rst,Read_Add_Data(9 downto 0),Write_Data,memBuffer);
+The_Memory: Memory generic map(1024,10) port map( clk,MemW,'0',Read_Add_Data(9 downto 0),Write_Data,memBuffer);
 WbBufferin<=wb&M2r&OutEn&memBuffer&Read_Add_Data&Rsrc1&Rsrc2&Rdst;
 Writeback_Buffer  : RegisterBuffer generic map(44) port map( NOT_CLK , RST , WbBufferin ,WbBufferout );
 wbout<=WbBufferout(43);
