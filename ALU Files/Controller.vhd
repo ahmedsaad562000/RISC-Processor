@@ -56,7 +56,8 @@ OUT_SIGNALS (13) <= (not(CAT(1)) and CAT(0) and OP(3) and not(OP(2))) and  (( OP
 OUT_SIGNALS (12) <= (CAT(1) and CAT(0))  
 or (CAT(1) and not(CAT(0)) and ( ( not(OP(4)) and OP(3) and OP(2) )  or ( OP(3) nand OP(2) ))  )
 -- (CAT(1) and not(CAT(0)) and not(OP(4)) and OP(3) and OP(2)) or (OP(3) nand OP(2)) 
-or (not(CAT(1)) and CAT(0) and OP(4) and OP(2));
+or (not(CAT(1)) and CAT(0) and OP(4) and OP(2))
+or (NOT(CAT(1)) AND CAT(0) AND OP(4) AND NOT(OP(3)) AND NOT(OP(2)));
 
 --------------------------------------
 --MEM_SRC
