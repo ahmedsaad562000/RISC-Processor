@@ -10,5 +10,5 @@ END ENTITY is_in_inst;
 
 ARCHITECTURE is_in_inst_arch OF is_in_inst IS
 BEGIN
-OUT_SIGNAL <= not(CAT(1)) and CAT(0) and OP(4) and OP(2);
+OUT_SIGNAL <= NOT(CAT(1)) AND CAT(0) AND OP(4) AND NOT(OP(3)) AND NOT(OP(2));
 END is_in_inst_arch;
