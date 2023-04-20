@@ -1,0 +1,962 @@
+# Compile of MemoryStage2.vhd was successful.
+# Compile of WbRegister.vhd was successful.
+# Compile of Pipelined_Processor.vhd was successful.
+# Compile of Alu.vhd was successful.
+# Compile of ArithmaticPart.vhd was successful.
+# Compile of Decode_stage.vhd was successful.
+# Compile of execute_stage.vhd was successful.
+# Compile of fetch_stage.vhd was successful.
+# Compile of flag_reg.vhd was successful.
+# Compile of InstCache.vhd was successful.
+# Compile of is_in_instr.vhd was successful.
+# Compile of is_mem.vhd was successful.
+# Compile of Logicpart.vhd was successful.
+# Compile of MEM_ONE.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of MemoryStage2.vhd was successful.
+# Compile of MUX_2X1.vhd was successful.
+# Compile of my_adder.vhd was successful.
+# Compile of my_nadder.vhd was successful.
+# Compile of PC.vhd was successful.
+# Compile of RAM.vhd was successful.
+# Compile of RegisterBuffer.vhd was successful.
+# Compile of select_adder.vhd was successful.
+# Compile of SP.vhd was successful.
+# Compile of tb_Decode_stage.vhd was successful.
+# Compile of uses_imm.vhd was successful.
+# Compile of WbRegister.vhd was successful.
+# Compile of Pipelined_Processor.vhd was successful.
+# 25 compiles, 0 failed with no errors.
+# Load canceled
+# Compile of Pipelined.vhd was successful.
+vsim -gui work.pipelined
+# vsim -gui work.pipelined 
+# Start time: 20:25:01 on Apr 19,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Loading work.pipelined(pipelined_arch)
+# Loading work.fetch_stage(fetch_stage_arch)
+# Loading work.pc(pc_arch)
+# Loading work.mux_2x1(mux_2x1_arch)
+# Loading work.inst_cache(inst_cach_arch)
+# Loading work.flag_reg(flag_reg_arch)
+# ** Fatal: (vsim-3817) Port "CLK" of entity "flag_reg" is not in the component being instantiated.
+#    Time: 0 ps  Iteration: 0  Instance: /pipelined/FETCH_STAGE_BOX/IS_MEM1_BOX File: D:/Computer arch/Project/ALU Files/flag_reg.vhd Line: 6
+# FATAL ERROR while loading design
+# Error loading design
+# End time: 20:25:02 on Apr 19,2023, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 9
+# Compile of Alu.vhd was successful.
+# Compile of ArithmaticPart.vhd was successful.
+# Compile of Controller.vhd was successful.
+# Compile of Decode_stage.vhd was successful.
+# Compile of execute_stage.vhd was successful.
+# Compile of fetch_stage.vhd was successful.
+# Compile of flag_reg.vhd was successful.
+# Compile of InstCache.vhd was successful.
+# Compile of is_in_instr.vhd was successful.
+# Compile of is_mem.vhd was successful.
+# Compile of Logicpart.vhd was successful.
+# Compile of MEM_ONE.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of MemoryStage2.vhd was successful.
+# Compile of MUX_2X1.vhd was successful.
+# Compile of my_adder.vhd was successful.
+# Compile of my_nadder.vhd was successful.
+# Compile of PC.vhd was successful.
+# Compile of Pipelined.vhd was successful.
+# Compile of RAM.vhd was successful.
+# Compile of RegisterBuffer.vhd was successful.
+# Compile of select_adder.vhd was successful.
+# Compile of SP.vhd was successful.
+# Compile of tb_Decode_stage.vhd was successful.
+# Compile of uses_imm.vhd was successful.
+# Compile of WbRegister.vhd was successful.
+# 26 compiles, 0 failed with no errors.
+vsim -gui work.pipelined
+# vsim -gui work.pipelined 
+# Start time: 20:27:48 on Apr 19,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Loading work.pipelined(pipelined_arch)
+# Loading work.fetch_stage(fetch_stage_arch)
+# Loading work.pc(pc_arch)
+# Loading work.mux_2x1(mux_2x1_arch)
+# Loading work.inst_cache(inst_cach_arch)
+# Loading work.flag_reg(flag_reg_arch)
+# ** Fatal: (vsim-3817) Port "CLK" of entity "flag_reg" is not in the component being instantiated.
+#    Time: 0 ps  Iteration: 0  Instance: /pipelined/FETCH_STAGE_BOX/IS_MEM1_BOX File: D:/Computer arch/Project/ALU Files/flag_reg.vhd Line: 6
+# FATAL ERROR while loading design
+# Error loading design
+# End time: 20:27:48 on Apr 19,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 5
+# Compile of Alu.vhd was successful.
+# Compile of ArithmaticPart.vhd was successful.
+# Compile of Controller.vhd was successful.
+# Compile of Decode_stage.vhd was successful.
+# Compile of execute_stage.vhd was successful.
+# Compile of fetch_stage.vhd was successful.
+# Compile of flag_reg.vhd was successful.
+# Compile of InstCache.vhd was successful.
+# Compile of is_in_instr.vhd was successful.
+# Compile of is_mem.vhd was successful.
+# Compile of Logicpart.vhd was successful.
+# Compile of MEM_ONE.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of MemoryStage2.vhd was successful.
+# Compile of MUX_2X1.vhd was successful.
+# Compile of my_adder.vhd was successful.
+# Compile of my_nadder.vhd was successful.
+# Compile of PC.vhd was successful.
+# Compile of Pipelined.vhd was successful.
+# Compile of RAM.vhd was successful.
+# Compile of RegisterBuffer.vhd was successful.
+# Compile of select_adder.vhd was successful.
+# Compile of SP.vhd was successful.
+# Compile of tb_Decode_stage.vhd was successful.
+# Compile of uses_imm.vhd was successful.
+# Compile of WbRegister.vhd was successful.
+# 26 compiles, 0 failed with no errors.
+# Compile of fetch_stage.vhd was successful.
+vsim -gui work.pipelined
+# vsim -gui work.pipelined 
+# Start time: 20:32:38 on Apr 19,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Loading work.pipelined(pipelined_arch)
+# Loading work.fetch_stage(fetch_stage_arch)
+# Loading work.pc(pc_arch)
+# Loading work.mux_2x1(mux_2x1_arch)
+# Loading work.inst_cache(inst_cach_arch)
+# Loading work.is_mem(is_mem_arch)
+# Loading work.uses_imm(uses_imm_arch)
+# Loading work.is_in_inst(is_in_inst_arch)
+# Loading work.registerbuffer(registerbuffer_arch)
+# Loading work.decode_stage(decode_stage_arch)
+# Loading work.ram(ram_arch)
+# Loading work.controlller(controlller_arch)
+# Loading work.execute_stage(execute_stage_arch)
+# Loading work.alu(aluimp)
+# Loading work.arithmaticpart(partaimp)
+# Loading work.select_adder(a_my_adder)
+# Loading work.my_nadder(a_my_adder)
+# Loading work.my_adder(a_my_adder)
+# Loading work.logicpart(logicpartimp)
+# Loading work.flag_reg(flag_reg_arch)
+# Loading work.mem_one(mem_one_arch)
+# Loading work.sp(sp_arch)
+# Loading work.memorystage2(memorystage2_arch)
+# Loading work.memory(memory_arch)
+# Loading work.wbregister(wbregister_arch)
+# ** Warning: (vsim-3473) Component instance "Mux2Dataout : Mux2" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /pipelined/WB_STAGE_BOX File: D:/Computer arch/Project/ALU Files/WbRegister.vhd
+# ** Warning: (vsim-3473) Component instance "Mux2outport : Mux2" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /pipelined/WB_STAGE_BOX File: D:/Computer arch/Project/ALU Files/WbRegister.vhd
+# ** Warning: (vsim-8684) No drivers exist on out port /pipelined/WB_STAGE_BOX/outputport, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /pipelined/OUT_PORT.
+mem save -o {D:/Computer arch/Project/ALU Files/firsttest.mem} -f mti -data symbolic -addr hex -wordsperline 1 /pipelined/FETCH_STAGE_BOX/INST_CACHE_BOX/inst_cache
+mem load -i {D:/Computer arch/Project/ALU Files/firsttest.mem} /pipelined/FETCH_STAGE_BOX/INST_CACHE_BOX/inst_cache
+add wave -position insertpoint  \
+sim:/pipelined/FETCH_STAGE_BOX/PC_BOX/pc_val
+add wave -position insertpoint  \
+sim:/pipelined/RST \
+sim:/pipelined/CLK \
+sim:/pipelined/IN_PORT \
+sim:/pipelined/EXECUTE_FLAGS
+mem load -i {D:/Computer arch/Project/ALU Files/firsttest.mem} /pipelined/FETCH_STAGE_BOX/INST_CACHE_BOX/inst_cache
+force -freeze sim:/pipelined/RST 1 0
+force -freeze sim:/pipelined/CLK 1 0, 0 {50 ps} -r 100
+force -freeze sim:/pipelined/IN_PORT 1111 0
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /pipelined/MEMORY_TWO_STAGE_BOX/The_Memory
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /pipelined/DECODE_STAGE_BOX/REG_FILE
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /pipelined/DECODE_STAGE_BOX/REG_FILE
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /pipelined/MEMORY_TWO_STAGE_BOX/The_Memory
+run
+run
+run
+force -freeze sim:/pipelined/RST 0 0
+run
+run
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 650 ps  Iteration: 3  Instance: /pipelined/MEMORY_TWO_STAGE_BOX/The_Memory
+run
+run
+run
+run
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3473) Component instance "Mux2Dataout : Mux2" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /pipelined/WB_STAGE_BOX File: D:/Computer arch/Project/ALU Files/WbRegister.vhd
+# ** Warning: (vsim-3473) Component instance "Mux2outport : Mux2" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /pipelined/WB_STAGE_BOX File: D:/Computer arch/Project/ALU Files/WbRegister.vhd
+# ** Warning: (vsim-8684) No drivers exist on out port /pipelined/WB_STAGE_BOX/outputport, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /pipelined/OUT_PORT.
+add wave -position insertpoint  \
+sim:/pipelined/FETCH_STAGE_BOX/PC_BOX/pc_val
+add wave -position insertpoint  \
+sim:/pipelined/RST \
+sim:/pipelined/CLK \
+sim:/pipelined/IN_PORT \
+sim:/pipelined/EXECUTE_FLAGS
+mem load -i {D:/Computer arch/Project/ALU Files/firsttest.mem} /pipelined/FETCH_STAGE_BOX/INST_CACHE_BOX/inst_cache
+force -freeze sim:/pipelined/RST 1 0
+force -freeze sim:/pipelined/CLK 1 0, 0 {50 ps} -r 100
+force -freeze sim:/pipelined/IN_PORT 1111 0
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /pipelined/MEMORY_TWO_STAGE_BOX/The_Memory
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /pipelined/DECODE_STAGE_BOX/REG_FILE
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /pipelined/DECODE_STAGE_BOX/REG_FILE
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /pipelined/MEMORY_TWO_STAGE_BOX/The_Memory
+run
+run
+run
+run
+run
+run
+run
+
+run
+run
+run
+run
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3473) Component instance "Mux2Dataout : Mux2" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /pipelined/WB_STAGE_BOX File: D:/Computer arch/Project/ALU Files/WbRegister.vhd
+# ** Warning: (vsim-3473) Component instance "Mux2outport : Mux2" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /pipelined/WB_STAGE_BOX File: D:/Computer arch/Project/ALU Files/WbRegister.vhd
+# ** Warning: (vsim-8684) No drivers exist on out port /pipelined/WB_STAGE_BOX/outputport, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /pipelined/OUT_PORT.
+add wave -position insertpoint  \
+sim:/pipelined/FETCH_STAGE_BOX/PC_BOX/pc_val
+add wave -position insertpoint  \
+sim:/pipelined/RST \
+sim:/pipelined/CLK \
+sim:/pipelined/IN_PORT \
+sim:/pipelined/EXECUTE_FLAGS
+mem load -i {D:/Computer arch/Project/ALU Files/firsttest.mem} /pipelined/FETCH_STAGE_BOX/INST_CACHE_BOX/inst_cache
+force -freeze sim:/pipelined/RST 1 0
+force -freeze sim:/pipelined/CLK 1 0, 0 {50 ps} -r 100
+force -freeze sim:/pipelined/IN_PORT 1111 0
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /pipelined/MEMORY_TWO_STAGE_BOX/The_Memory
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /pipelined/DECODE_STAGE_BOX/REG_FILE
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /pipelined/DECODE_STAGE_BOX/REG_FILE
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /pipelined/MEMORY_TWO_STAGE_BOX/The_Memory
+# Compile of Decode_stage.vhd was successful.
+# Compile of Alu.vhd was successful.
+# Compile of ArithmaticPart.vhd was successful.
+# Compile of Controller.vhd was successful.
+# Compile of Decode_stage.vhd was successful.
+# Compile of execute_stage.vhd was successful.
+# Compile of fetch_stage.vhd was successful.
+# Compile of flag_reg.vhd was successful.
+# Compile of InstCache.vhd was successful.
+# Compile of is_in_instr.vhd was successful.
+# Compile of is_mem.vhd was successful.
+# Compile of Logicpart.vhd was successful.
+# Compile of MEM_ONE.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of MemoryStage2.vhd was successful.
+# Compile of MUX_2X1.vhd was successful.
+# Compile of my_adder.vhd was successful.
+# Compile of my_nadder.vhd was successful.
+# Compile of PC.vhd was successful.
+# Compile of Pipelined.vhd was successful.
+# Compile of RAM.vhd was successful.
+# Compile of RegisterBuffer.vhd was successful.
+# Compile of select_adder.vhd was successful.
+# Compile of SP.vhd was successful.
+# Compile of tb_Decode_stage.vhd was successful.
+# Compile of uses_imm.vhd was successful.
+# Compile of WbRegister.vhd was successful.
+# 26 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.pipelined(pipelined_arch)
+# Loading work.fetch_stage(fetch_stage_arch)
+# Loading work.pc(pc_arch)
+# Loading work.mux_2x1(mux_2x1_arch)
+# Loading work.inst_cache(inst_cach_arch)
+# Loading work.is_mem(is_mem_arch)
+# Loading work.uses_imm(uses_imm_arch)
+# Loading work.is_in_inst(is_in_inst_arch)
+# Loading work.registerbuffer(registerbuffer_arch)
+# Loading work.decode_stage(decode_stage_arch)
+# Loading work.ram(ram_arch)
+# Loading work.controlller(controlller_arch)
+# Loading work.execute_stage(execute_stage_arch)
+# Loading work.alu(aluimp)
+# Loading work.arithmaticpart(partaimp)
+# Loading work.select_adder(a_my_adder)
+# Loading work.my_nadder(a_my_adder)
+# Loading work.my_adder(a_my_adder)
+# Loading work.logicpart(logicpartimp)
+# Loading work.flag_reg(flag_reg_arch)
+# Loading work.mem_one(mem_one_arch)
+# Loading work.sp(sp_arch)
+# Loading work.memorystage2(memorystage2_arch)
+# Loading work.memory(memory_arch)
+# Loading work.wbregister(wbregister_arch)
+# ** Warning: (vsim-3473) Component instance "Mux2Dataout : Mux2" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /pipelined/WB_STAGE_BOX File: D:/Computer arch/Project/ALU Files/WbRegister.vhd
+# ** Warning: (vsim-3473) Component instance "Mux2outport : Mux2" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /pipelined/WB_STAGE_BOX File: D:/Computer arch/Project/ALU Files/WbRegister.vhd
+# ** Warning: (vsim-8684) No drivers exist on out port /pipelined/WB_STAGE_BOX/outputport, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /pipelined/OUT_PORT.
+add wave -position insertpoint  \
+sim:/pipelined/FETCH_STAGE_BOX/PC_BOX/pc_val
+add wave -position insertpoint  \
+sim:/pipelined/RST \
+sim:/pipelined/CLK \
+sim:/pipelined/IN_PORT \
+sim:/pipelined/EXECUTE_FLAGS
+mem load -i {D:/Computer arch/Project/ALU Files/firsttest.mem} /pipelined/FETCH_STAGE_BOX/INST_CACHE_BOX/inst_cache
+force -freeze sim:/pipelined/RST 1 0
+force -freeze sim:/pipelined/CLK 1 0, 0 {50 ps} -r 100
+force -freeze sim:/pipelined/IN_PORT 1111 0
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /pipelined/MEMORY_TWO_STAGE_BOX/The_Memory
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /pipelined/DECODE_STAGE_BOX/REG_FILE
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /pipelined/DECODE_STAGE_BOX/REG_FILE
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /pipelined/MEMORY_TWO_STAGE_BOX/The_Memory
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /pipelined/DECODE_STAGE_BOX/REG_FILE
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /pipelined/DECODE_STAGE_BOX/REG_FILE
+run
+run
+run
+run
+run
+run
+force -freeze sim:/pipelined/RST 0 0
+run
+run
+run
+run
+run
+run
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 1350 ps  Iteration: 3  Instance: /pipelined/MEMORY_TWO_STAGE_BOX/The_Memory
+run
+add wave -position insertpoint  \
+sim:/pipelined/DECODE_WB_ENABLE
+add wave -position insertpoint  \
+sim:/pipelined/DECODE_WB_VALUE
+add wave -position insertpoint  \
+sim:/pipelined/DECODE_EXECUTE_WRITE_BACK_OUT
+add wave -position insertpoint  \
+sim:/pipelined/EXECUTE_MEM1_WB_OUT
+add wave -position insertpoint  \
+sim:/pipelined/MEM1_MEM2_WB_OUT
+add wave -position insertpoint  \
+sim:/pipelined/MEM2_WB_WB_OUT
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3473) Component instance "Mux2Dataout : Mux2" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /pipelined/WB_STAGE_BOX File: D:/Computer arch/Project/ALU Files/WbRegister.vhd
+# ** Warning: (vsim-3473) Component instance "Mux2outport : Mux2" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /pipelined/WB_STAGE_BOX File: D:/Computer arch/Project/ALU Files/WbRegister.vhd
+# ** Warning: (vsim-8684) No drivers exist on out port /pipelined/WB_STAGE_BOX/outputport, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /pipelined/OUT_PORT.
+sim:/pipelined/RST \
+sim:/pipelined/CLK \
+sim:/pipelined/IN_PORT \
+sim:/pipelined/EXECUTE_FLAGS
+# invalid command name "sim:/pipelined/RST"
+mem load -i {D:/Computer arch/Project/ALU Files/firsttest.mem} /pipelined/FETCH_STAGE_BOX/INST_CACHE_BOX/inst_cache
+force -freeze sim:/pipelined/RST 1 0
+force -freeze sim:/pipelined/CLK 1 0, 0 {50 ps} -r 100
+force -freeze sim:/pipelined/IN_PORT 1111 0
+mem load -i {D:/Computer arch/Project/ALU Files/firsttest.mem} /pipelined/FETCH_STAGE_BOX/INST_CACHE_BOX/inst_cache
+force -freeze sim:/pipelined/RST 1 0
+force -freeze sim:/pipelined/CLK 1 0, 0 {50 ps} -r 100
+force -freeze sim:/pipelined/IN_PORT 1111 0
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /pipelined/MEMORY_TWO_STAGE_BOX/The_Memory
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /pipelined/DECODE_STAGE_BOX/REG_FILE
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /pipelined/DECODE_STAGE_BOX/REG_FILE
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /pipelined/MEMORY_TWO_STAGE_BOX/The_Memory
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /pipelined/DECODE_STAGE_BOX/REG_FILE
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /pipelined/DECODE_STAGE_BOX/REG_FILE
+run
+run
+force -freeze sim:/pipelined/RST 0 0
+run
+run
+run
+run
+# Compile of Controller.vhd was successful.
+# Compile of Alu.vhd was successful.
+# Compile of ArithmaticPart.vhd was successful.
+# Compile of Controller.vhd was successful.
+# Compile of Decode_stage.vhd was successful.
+# Compile of execute_stage.vhd was successful.
+# Compile of fetch_stage.vhd was successful.
+# Compile of flag_reg.vhd was successful.
+# Compile of InstCache.vhd was successful.
+# Compile of is_in_instr.vhd was successful.
+# Compile of is_mem.vhd was successful.
+# Compile of Logicpart.vhd was successful.
+# Compile of MEM_ONE.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of MemoryStage2.vhd was successful.
+# Compile of MUX_2X1.vhd was successful.
+# Compile of my_adder.vhd was successful.
+# Compile of my_nadder.vhd was successful.
+# Compile of PC.vhd was successful.
+# Compile of Pipelined.vhd was successful.
+# Compile of RAM.vhd was successful.
+# Compile of RegisterBuffer.vhd was successful.
+# Compile of select_adder.vhd was successful.
+# Compile of SP.vhd was successful.
+# Compile of tb_Decode_stage.vhd was successful.
+# Compile of uses_imm.vhd was successful.
+# Compile of WbRegister.vhd was successful.
+# 26 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.pipelined(pipelined_arch)
+# Loading work.fetch_stage(fetch_stage_arch)
+# Loading work.pc(pc_arch)
+# Loading work.mux_2x1(mux_2x1_arch)
+# Loading work.inst_cache(inst_cach_arch)
+# Loading work.is_mem(is_mem_arch)
+# Loading work.uses_imm(uses_imm_arch)
+# Loading work.is_in_inst(is_in_inst_arch)
+# Loading work.registerbuffer(registerbuffer_arch)
+# Loading work.decode_stage(decode_stage_arch)
+# Loading work.ram(ram_arch)
+# Loading work.controlller(controlller_arch)
+# Loading work.execute_stage(execute_stage_arch)
+# Loading work.alu(aluimp)
+# Loading work.arithmaticpart(partaimp)
+# Loading work.select_adder(a_my_adder)
+# Loading work.my_nadder(a_my_adder)
+# Loading work.my_adder(a_my_adder)
+# Loading work.logicpart(logicpartimp)
+# Loading work.flag_reg(flag_reg_arch)
+# Loading work.mem_one(mem_one_arch)
+# Loading work.sp(sp_arch)
+# Loading work.memorystage2(memorystage2_arch)
+# Loading work.memory(memory_arch)
+# Loading work.wbregister(wbregister_arch)
+# ** Warning: (vsim-3473) Component instance "Mux2Dataout : Mux2" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /pipelined/WB_STAGE_BOX File: D:/Computer arch/Project/ALU Files/WbRegister.vhd
+# ** Warning: (vsim-3473) Component instance "Mux2outport : Mux2" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /pipelined/WB_STAGE_BOX File: D:/Computer arch/Project/ALU Files/WbRegister.vhd
+# ** Warning: (vsim-8684) No drivers exist on out port /pipelined/WB_STAGE_BOX/outputport, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /pipelined/OUT_PORT.
+mem load -i {D:/Computer arch/Project/ALU Files/firsttest.mem} /pipelined/FETCH_STAGE_BOX/INST_CACHE_BOX/inst_cache
+force -freeze sim:/pipelined/RST 1 0
+force -freeze sim:/pipelined/CLK 1 0, 0 {50 ps} -r 100
+force -freeze sim:/pipelined/IN_PORT 1111 0
+mem load -i {D:/Computer arch/Project/ALU Files/firsttest.mem} /pipelined/FETCH_STAGE_BOX/INST_CACHE_BOX/inst_cache
+force -freeze sim:/pipelined/RST 1 0
+force -freeze sim:/pipelined/CLK 1 0, 0 {50 ps} -r 100
+force -freeze sim:/pipelined/IN_PORT 1111 0
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /pipelined/MEMORY_TWO_STAGE_BOX/The_Memory
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /pipelined/DECODE_STAGE_BOX/REG_FILE
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /pipelined/DECODE_STAGE_BOX/REG_FILE
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /pipelined/MEMORY_TWO_STAGE_BOX/The_Memory
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /pipelined/DECODE_STAGE_BOX/REG_FILE
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /pipelined/DECODE_STAGE_BOX/REG_FILE
+force -freeze sim:/pipelined/RST 0 0
+run
+run
+run
+run
+run
+run
+run
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3473) Component instance "Mux2Dataout : Mux2" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /pipelined/WB_STAGE_BOX File: D:/Computer arch/Project/ALU Files/WbRegister.vhd
+# ** Warning: (vsim-3473) Component instance "Mux2outport : Mux2" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /pipelined/WB_STAGE_BOX File: D:/Computer arch/Project/ALU Files/WbRegister.vhd
+# ** Warning: (vsim-8684) No drivers exist on out port /pipelined/WB_STAGE_BOX/outputport, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /pipelined/OUT_PORT.
+mem load -i {D:/Computer arch/Project/ALU Files/firsttest.mem} /pipelined/FETCH_STAGE_BOX/INST_CACHE_BOX/inst_cache
+force -freeze sim:/pipelined/RST 1 0
+noforce sim:/pipelined/CLK
+force -freeze sim:/pipelined/CLK 1 0, 0 {50 ps} -r 100
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /pipelined/MEMORY_TWO_STAGE_BOX/The_Memory
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /pipelined/DECODE_STAGE_BOX/REG_FILE
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /pipelined/DECODE_STAGE_BOX/REG_FILE
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /pipelined/MEMORY_TWO_STAGE_BOX/The_Memory
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /pipelined/DECODE_STAGE_BOX/REG_FILE
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /pipelined/DECODE_STAGE_BOX/REG_FILE
+force -freeze sim:/pipelined/RST 0 0
+run
+run
+run
+run
+run
+run
+run
+run
+add wave -position insertpoint  \
+sim:/pipelined/DECODE_EXECUTE_RDST_ADD_OUT
+add wave -position insertpoint  \
+sim:/pipelined/DECODE_EXECUTE_RSRC1_ADD_OUT
+add wave -position insertpoint  \
+sim:/pipelined/DECODE_EXECUTE_RSRC2_ADD_OUT
+add wave -position insertpoint  \
+sim:/pipelined/DECODE_EXECUTE_ALU_SRC_OUT
+add wave -position insertpoint  \
+sim:/pipelined/DECODE_EXECUTE_ALU_OP_OUT
+add wave -position insertpoint  \
+sim:/pipelined/DECODE_EXECUTE_MEM_TO_REG_OUT
+add wave -position insertpoint  \
+sim:/pipelined/DECODE_EXECUTE_RSRC1_VALUE_OUT
+add wave -position insertpoint  \
+sim:/pipelined/DECODE_EXECUTE_RSRC2_VALUE_OUT
+add wave -position insertpoint  \
+sim:/pipelined/EXECUTE_MEM1_MEM_SRC_OUT
+add wave -position insertpoint  \
+sim:/pipelined/EXECUTE_MEM1_RESULT_VALUE_OUT
+add wave -position insertpoint  \
+sim:/pipelined/EXECUTE_MEM1_RSRC2_VALUE_OUT
+add wave -position insertpoint  \
+sim:/pipelined/MEM1_MEM2_MEM_WRITE_OUT
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3473) Component instance "Mux2Dataout : Mux2" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /pipelined/WB_STAGE_BOX File: D:/Computer arch/Project/ALU Files/WbRegister.vhd
+# ** Warning: (vsim-3473) Component instance "Mux2outport : Mux2" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /pipelined/WB_STAGE_BOX File: D:/Computer arch/Project/ALU Files/WbRegister.vhd
+# ** Warning: (vsim-8684) No drivers exist on out port /pipelined/WB_STAGE_BOX/outputport, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /pipelined/OUT_PORT.
+mem load -i {D:/Computer arch/Project/ALU Files/firsttest.mem} /pipelined/FETCH_STAGE_BOX/INST_CACHE_BOX/inst_cache
+force -freeze sim:/pipelined/RST 1 0
+noforce sim:/pipelined/CLK
+force -freeze sim:/pipelined/CLK 1 0, 0 {50 ps} -r 100
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /pipelined/MEMORY_TWO_STAGE_BOX/The_Memory
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /pipelined/DECODE_STAGE_BOX/REG_FILE
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /pipelined/DECODE_STAGE_BOX/REG_FILE
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /pipelined/MEMORY_TWO_STAGE_BOX/The_Memory
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /pipelined/DECODE_STAGE_BOX/REG_FILE
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /pipelined/DECODE_STAGE_BOX/REG_FILE
+force -freeze sim:/pipelined/RST 0 0
+run
+run
+run
+run
+add wave -position insertpoint  \
+sim:/pipelined/MEM1_MEM2_READ_ADD_OUT
+add wave -position insertpoint  \
+sim:/pipelined/MEM1_MEM2_WRITE_DATA_OUT
+run
+run
+add wave -position insertpoint  \
+sim:/pipelined/MEM2_WB_MEM_OUT_DATA_OUT
+add wave -position insertpoint  \
+sim:/pipelined/MEM2_WB_READ_ADD_DATA_OUT
+run
+run
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3473) Component instance "Mux2Dataout : Mux2" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /pipelined/WB_STAGE_BOX File: D:/Computer arch/Project/ALU Files/WbRegister.vhd
+# ** Warning: (vsim-3473) Component instance "Mux2outport : Mux2" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /pipelined/WB_STAGE_BOX File: D:/Computer arch/Project/ALU Files/WbRegister.vhd
+# ** Warning: (vsim-8684) No drivers exist on out port /pipelined/WB_STAGE_BOX/outputport, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /pipelined/OUT_PORT.
+# Compile of Alu.vhd was successful.
+# Compile of ArithmaticPart.vhd was successful.
+# Compile of Controller.vhd was successful.
+# Compile of Decode_stage.vhd was successful.
+# Compile of execute_stage.vhd was successful.
+# Compile of fetch_stage.vhd was successful.
+# Compile of flag_reg.vhd was successful.
+# Compile of InstCache.vhd was successful.
+# Compile of is_in_instr.vhd was successful.
+# Compile of is_mem.vhd was successful.
+# Compile of Logicpart.vhd was successful.
+# Compile of MEM_ONE.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of MemoryStage2.vhd was successful.
+# Compile of MUX_2X1.vhd was successful.
+# Compile of my_adder.vhd was successful.
+# Compile of my_nadder.vhd was successful.
+# Compile of PC.vhd was successful.
+# Compile of Pipelined.vhd was successful.
+# Compile of RAM.vhd was successful.
+# Compile of RegisterBuffer.vhd was successful.
+# Compile of select_adder.vhd was successful.
+# Compile of SP.vhd was successful.
+# Compile of tb_Decode_stage.vhd was successful.
+# Compile of uses_imm.vhd was successful.
+# Compile of WbRegister.vhd was successful.
+# 26 compiles, 0 failed with no errors.
+mem load -i {D:/Computer arch/Project/ALU Files/firsttest.mem} /pipelined/FETCH_STAGE_BOX/INST_CACHE_BOX/inst_cache
+orce -freeze sim:/pipelined/RST 1 0
+# invalid command name "orce"
+noforce sim:/pipelined/CLK
+force -freeze sim:/pipelined/CLK 1 0, 0 {50 ps} -r 100
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /pipelined/MEMORY_TWO_STAGE_BOX/The_Memory
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /pipelined/DECODE_STAGE_BOX/REG_FILE
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /pipelined/DECODE_STAGE_BOX/REG_FILE
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.pipelined(pipelined_arch)
+# Loading work.fetch_stage(fetch_stage_arch)
+# Loading work.pc(pc_arch)
+# Loading work.mux_2x1(mux_2x1_arch)
+# Loading work.inst_cache(inst_cach_arch)
+# Loading work.is_mem(is_mem_arch)
+# Loading work.uses_imm(uses_imm_arch)
+# Loading work.is_in_inst(is_in_inst_arch)
+# Loading work.registerbuffer(registerbuffer_arch)
+# Loading work.decode_stage(decode_stage_arch)
+# Loading work.ram(ram_arch)
+# Loading work.controlller(controlller_arch)
+# Loading work.execute_stage(execute_stage_arch)
+# Loading work.alu(aluimp)
+# Loading work.arithmaticpart(partaimp)
+# Loading work.select_adder(a_my_adder)
+# Loading work.my_nadder(a_my_adder)
+# Loading work.my_adder(a_my_adder)
+# Loading work.logicpart(logicpartimp)
+# Loading work.flag_reg(flag_reg_arch)
+# Loading work.mem_one(mem_one_arch)
+# Loading work.sp(sp_arch)
+# Loading work.memorystage2(memorystage2_arch)
+# Loading work.memory(memory_arch)
+# Loading work.wbregister(wbregister_arch)
+# ** Fatal: (vsim-3817) Port "A" of entity "mux_2x1" is not in the component being instantiated.
+#    Time: 0 ps  Iteration: 0  Instance: /pipelined/WB_STAGE_BOX/Mux2Dataout File: D:/Computer arch/Project/ALU Files/MUX_2X1.vhd Line: 8
+# FATAL ERROR while loading design
+# Compile of Alu.vhd was successful.
+# Compile of ArithmaticPart.vhd was successful.
+# Compile of Controller.vhd was successful.
+# Compile of Decode_stage.vhd was successful.
+# Compile of execute_stage.vhd was successful.
+# Compile of fetch_stage.vhd was successful.
+# Compile of flag_reg.vhd was successful.
+# Compile of InstCache.vhd was successful.
+# Compile of is_in_instr.vhd was successful.
+# Compile of is_mem.vhd was successful.
+# Compile of Logicpart.vhd was successful.
+# Compile of MEM_ONE.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of MemoryStage2.vhd was successful.
+# Compile of MUX_2X1.vhd was successful.
+# Compile of my_adder.vhd was successful.
+# Compile of my_nadder.vhd was successful.
+# Compile of PC.vhd was successful.
+# Compile of Pipelined.vhd was successful.
+# Compile of RAM.vhd was successful.
+# Compile of RegisterBuffer.vhd was successful.
+# Compile of select_adder.vhd was successful.
+# Compile of SP.vhd was successful.
+# Compile of tb_Decode_stage.vhd was successful.
+# Compile of uses_imm.vhd was successful.
+# Compile of WbRegister.vhd was successful.
+# 26 compiles, 0 failed with no errors.
+restart
+# No Design Loaded!
+vsim -gui work.pipelined
+# vsim -gui work.pipelined 
+# Start time: 20:32:38 on Apr 19,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Loading work.pipelined(pipelined_arch)
+# Loading work.fetch_stage(fetch_stage_arch)
+# Loading work.pc(pc_arch)
+# Loading work.mux_2x1(mux_2x1_arch)
+# Loading work.inst_cache(inst_cach_arch)
+# Loading work.is_mem(is_mem_arch)
+# Loading work.uses_imm(uses_imm_arch)
+# Loading work.is_in_inst(is_in_inst_arch)
+# Loading work.registerbuffer(registerbuffer_arch)
+# Loading work.decode_stage(decode_stage_arch)
+# Loading work.ram(ram_arch)
+# Loading work.controlller(controlller_arch)
+# Loading work.execute_stage(execute_stage_arch)
+# Loading work.alu(aluimp)
+# Loading work.arithmaticpart(partaimp)
+# Loading work.select_adder(a_my_adder)
+# Loading work.my_nadder(a_my_adder)
+# Loading work.my_adder(a_my_adder)
+# Loading work.logicpart(logicpartimp)
+# Loading work.flag_reg(flag_reg_arch)
+# Loading work.mem_one(mem_one_arch)
+# Loading work.sp(sp_arch)
+# Loading work.memorystage2(memorystage2_arch)
+# Loading work.memory(memory_arch)
+# Loading work.wbregister(wbregister_arch)
+force -freeze sim:/pipelined/CLK 1 0, 0 {50 ps} -r 100
+force -freeze sim:/pipelined/RST 1 0
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /pipelined/MEMORY_TWO_STAGE_BOX/The_Memory
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /pipelined/DECODE_STAGE_BOX/REG_FILE
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /pipelined/DECODE_STAGE_BOX/REG_FILE
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /pipelined/MEMORY_TWO_STAGE_BOX/The_Memory
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /pipelined/DECODE_STAGE_BOX/REG_FILE
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /pipelined/DECODE_STAGE_BOX/REG_FILE
+force -freeze sim:/pipelined/RST 0 0
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 150 ps  Iteration: 3  Instance: /pipelined/DECODE_STAGE_BOX/REG_FILE
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 150 ps  Iteration: 3  Instance: /pipelined/DECODE_STAGE_BOX/REG_FILE
+run
+run
+run
+run
+run
+run
+run
+run
+run
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+force -freeze sim:/pipelined/RST 1 0
+force -freeze sim:/pipelined/CLK 1 0, 0 {50 ps} -r 100
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /pipelined/MEMORY_TWO_STAGE_BOX/The_Memory
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /pipelined/DECODE_STAGE_BOX/REG_FILE
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /pipelined/DECODE_STAGE_BOX/REG_FILE
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /pipelined/MEMORY_TWO_STAGE_BOX/The_Memory
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /pipelined/DECODE_STAGE_BOX/REG_FILE
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /pipelined/DECODE_STAGE_BOX/REG_FILE
+force -freeze sim:/pipelined/RST 0 0
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 150 ps  Iteration: 3  Instance: /pipelined/DECODE_STAGE_BOX/REG_FILE
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 150 ps  Iteration: 3  Instance: /pipelined/DECODE_STAGE_BOX/REG_FILE
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+mem load -i {D:/Computer arch/Project/ALU Files/firsttest.mem} /pipelined/FETCH_STAGE_BOX/INST_CACHE_BOX/inst_cache
+force -freeze sim:/pipelined/CLK 1 0, 0 {50 ps} -r 100
+force -freeze sim:/pipelined/RST 1 0
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /pipelined/MEMORY_TWO_STAGE_BOX/The_Memory
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /pipelined/DECODE_STAGE_BOX/REG_FILE
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /pipelined/DECODE_STAGE_BOX/REG_FILE
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /pipelined/MEMORY_TWO_STAGE_BOX/The_Memory
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /pipelined/DECODE_STAGE_BOX/REG_FILE
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /pipelined/DECODE_STAGE_BOX/REG_FILE
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+add wave -position insertpoint  \
+sim:/pipelined/RST \
+sim:/pipelined/CLK \
+sim:/pipelined/IN_PORT \
+sim:/pipelined/DECODE_WB_ENABLE \
+sim:/pipelined/DECODE_WB_VALUE \
+sim:/pipelined/DECODE_EXECUTE_RDST_ADD_OUT \
+sim:/pipelined/DECODE_EXECUTE_RSRC1_ADD_OUT \
+sim:/pipelined/DECODE_EXECUTE_RSRC2_ADD_OUT \
+sim:/pipelined/DECODE_EXECUTE_ALU_SRC_OUT \
+sim:/pipelined/DECODE_EXECUTE_ALU_OP_OUT \
+sim:/pipelined/DECODE_EXECUTE_MEM_TO_REG_OUT \
+sim:/pipelined/DECODE_EXECUTE_WRITE_BACK_OUT \
+sim:/pipelined/DECODE_EXECUTE_RSRC1_VALUE_OUT \
+sim:/pipelined/DECODE_EXECUTE_RSRC2_VALUE_OUT \
+sim:/pipelined/EXECUTE_FLAGS \
+sim:/pipelined/EXECUTE_MEM1_WB_OUT \
+sim:/pipelined/EXECUTE_MEM1_MEM_SRC_OUT \
+sim:/pipelined/EXECUTE_MEM1_RESULT_VALUE_OUT \
+sim:/pipelined/EXECUTE_MEM1_RSRC2_VALUE_OUT \
+sim:/pipelined/MEM1_MEM2_WB_OUT \
+sim:/pipelined/MEM1_MEM2_MEM_WRITE_OUT \
+sim:/pipelined/MEM1_MEM2_READ_ADD_OUT \
+sim:/pipelined/MEM1_MEM2_WRITE_DATA_OUT \
+sim:/pipelined/MEM2_WB_WB_OUT \
+sim:/pipelined/MEM2_WB_MEM_OUT_DATA_OUT \
+sim:/pipelined/MEM2_WB_READ_ADD_DATA_OUT
+force -freeze sim:/pipelined/CLK 1 0, 0 {50 ps} -r 100
+force -freeze sim:/pipelined/RST 1 0
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /pipelined/MEMORY_TWO_STAGE_BOX/The_Memory
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /pipelined/DECODE_STAGE_BOX/REG_FILE
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /pipelined/DECODE_STAGE_BOX/REG_FILE
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /pipelined/MEMORY_TWO_STAGE_BOX/The_Memory
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /pipelined/DECODE_STAGE_BOX/REG_FILE
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /pipelined/DECODE_STAGE_BOX/REG_FILE
+force -freeze sim:/pipelined/RST 0 0
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 150 ps  Iteration: 3  Instance: /pipelined/DECODE_STAGE_BOX/REG_FILE
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 150 ps  Iteration: 3  Instance: /pipelined/DECODE_STAGE_BOX/REG_FILE
+run
+run
+run
+run
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+mem load -i {D:/Computer arch/Project/ALU Files/firsttest.mem} /pipelined/FETCH_STAGE_BOX/INST_CACHE_BOX/inst_cache
+force -freeze sim:/pipelined/CLK 1 0, 0 {50 ps} -r 100
+force -freeze sim:/pipelined/RST 1 0
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /pipelined/MEMORY_TWO_STAGE_BOX/The_Memory
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /pipelined/DECODE_STAGE_BOX/REG_FILE
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /pipelined/DECODE_STAGE_BOX/REG_FILE
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /pipelined/MEMORY_TWO_STAGE_BOX/The_Memory
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /pipelined/DECODE_STAGE_BOX/REG_FILE
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /pipelined/DECODE_STAGE_BOX/REG_FILE
+force -freeze sim:/pipelined/RST 0 0
+run
+run
+run
+run
+run
+run
+run
