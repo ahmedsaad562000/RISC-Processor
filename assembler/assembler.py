@@ -45,7 +45,7 @@ machineCodes = []
 def InstructionMachineCode():
     with open('TestcasesPhaseOne.txt', 'r') as file:
         for line in file:
-            if line.startswith('#'):
+            if line.startswith('#') or line.startswith('\n'):
                 continue
             Instruction = line.split()
             if  len(Instruction) > 1 :

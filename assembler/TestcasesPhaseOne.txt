@@ -9,7 +9,10 @@
                         # several places in the file and the assembler should handle it in Phase 2
 IN R5                                
 INC R5,R5                 
-INC R5,R5                 
+INC R5,R5  
+
+
+
 IN R1                               
 IN R2                                
 IN R3                               

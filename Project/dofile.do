@@ -1,5 +1,5 @@
 vsim -gui work.pipelined
-mem load -i {G:/Computer-Architecture-Project/ALU Files/firsttest.mem} /pipelined/FETCH_STAGE_BOX/INST_CACHE_BOX/inst_cache
+mem load -i {D:\Computer arch\Project\Project\firsttest.mem} /pipelined/FETCH_STAGE_BOX/INST_CACHE_BOX/inst_cache
 add wave -position end  sim:/pipelined/RST
 add wave -position end  sim:/pipelined/CLK
 add wave -position end  sim:/pipelined/FETCH_STAGE_BOX/PC_BOX/pc_val
