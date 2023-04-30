@@ -102,30 +102,30 @@ def readFile(inputfile):
                 continue
             Instruction = line.split()
             if  Instruction[0] == ".org":
-                current_index = int(Instruction[1])
+                current_index = hexToDecimal(Instruction[1])
                 continue            
             elif  is_number(Instruction[0]):
-                machineCodes[ str(current_index) ] = hexToBinary(Instruction[0])
+                machineCodes[ decimalToHex(current_index) ] = hexToBinary(Instruction[0])
                 current_index += 1
                 continue
             elif Instruction[0] == "IADD":
                 firstline = getInstructionMachineCode(line)
-                machineCodes[ str(current_index) ] = str(firstline)
+                machineCodes[ decimalToHex(current_index) ] = str(firstline)
                 current_index += 1
                 immvalue = Instruction[1].split(",")[2]
-                machineCodes[ str(current_index) ] = hexToBinary(immvalue)
+                machineCodes[ decimalToHex(current_index) ] = hexToBinary(immvalue)
                 current_index += 1
                 continue
             elif Instruction[0] == "LDM":
                 firstline = getInstructionMachineCode(line)
-                machineCodes[ str(current_index) ] = str(firstline)
+                machineCodes[ decimalToHex(current_index) ] = str(firstline)
                 current_index += 1
                 immvalue = Instruction[1].split(",")[1]
-                machineCodes[ str(current_index) ] = hexToBinary(immvalue)
+                machineCodes[ decimalToHex(current_index) ] = hexToBinary(immvalue)
                 current_index += 1
                 continue
             else:
-                machineCodes[ str(current_index) ] = getInstructionMachineCode(line)
+                machineCodes[ decimalToHex(current_index) ] = getInstructionMachineCode(line)
                 current_index += 1
                 continue
     return machineCodes
@@ -166,13 +166,35 @@ def WriteIntoFile(outputfile, machineCodes):
 
 import sys;
 if __name__ == "__main__":
-    inputfile = sys.argv[1]
-    outputfile = sys.argv[2]
-    inputfile = inputfile + ".txt"
-    outputfile = outputfile + ".mem"
-    machineCodes = readFile(inputfile)
-    WriteIntoFile(outputfile, machineCodes)
-    print('done')
+    # inputfile = sys.argv[1]
+    # outputfile = sys.argv[2]
+    cont = True
+    while cont:
+        inputfile = input("Please write the path of the input file: ")
+        outputfile = input("Please write the path of the output file: ")
+
+
+        machineCodes = readFile(inputfile)
+        
+        print('')
+        print('The machine codes are:')
+        for key, value in machineCodes.items():
+            print(key + ": " + value)
+
+        WriteIntoFile(outputfile, machineCodes)
+        print('---------------------------------------------------')
+        print('**Note: The above machine codes are just for testing.')
+    
+        print('The real results with the right format are saved in ' + outputfile)
+        print('---------------------------------------------------')
+        
+        cont = input("Do you want to continue? (y/n): ")
+        if cont == "n":
+            cont = False
+        else:
+            cont = True
+
+
      
 
 
