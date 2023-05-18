@@ -34,14 +34,14 @@ OUT_SIGNALS (17) <= not(CAT(1)) and CAT(0) and OP(4) and OP(2);
 OUT_SIGNALS (16) <= not(CAT(1)) and not(CAT(0)) and OP(3);
 
 --------------------------------------
---SET
+--SETC/CLEARC VALUE 
 
 OUT_SIGNALS (15) <= not(CAT(1)) and not(CAT(0)) and not(OP(3)) and OP(2) and not(OP(4)) ;
 
 --------------------------------------
---CLEAR
+--SETC/CLEARC Enable
 
-OUT_SIGNALS (14) <= not(CAT(1)) and not(CAT(0)) and not(OP(3)) and OP(2) and OP(4);
+OUT_SIGNALS (14) <= not(CAT(1)) and not(CAT(0)) and not(OP(3)) and OP(2);
 
 --------------------------------------
 --JMP_FLAG
