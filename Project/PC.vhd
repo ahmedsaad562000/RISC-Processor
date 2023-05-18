@@ -44,7 +44,7 @@ begin
     IF rst = '1' THEN
         temp_address <= (others => '0');
     Elsif rising_edge(clk) AND enable = '1' THEN
-	temp_address <= mux1_output;
+	temp_address <= mux3_output;
     End IF;
 end Process;
 pc_val <= temp_address;
