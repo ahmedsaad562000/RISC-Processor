@@ -1,0 +1,1166 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/Architecture/practice vhdl/trianing/lab3
+Ealu
+Z0 w1681905658
+Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z2 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 762
+Z3 dD:/Computer arch/Project/Project
+Z4 8D:/Computer arch/Project/Project/Alu.vhd
+Z5 FD:/Computer arch/Project/Project/Alu.vhd
+l0
+L4 1
+V8^Y:R4M[MLc_mRaj^aVYd2
+!s100 X04kkzk]30=9g4@19mRfN1
+Z6 OV;C;2020.1;71
+32
+Z7 !s110 1682800314
+!i10b 1
+Z8 !s108 1682800314.000000
+Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Computer arch/Project/Project/Alu.vhd|
+Z10 !s107 D:/Computer arch/Project/Project/Alu.vhd|
+!i113 1
+Z11 o-work work -2002 -explicit
+Z12 tExplicit 1 CvgOpt 0
+Aaluimp
+R1
+R2
+DEx4 work 3 alu 0 22 8^Y:R4M[MLc_mRaj^aVYd2
+!i122 762
+l44
+L18 56
+VS[LBFQ9YZ2WdCiIGodOok1
+!s100 Agi9jUQG6XNI5;JBG6GAl0
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Earithmaticpart
+Z13 w1680990388
+R1
+R2
+!i122 763
+R3
+Z14 8D:/Computer arch/Project/Project/ArithmaticPart.vhd
+Z15 FD:/Computer arch/Project/Project/ArithmaticPart.vhd
+l0
+L4 1
+V_ZW3c4Z?YAe6E[fgT;1M03
+!s100 hg_[J<2kzm2=RoVNeajlz3
+R6
+32
+R7
+!i10b 1
+R8
+Z16 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Computer arch/Project/Project/ArithmaticPart.vhd|
+Z17 !s107 D:/Computer arch/Project/Project/ArithmaticPart.vhd|
+!i113 1
+R11
+R12
+Apartaimp
+R1
+R2
+DEx4 work 14 arithmaticpart 0 22 _ZW3c4Z?YAe6E[fgT;1M03
+!i122 763
+l27
+L14 26
+Vinc74fKJ>8RlB1c0AL2aj3
+!s100 CO_z1zVJFkM0D9PcD4g>72
+R6
+32
+R7
+!i10b 1
+R8
+R16
+R17
+!i113 1
+R11
+R12
+Econtrolller
+Z18 w1681953185
+R1
+R2
+!i122 764
+R3
+Z19 8D:/Computer arch/Project/Project/Controller.vhd
+Z20 FD:/Computer arch/Project/Project/Controller.vhd
+l0
+L4 1
+VZ^535P6Uf=`AK:T0F<Y6Z0
+!s100 V2T18jD;<MJK838M`NPP>1
+R6
+32
+Z21 !s110 1682800315
+!i10b 1
+R8
+Z22 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Computer arch/Project/Project/Controller.vhd|
+Z23 !s107 D:/Computer arch/Project/Project/Controller.vhd|
+!i113 1
+R11
+R12
+Acontrolller_arch
+R1
+R2
+DEx4 work 11 controlller 0 22 Z^535P6Uf=`AK:T0F<Y6Z0
+!i122 764
+l16
+L15 104
+VlWGV^Z497PNT9oC1>>Ma>0
+!s100 O<62WZQoo6dYfZ]eQz>_@3
+R6
+32
+R21
+!i10b 1
+R8
+R22
+R23
+!i113 1
+R11
+R12
+Edecode_stage
+Z24 w1681932101
+Z25 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+R1
+R2
+!i122 765
+R3
+Z26 8D:/Computer arch/Project/Project/Decode_stage.vhd
+Z27 FD:/Computer arch/Project/Project/Decode_stage.vhd
+l0
+L5 1
+VLL8LUBBLhcm9f6>JS@nGB3
+!s100 A?1NAAX<Ud03:dLC9WI2f1
+R6
+32
+R21
+!i10b 1
+Z28 !s108 1682800315.000000
+Z29 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Computer arch/Project/Project/Decode_stage.vhd|
+Z30 !s107 D:/Computer arch/Project/Project/Decode_stage.vhd|
+!i113 1
+R11
+R12
+Adecode_stage_arch
+R25
+R1
+R2
+Z31 DEx4 work 12 decode_stage 0 22 LL8LUBBLhcm9f6>JS@nGB3
+!i122 765
+l86
+L48 72
+VEUY7Z;m6j3FmYVIgEAgGC0
+!s100 >=;JRB1:OYadgOz^o@g_M1
+R6
+32
+R21
+!i10b 1
+R28
+R29
+R30
+!i113 1
+R11
+R12
+Eexecute_stage
+Z32 w1681905713
+R25
+R1
+R2
+!i122 766
+R3
+Z33 8D:/Computer arch/Project/Project/execute_stage.vhd
+Z34 FD:/Computer arch/Project/Project/execute_stage.vhd
+l0
+L5 1
+V@44JTnbQiFGHhW`BD4;[S3
+!s100 9aR]U<MV]<H<QziYTjcO^0
+R6
+32
+R21
+!i10b 1
+R28
+Z35 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Computer arch/Project/Project/execute_stage.vhd|
+Z36 !s107 D:/Computer arch/Project/Project/execute_stage.vhd|
+!i113 1
+R11
+R12
+Aexecute_stage_arch
+R25
+R1
+R2
+Z37 DEx4 work 13 execute_stage 0 22 @44JTnbQiFGHhW`BD4;[S3
+!i122 766
+l115
+L49 102
+VU3MYEPSfdk`nFC:9^_l963
+!s100 D@oO8MoE02nI9INK?e2XM1
+R6
+32
+R21
+!i10b 1
+R28
+R35
+R36
+!i113 1
+R11
+R12
+Adecode_stage_arch
+R25
+R1
+R2
+R37
+!i122 468
+l116
+L49 103
+V5cN:]DfVZ]cdLB`nA_Ve?0
+!s100 T2`Rd;FOZVTGGe97<B4?j2
+R6
+32
+!s110 1681797985
+!i10b 1
+!s108 1681797985.000000
+!s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Computer arch/Project/ALU Files/execute_stage.vhd|
+!s107 D:/Computer arch/Project/ALU Files/execute_stage.vhd|
+!i113 1
+R11
+R12
+w1681797963
+Z38 dD:/Computer arch/Project/ALU Files
+FD:/Computer arch/Project/ALU Files/execute_stage.vhd
+8D:/Computer arch/Project/ALU Files/execute_stage.vhd
+Efetch_stage
+R18
+R25
+R1
+R2
+!i122 767
+R3
+Z39 8D:/Computer arch/Project/Project/fetch_stage.vhd
+Z40 FD:/Computer arch/Project/Project/fetch_stage.vhd
+l0
+L5 1
+V@THASc9WA@YcWY9F@z0N92
+!s100 ^?cz?]hoI7SfiENCn[hkG3
+R6
+32
+Z41 !s110 1682800316
+!i10b 1
+R28
+Z42 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Computer arch/Project/Project/fetch_stage.vhd|
+Z43 !s107 D:/Computer arch/Project/Project/fetch_stage.vhd|
+!i113 1
+R11
+R12
+Afetch_stage_arch
+R25
+R1
+R2
+Z44 DEx4 work 11 fetch_stage 0 22 @THASc9WA@YcWY9F@z0N92
+!i122 767
+l115
+L24 117
+VA:z0TmQG:2n?cP1616zjO2
+!s100 H^Ng;X:Zhfj@jU4>DZFSb0
+R6
+32
+R41
+!i10b 1
+R28
+R42
+R43
+!i113 1
+R11
+R12
+Eflag_reg
+Z45 w1681797018
+R1
+R2
+!i122 768
+R3
+Z46 8D:/Computer arch/Project/Project/flag_reg.vhd
+Z47 FD:/Computer arch/Project/Project/flag_reg.vhd
+l0
+L4 1
+V6oihjj<eIF>fBED4PP5oC3
+!s100 =Y<BV>_iI:^d77U7_RE_M3
+R6
+32
+R41
+!i10b 1
+Z48 !s108 1682800316.000000
+Z49 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Computer arch/Project/Project/flag_reg.vhd|
+Z50 !s107 D:/Computer arch/Project/Project/flag_reg.vhd|
+!i113 1
+R11
+R12
+Aflag_reg_arch
+R1
+R2
+DEx4 work 8 flag_reg 0 22 6oihjj<eIF>fBED4PP5oC3
+!i122 768
+l14
+L11 18
+VnV4Gm0[Y[?U@EkdM@3;WX0
+!s100 89KIG[MmnbBN>;miGNRZ33
+R6
+32
+R41
+!i10b 1
+R48
+R49
+R50
+!i113 1
+R11
+R12
+Einst_cache
+Z51 w1681687250
+R25
+R1
+R2
+!i122 769
+R3
+Z52 8D:/Computer arch/Project/Project/InstCache.vhd
+Z53 FD:/Computer arch/Project/Project/InstCache.vhd
+l0
+L5 1
+VE@@Zc6aA54:^h_ijoK5^N0
+!s100 jI_=kY=NSIK0:oi2B52mZ3
+R6
+32
+R41
+!i10b 1
+R48
+Z54 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Computer arch/Project/Project/InstCache.vhd|
+Z55 !s107 D:/Computer arch/Project/Project/InstCache.vhd|
+!i113 1
+R11
+R12
+Ainst_cach_arch
+R25
+R1
+R2
+DEx4 work 10 inst_cache 0 22 E@@Zc6aA54:^h_ijoK5^N0
+!i122 769
+l18
+L13 10
+VL1:16dQCPzY<5hVSTfEhc3
+!s100 iRUXhWchSZemA]]0:a=Dm3
+R6
+32
+R41
+!i10b 1
+R48
+R54
+R55
+!i113 1
+R11
+R12
+Eis_in_inst
+R18
+R1
+R2
+!i122 770
+R3
+Z56 8D:/Computer arch/Project/Project/is_in_instr.vhd
+Z57 FD:/Computer arch/Project/Project/is_in_instr.vhd
+l0
+L4 1
+VmTDim]@X8=Mj3i_NQES:B0
+!s100 bhU5V8MCMc=oAME5fMJR03
+R6
+32
+R41
+!i10b 1
+R48
+Z58 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Computer arch/Project/Project/is_in_instr.vhd|
+Z59 !s107 D:/Computer arch/Project/Project/is_in_instr.vhd|
+!i113 1
+R11
+R12
+Ais_in_inst_arch
+R1
+R2
+DEx4 work 10 is_in_inst 0 22 mTDim]@X8=Mj3i_NQES:B0
+!i122 770
+l12
+Z60 L11 4
+VQeTnLzoYX;WfZbzlakPEj0
+!s100 K;z^O=M[IojOd0ckj076@2
+R6
+32
+R41
+!i10b 1
+R48
+R58
+R59
+!i113 1
+R11
+R12
+Eis_mem
+Z61 w1681788888
+R1
+R2
+!i122 771
+R3
+Z62 8D:/Computer arch/Project/Project/is_mem.vhd
+Z63 FD:/Computer arch/Project/Project/is_mem.vhd
+l0
+L4 1
+VSLB``ZjF;KWzga3TIP3T]1
+!s100 h>O7NEAZack<i6PVRP>f22
+R6
+32
+Z64 !s110 1682800317
+!i10b 1
+R48
+Z65 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Computer arch/Project/Project/is_mem.vhd|
+Z66 !s107 D:/Computer arch/Project/Project/is_mem.vhd|
+!i113 1
+R11
+R12
+Ais_mem_arch
+R1
+R2
+DEx4 work 6 is_mem 0 22 SLB``ZjF;KWzga3TIP3T]1
+!i122 771
+l12
+R60
+V;AJl_OiHKkb;lVmV[fX=e0
+!s100 37GjJKLJeHVKB>O5CibLN3
+R6
+32
+R64
+!i10b 1
+R48
+R65
+R66
+!i113 1
+R11
+R12
+Elogicpart
+Z67 w1681905221
+R1
+R2
+!i122 772
+R3
+Z68 8D:/Computer arch/Project/Project/Logicpart.vhd
+Z69 FD:/Computer arch/Project/Project/Logicpart.vhd
+l0
+L4 1
+VO8g3HjX:UJcdnTgb0V4QY2
+!s100 :_iJkJfl`Nhb`0afbnFL63
+R6
+32
+R64
+!i10b 1
+Z70 !s108 1682800317.000000
+Z71 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Computer arch/Project/Project/Logicpart.vhd|
+Z72 !s107 D:/Computer arch/Project/Project/Logicpart.vhd|
+!i113 1
+R11
+R12
+Alogicpartimp
+R1
+R2
+DEx4 work 9 logicpart 0 22 O8g3HjX:UJcdnTgb0V4QY2
+!i122 772
+l15
+L14 9
+VfGMH:`[n0TiFnm6mjPM_e0
+!s100 GK`kNEgMiTPdn<z5z64Po3
+R6
+32
+R64
+!i10b 1
+R70
+R71
+R72
+!i113 1
+R11
+R12
+Emem_one
+Z73 w1681908821
+R25
+R1
+R2
+!i122 773
+R3
+Z74 8D:/Computer arch/Project/Project/MEM_ONE.vhd
+Z75 FD:/Computer arch/Project/Project/MEM_ONE.vhd
+l0
+L4 1
+V6MzZjzo`HkC09@1ml8eUL3
+!s100 LI]?QLW^iEzE?k5E>XPOQ0
+R6
+32
+R64
+!i10b 1
+R70
+Z76 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Computer arch/Project/Project/MEM_ONE.vhd|
+Z77 !s107 D:/Computer arch/Project/Project/MEM_ONE.vhd|
+!i113 1
+R11
+R12
+Amem_one_arch
+R25
+R1
+R2
+Z78 DEx4 work 7 mem_one 0 22 6MzZjzo`HkC09@1ml8eUL3
+!i122 773
+l81
+L42 70
+VgTIMM1m41PB8X<z2jU1oO1
+!s100 2U24AEUG:[YmmWko<<UFU1
+R6
+32
+R64
+!i10b 1
+R70
+R76
+R77
+!i113 1
+R11
+R12
+Ememory
+R67
+Z79 DPx4 ieee 9 math_real 0 22 gNk<PdFJ<XNPcfef`f?Z81
+R25
+R1
+R2
+!i122 774
+R3
+Z80 8D:/Computer arch/Project/Project/Memory.vhd
+Z81 FD:/Computer arch/Project/Project/Memory.vhd
+l0
+L6 1
+VJO@<6kW0lR8@DAiUX]Rd40
+!s100 5oeM5HcK3n[G^g3hdGE0X0
+R6
+32
+Z82 !s110 1682800318
+!i10b 1
+R70
+Z83 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Computer arch/Project/Project/Memory.vhd|
+Z84 !s107 D:/Computer arch/Project/Project/Memory.vhd|
+!i113 1
+R11
+R12
+Amemory_arch
+R79
+R25
+R1
+R2
+DEx4 work 6 memory 0 22 JO@<6kW0lR8@DAiUX]Rd40
+!i122 774
+l18
+L15 14
+V5l]>`Yi;T?PSa<NDcC4771
+!s100 T2<UTJRN_l;UNV_9^mMSS2
+R6
+32
+R82
+!i10b 1
+R70
+R83
+R84
+!i113 1
+R11
+R12
+Ememorystage2
+Z85 w1681962143
+R79
+R25
+R1
+R2
+!i122 775
+R3
+Z86 8D:/Computer arch/Project/Project/MemoryStage2.vhd
+Z87 FD:/Computer arch/Project/Project/MemoryStage2.vhd
+l0
+L6 1
+V5=::?4loQ2K;P]FJ47m?M2
+!s100 C]`6?@iLKAnPjG19ID07C2
+R6
+32
+R82
+!i10b 1
+Z88 !s108 1682800318.000000
+Z89 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Computer arch/Project/Project/MemoryStage2.vhd|
+Z90 !s107 D:/Computer arch/Project/Project/MemoryStage2.vhd|
+!i113 1
+R11
+R12
+Amemorystage2_arch
+R79
+R25
+R1
+R2
+Z91 DEx4 work 12 memorystage2 0 22 5=::?4loQ2K;P]FJ47m?M2
+!i122 775
+l40
+L18 40
+VEUY^aK<e@9W>o0Hzd;a];1
+!s100 GZd@fzc1C8kjJIUEL03ch0
+R6
+32
+R82
+!i10b 1
+R88
+R89
+R90
+!i113 1
+R11
+R12
+Emux_2x1
+Z92 w1681936004
+R25
+R1
+R2
+!i122 788
+R3
+Z93 8D:/Computer arch/Project/Project/MUX_2X1.vhd
+Z94 FD:/Computer arch/Project/Project/MUX_2X1.vhd
+l0
+L5 1
+V8dH7MNzGIL@3PR8Xzh9]@2
+!s100 XTE4oQdDj7Qj7`6>SjiD`3
+R6
+32
+Z95 !s110 1682800369
+!i10b 1
+Z96 !s108 1682800369.000000
+Z97 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Computer arch/Project/Project/MUX_2X1.vhd|
+Z98 !s107 D:/Computer arch/Project/Project/MUX_2X1.vhd|
+!i113 1
+R11
+R12
+Amux_2x1_arch
+R25
+R1
+R2
+Z99 DEx4 work 7 mux_2x1 0 22 8dH7MNzGIL@3PR8Xzh9]@2
+!i122 788
+l15
+Z100 L14 5
+Z101 VYVndg3VMim:nQK?dc<[Jn3
+Z102 !s100 ja<QcB8ZhlQ@=CC5K`c5B0
+R6
+32
+R95
+!i10b 1
+R96
+R97
+R98
+!i113 1
+R11
+R12
+Emy_adder
+Z103 w1677101900
+R1
+R2
+!i122 777
+R3
+Z104 8D:/Computer arch/Project/Project/my_adder.vhd
+Z105 FD:/Computer arch/Project/Project/my_adder.vhd
+l0
+L4 1
+VFjlMaf=9aFlNWPMnMXH?k3
+!s100 A5lJZfMh@V_I]hj`4ZSML1
+R6
+32
+Z106 !s110 1682800319
+!i10b 1
+R88
+Z107 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Computer arch/Project/Project/my_adder.vhd|
+Z108 !s107 D:/Computer arch/Project/Project/my_adder.vhd|
+!i113 1
+R11
+R12
+Aa_my_adder
+R1
+R2
+DEx4 work 8 my_adder 0 22 FjlMaf=9aFlNWPMnMXH?k3
+!i122 777
+l10
+L9 7
+VEOP9;;8K^;kWb:D@aED0N1
+!s100 GNi^[i0bJH4Ed:4A3E4hd2
+R6
+32
+R106
+!i10b 1
+R88
+R107
+R108
+!i113 1
+R11
+R12
+Emy_nadder
+R103
+R1
+R2
+!i122 778
+R3
+Z109 8D:/Computer arch/Project/Project/my_nadder.vhd
+Z110 FD:/Computer arch/Project/Project/my_nadder.vhd
+l0
+L4 1
+V=][h<nF1PHmQi5T3P<4730
+!s100 c4^Xj=;G0[gJ;zX<Wc5N91
+R6
+32
+R106
+!i10b 1
+Z111 !s108 1682800319.000000
+Z112 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Computer arch/Project/Project/my_nadder.vhd|
+Z113 !s107 D:/Computer arch/Project/Project/my_nadder.vhd|
+!i113 1
+R11
+R12
+Aa_my_adder
+R1
+R2
+DEx4 work 9 my_nadder 0 22 =][h<nF1PHmQi5T3P<4730
+!i122 778
+l19
+L12 15
+VniRk;BmlJ88aTo?TfE=HE1
+!s100 IGJSVa3JiZZfD3f?51nCY3
+R6
+32
+R106
+!i10b 1
+R111
+R112
+R113
+!i113 1
+R11
+R12
+Epc
+Z114 w1681794048
+R25
+R1
+R2
+!i122 779
+R3
+Z115 8D:/Computer arch/Project/Project/PC.vhd
+Z116 FD:/Computer arch/Project/Project/PC.vhd
+l0
+L5 1
+V=kEU64i_ALEN255R>HFo40
+!s100 k^DRMRL3d<PULNTLCk0ch0
+R6
+32
+R106
+!i10b 1
+R111
+Z117 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Computer arch/Project/Project/PC.vhd|
+Z118 !s107 D:/Computer arch/Project/Project/PC.vhd|
+!i113 1
+R11
+R12
+Apc_arch
+R25
+R1
+R2
+DEx4 work 2 pc 0 22 =kEU64i_ALEN255R>HFo40
+!i122 779
+l31
+L14 39
+VoE:^OYl>02glWZVVM`f^12
+!s100 ^8f]3AFS;Ge4kj=P_CCYG3
+R6
+32
+R106
+!i10b 1
+R111
+R117
+R118
+!i113 1
+R11
+R12
+Epipelined
+Z119 w1681935550
+R25
+R1
+R2
+!i122 780
+R3
+Z120 8D:/Computer arch/Project/Project/Pipelined.vhd
+Z121 FD:/Computer arch/Project/Project/Pipelined.vhd
+l0
+L5 1
+VSM2BI3MFN=;W8_3i9GjP^1
+!s100 D]bW@1JXbLgQaB`79[>[H0
+R6
+32
+Z122 !s110 1682800320
+!i10b 1
+Z123 !s108 1682800320.000000
+Z124 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Computer arch/Project/Project/Pipelined.vhd|
+Z125 !s107 D:/Computer arch/Project/Project/Pipelined.vhd|
+!i113 1
+R11
+R12
+Apipelined_arch
+Z126 DEx4 work 10 wbregister 0 22 _h1eEVY_H[5jU_GgNK5_h0
+R79
+R91
+R78
+R37
+R31
+R44
+R25
+R1
+R2
+DEx4 work 9 pipelined 0 22 SM2BI3MFN=;W8_3i9GjP^1
+!i122 780
+l192
+L14 192
+VDgNff1YQ<c`072:JSIQH01
+!s100 @fb^IB:BdDNQ]E2Tl2kNc1
+R6
+32
+R122
+!i10b 1
+R123
+R124
+R125
+!i113 1
+R11
+R12
+Eram
+Z127 w1681762493
+R79
+R25
+R1
+R2
+!i122 781
+R3
+Z128 8D:/Computer arch/Project/Project/RAM.vhd
+Z129 FD:/Computer arch/Project/Project/RAM.vhd
+l0
+L6 1
+V:U;ldWCQ0f2RXOglhGNm93
+!s100 >UiZl]A0?I[EgbJ[kJ5cf3
+R6
+32
+R122
+!i10b 1
+R123
+Z130 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Computer arch/Project/Project/RAM.vhd|
+Z131 !s107 D:/Computer arch/Project/Project/RAM.vhd|
+!i113 1
+R11
+R12
+Aram_arch
+R79
+R25
+R1
+R2
+DEx4 work 3 ram 0 22 :U;ldWCQ0f2RXOglhGNm93
+!i122 781
+l21
+L18 15
+VK?I6R<2i?WiT21>5n@TCL2
+!s100 ^;Wf@bmE[OPnbL0z?bXEU1
+R6
+32
+R122
+!i10b 1
+R123
+R130
+R131
+!i113 1
+R11
+R12
+Eregisterbuffer
+Z132 w1681685824
+R25
+R1
+R2
+!i122 782
+R3
+Z133 8D:/Computer arch/Project/Project/RegisterBuffer.vhd
+Z134 FD:/Computer arch/Project/Project/RegisterBuffer.vhd
+l0
+L5 1
+VXWL;Ig5^i_gf4:HDzAzg20
+!s100 ZnAYBbE5D:RgHm1=73=I71
+R6
+32
+R122
+!i10b 1
+R123
+Z135 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Computer arch/Project/Project/RegisterBuffer.vhd|
+Z136 !s107 D:/Computer arch/Project/Project/RegisterBuffer.vhd|
+!i113 1
+R11
+R12
+Aregisterbuffer_arch
+R25
+R1
+R2
+DEx4 work 14 registerbuffer 0 22 XWL;Ig5^i_gf4:HDzAzg20
+!i122 782
+l16
+L15 11
+V3PeP;IfLj`HP1aL>=HZIc1
+!s100 l[hM]K4:V`NOM6I`IjgcH1
+R6
+32
+R122
+!i10b 1
+R123
+R135
+R136
+!i113 1
+R11
+R12
+Eselect_adder
+Z137 w1680986108
+R1
+R2
+!i122 783
+R3
+Z138 8D:/Computer arch/Project/Project/select_adder.vhd
+Z139 FD:/Computer arch/Project/Project/select_adder.vhd
+l0
+L4 1
+VN4fB7VkRo_GRUQ]^2ZZ5H0
+!s100 iLDGe:IR6i1jW3>6`0OZ70
+R6
+32
+Z140 !s110 1682800321
+!i10b 1
+R123
+Z141 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Computer arch/Project/Project/select_adder.vhd|
+Z142 !s107 D:/Computer arch/Project/Project/select_adder.vhd|
+!i113 1
+R11
+R12
+Aa_my_adder
+R1
+R2
+DEx4 work 12 select_adder 0 22 N4fB7VkRo_GRUQ]^2ZZ5H0
+!i122 783
+l23
+L12 21
+VefE`U]<>`W4g6KTUaZh3i2
+!s100 l=A30nUK0Hl0GKCZ_lXdS1
+R6
+32
+R140
+!i10b 1
+R123
+R141
+R142
+!i113 1
+R11
+R12
+Esp
+R67
+R25
+R1
+R2
+!i122 784
+R3
+Z143 8D:/Computer arch/Project/Project/SP.vhd
+Z144 FD:/Computer arch/Project/Project/SP.vhd
+l0
+L5 1
+VKcob7J;jbMMOYWmUjL<=S0
+!s100 `X?dbZclZo;N_GIBhh>A`1
+R6
+32
+R140
+!i10b 1
+Z145 !s108 1682800321.000000
+Z146 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Computer arch/Project/Project/SP.vhd|
+Z147 !s107 D:/Computer arch/Project/Project/SP.vhd|
+!i113 1
+R11
+R12
+Asp_arch
+R25
+R1
+R2
+DEx4 work 2 sp 0 22 Kcob7J;jbMMOYWmUjL<=S0
+!i122 784
+l16
+L14 17
+VfYcg450jb<CY@J0@ogMcZ3
+!s100 dVD;>3nc[W6^=E?7XlXo`3
+R6
+32
+R140
+!i10b 1
+R145
+R146
+R147
+!i113 1
+R11
+R12
+Etb_decode_stage
+Z148 w1681788315
+R25
+R1
+R2
+!i122 785
+R3
+Z149 8D:/Computer arch/Project/Project/tb_Decode_stage.vhd
+Z150 FD:/Computer arch/Project/Project/tb_Decode_stage.vhd
+l0
+L5 1
+Vc^kJPRHEa^H^6f<z>O9dY2
+!s100 n;<RP?gL9mCZNj7QkDVB92
+R6
+32
+R140
+!i10b 1
+R145
+Z151 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Computer arch/Project/Project/tb_Decode_stage.vhd|
+Z152 !s107 D:/Computer arch/Project/Project/tb_Decode_stage.vhd|
+!i113 1
+R11
+R12
+Atb_decode_stage_arch
+R25
+R1
+R2
+DEx4 work 15 tb_decode_stage 0 22 c^kJPRHEa^H^6f<z>O9dY2
+!i122 785
+l78
+L8 122
+VEI[6ZA8fWKTacLVZ_c4@41
+!s100 Gk31Ba;6P^Sk;^6@o]kEf3
+R6
+32
+R140
+!i10b 1
+R145
+R151
+R152
+!i113 1
+R11
+R12
+Euses_imm
+Z153 w1681792144
+R1
+R2
+!i122 786
+R3
+Z154 8D:/Computer arch/Project/Project/uses_imm.vhd
+Z155 FD:/Computer arch/Project/Project/uses_imm.vhd
+l0
+L4 1
+VVz3<cmVl1cJImLQ[NNR@<3
+!s100 0HnI>II4zj^@RZbbYU>FF1
+R6
+32
+Z156 !s110 1682800322
+!i10b 1
+R145
+Z157 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Computer arch/Project/Project/uses_imm.vhd|
+Z158 !s107 D:/Computer arch/Project/Project/uses_imm.vhd|
+!i113 1
+R11
+R12
+Auses_imm_arch
+R1
+R2
+Z159 DEx4 work 8 uses_imm 0 22 Vz3<cmVl1cJImLQ[NNR@<3
+!i122 786
+l12
+R60
+V<amXAjUVHGVITU47PSUOh1
+!s100 k_hmPf<>;ZM<E:KQ90Yj51
+R6
+32
+R156
+!i10b 1
+R145
+R157
+R158
+!i113 1
+R11
+R12
+Alogicpartimp
+R1
+R2
+R159
+!i122 185
+l12
+R60
+VMk=DAk_PaHEW@G_A2m2=91
+!s100 ^JA58m`_0GNXTHV<S]]5:3
+R6
+32
+!s110 1681688961
+!i10b 1
+!s108 1681688961.000000
+!s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Computer arch/Project/ALU Files/uses_imm.vhd|
+!s107 D:/Computer arch/Project/ALU Files/uses_imm.vhd|
+!i113 1
+R11
+R12
+w1681792029
+R38
+FD:/Computer arch/Project/ALU Files/uses_imm.vhd
+8D:/Computer arch/Project/ALU Files/uses_imm.vhd
+Ewbregister
+Z160 w1681936036
+R1
+R2
+!i122 787
+R3
+Z161 8D:/Computer arch/Project/Project/WbRegister.vhd
+Z162 FD:/Computer arch/Project/Project/WbRegister.vhd
+l0
+L4 1
+V_h1eEVY_H[5jU_GgNK5_h0
+!s100 ?ZDo;3FB^R>Y>NaC9LQnS1
+R6
+32
+R156
+!i10b 1
+Z163 !s108 1682800322.000000
+Z164 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Computer arch/Project/Project/WbRegister.vhd|
+Z165 !s107 D:/Computer arch/Project/Project/WbRegister.vhd|
+!i113 1
+R11
+R12
+Awbregister_arch
+R1
+R2
+R126
+!i122 787
+l30
+L15 26
+V_b2jAZ<UoE98co433D>jD0
+!s100 5ekViczz3<cC<WE]mBW2D0
+R6
+32
+R156
+!i10b 1
+R163
+R164
+R165
+!i113 1
+R11
+R12
