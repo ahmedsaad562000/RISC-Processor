@@ -43,7 +43,7 @@ ENTITY Execute_stage IS
         RSRC2_Value_OUT : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
         RSRC1_ADD_OUT : OUT STD_LOGIC_VECTOR(2 DOWNTO 0);
         RSRC2_ADD_OUT : OUT STD_LOGIC_VECTOR(2 DOWNTO 0);
-        RDST_ADD_OUT : OUT STD_LOGIC_VECTOR(2 DOWNTO 0);
+        RDST_ADD_OUT : OUT STD_LOGIC_VECTOR(2 DOWNTO 0)
 
   ---------------------------------- Additional part of forwarding unit---------------------------------------------------------
         ALUData_Ex_Mem1,ALUData_Mem1_Mem2,ALUData_Mem2_Wb:IN STD_LOGIC_VECTOR(15 DOWNTO 0);  
@@ -52,7 +52,7 @@ ENTITY Execute_stage IS
         RegDst_Ex_Mem1,RegDst_Mem1_Mem2,RegDst_Mem2_Wb: IN STD_LOGIC_VECTOR(2 DOWNTO 0); 
         
         
-        RegWr_Ex_Mem1,RegWr_Mem1_Mem2,RegWr_Mem2_Wb:IN STD_LOGIC 
+        RegWr_Ex_Mem1,RegWr_Mem1_Mem2,RegWr_Mem2_Wb:IN STD_LOGIC; 
       
 
     );

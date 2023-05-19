@@ -209,5 +209,3 @@ BEGIN
     ---------------------------------------LOGIC--------------------------------------
     EXECUTE_FLAGS <= EXECUTE_ZF_OUT & EXECUTE_CF_OUT & EXECUTE_NF_OUT;
 END ARCHITECTURE Pipelined_arch;
-
-------22
