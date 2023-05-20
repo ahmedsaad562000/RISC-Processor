@@ -105,7 +105,8 @@ else '0';
 
 --------------------------------------
 --ALU_OP
-OUT_SIGNALS (5 DOWNTO 3) <= "000" when CAT(1)= '1' and CAT(0)= '1' and not(OP(3))= '1' and not(OP(2))= '1'  --ADD
+OUT_SIGNALS (5 DOWNTO 3) <= "100" when rst ='1'
+else "000" when CAT(1)= '1' and CAT(0)= '1' and not(OP(3))= '1' and not(OP(2))= '1'  --ADD
 else "001" when CAT(1)= '1' and not(CAT(0))= '1' and not(OP(4))= '1' and OP(3)= '1' and not(OP(2)) = '1' --INC
 else "010" when CAT(1)= '1' and not(CAT(0))= '1' and OP(4)= '1' and OP(3)= '1' and not(OP(2)) = '1' --DEC
 else "011" when CAT(1)= '1' and CAT(0)= '1' and not(OP(3))= '1' and OP(2) = '1' --SUB

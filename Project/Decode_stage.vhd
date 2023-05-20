@@ -81,13 +81,13 @@ Component RAM IS
 END Component;
 ---------------------------------------------LoadUseUnit-------------------------------------------------------------------
 
-component LoadUseDetection IS
+component LoadDetection IS
 
 PORT (  Dec_Exec_MemRead,Exec_Mem1_MemRead: IN std_logic;
         Dec_Exec_Rt,Exec_Mem1_Rt,Fet_Dec_Rs,Fet_Dec_Rt: IN std_logic_vector(2 downto 0);   
         OUT1 : OUT std_logic
 );
-END component LoadUseDetection;
+END component LoadDetection;
 ---------------------------------------------------------------------------------
 ------------------------------------- Signals -----------------------------------
 Signal RSRC1_Value_Signal     : std_logic_vector(15 downto 0);
@@ -104,7 +104,7 @@ Decode_Buffer_IN <= Controller_Out_Signal(15 downto 14) & Controller_Out_Signal(
 REG_FILE       : RAM generic map(8 , 3) port map(CLK , Write_back_Enable, RST, Write_back_ADD , RSRC1_ADD , RSRC2_ADD , Write_back_value , RSRC1_Value_Signal , RSRC2_Value_Signal);
 Controller_BOX : Controlller port map(CAT_IN , OP_CODE , FLAGS,Load_Out_Signal , Controller_Out_Signal); 
 Decode_Buffer  : RegisterBuffer generic map(88) port map(NOT_CLK , RST , Decode_Buffer_IN , Decode_Buffer_OUT);
-Load_Unit:       LoadUseDetection port map(Decode_Buffer_OUT(73),Exec_Mem1_Mem_to_Register,Decode_Buffer_OUT(53 downto 51), Exec_Memory1_Rt,RSRC1_ADD ,RSRC2_ADD,Load_Out_Signal);
+Load_Unit:       LoadDetection port map(Decode_Buffer_OUT(73),Exec_Mem1_Mem_to_Register,Decode_Buffer_OUT(53 downto 51), Exec_Memory1_Rt,RSRC1_ADD ,RSRC2_ADD,Load_Out_Signal);
 ----------------------------------OUTPUTS----------------------------------------------------------------------------------------------------------------------------------------------------------
 Load_Out<=Load_Out_Signal;
 JMP_FLAG        <= Controller_Out_Signal(13);
