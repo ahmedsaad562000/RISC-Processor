@@ -154,7 +154,7 @@ BEGIN
     ----------------------------------------- BOXES ---------------------------------------------------------------------------------------------------------------------------------------------------
     MUX_2X1_BOX : MUX_2X1 GENERIC MAP(16) PORT MAP(RSRC2_Value, IMM_OR_IN, ALU_SRC, MUX_OUTPUT);
     MUX_4X1_BOX_ALU_Input1: Mux4 GENERIC MAP(16) PORT MAP(RSRC1_Value, ALUData_Ex_Mem1,ALUData_Mem1_Mem2 ,ALUData_Mem2_Wb,Forwarding_First_Selector,MUX4X1_First_OUTPUT);
-    MUX_4X1_BOX_ALU_Input2: Mux4 GENERIC MAP(16) PORT MAP(MUX_OUTPUT,ALUData_Ex_Mem1,ALUData_Mem1_Mem2,ALUData_Mem2_Wb,Forwarding_Second_Selector,MUX4X1_Second_OUTPUT );
+    MUX_4X1_BOX_ALU_Input2: Mux4 GENERIC MAP(16) PORT MAP(RSRC2_Value,ALUData_Ex_Mem1,ALUData_Mem1_Mem2,ALUData_Mem2_Wb,Forwarding_Second_Selector,MUX4X1_Second_OUTPUT );
     Forwarding_Unit: ForwardingUnit GENERIC MAP(16) PORT MAP(RegDst_Ex_Mem1,RegDst_Mem1_Mem2,RegDst_Mem2_Wb,RSRC1_ADD,RSRC2_ADD,RegWr_Ex_Mem1,RegWr_Mem1_Mem2,RegWr_Mem2_Wb,Forwarding_First_Selector,Forwarding_Second_Selector);
 
     ALU_BOX : Alu GENERIC MAP(16) PORT MAP(ALU_Operation,MUX4X1_First_OUTPUT , MUX4X1_Second_OUTPUT, CIN_Signal , CF_VALUE, ZF_VALUE, NF_VALUE, CF_WE, ZF_WE, NF_WE, ALU_RESULT);
@@ -172,8 +172,8 @@ BEGIN
     --      ZF_OUT <= ZF_VALUE_OUT_TEMP;
     --     CF_OUT <= CF_VALUE_OUT_TEMP;
     --     NF_OUT <= NF_VALUE_OUT_TEMP;   
-
-    EX_MEM1_REG_IN <= PC_PLUS_ONE & Write_back & MEM_SRC & SP_INC & SP_DEC & MEM_WRITE & Out_Signal & CALL_Signal & MEM_TO_REG & ALU_RESULT & RSRC2_Value & RSRC1_ADD & RSRC2_ADD & RDST_ADD;
+    -- Replaced rsrc2 value with output of mux
+    EX_MEM1_REG_IN <= PC_PLUS_ONE & Write_back & MEM_SRC & SP_INC & SP_DEC & MEM_WRITE & Out_Signal & CALL_Signal & MEM_TO_REG & ALU_RESULT & MUX4X1_Second_OUTPUT & RSRC1_ADD & RSRC2_ADD & RDST_ADD;
     PC_PLUS_ONE_OUT <= EX_MEM1_REG_OUT(64 DOWNTO 49);
     Write_back_OUT <= EX_MEM1_REG_OUT(48);
     MEM_SRC_OUT <= EX_MEM1_REG_OUT(47);
