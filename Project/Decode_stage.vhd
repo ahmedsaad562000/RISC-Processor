@@ -45,7 +45,11 @@ entity Decode_stage is
    ----------------------------Load Additional--------------------------------------------------------------------
     Exec_Mem1_Mem_to_Register: IN std_logic;
     Exec_Memory1_Rt: IN std_logic_vector(2 downto 0);
-    Load_Out: Out std_logic
+    Load_Out: Out std_logic;
+    
+    ----------------------------Memory Additional--------------------------------------------------------------------
+    Execute_Call,Execute_MemW,Execute_MemSrc,Execute_Mem_to_Reg: IN std_logic
+
     );
 end Decode_stage;
 
@@ -104,7 +108,8 @@ Decode_Buffer_IN <= Controller_Out_Signal(15 downto 14) & Controller_Out_Signal(
 REG_FILE       : RAM generic map(8 , 3) port map(CLK , Write_back_Enable, RST, Write_back_ADD , RSRC1_ADD , RSRC2_ADD , Write_back_value , RSRC1_Value_Signal , RSRC2_Value_Signal);
 Controller_BOX : Controlller port map(CAT_IN , OP_CODE , FLAGS,Load_Out_Signal , Controller_Out_Signal); 
 Decode_Buffer  : RegisterBuffer generic map(88) port map(NOT_CLK , RST , Decode_Buffer_IN , Decode_Buffer_OUT);
-Load_Unit:       LoadDetection port map(Decode_Buffer_OUT(73),Exec_Mem1_Mem_to_Register,Decode_Buffer_OUT(53 downto 51), Exec_Memory1_Rt,RSRC1_ADD ,RSRC2_ADD,Load_Out_Signal);
+--mmkn nrg3 in
+Load_Unit:       LoadDetection port map(Decode_Buffer_OUT(73),Exec_Mem1_Mem_to_Register,Decode_Buffer_OUT(53 downto 51), Exec_Memory1_Rt,RSRC1_ADD ,RSRC2_ADD,Load_Out_Signal,Decode_Buffer_OUT(74),Decode_Buffer_OUT(81),Decode_Buffer_OUT(84),Decode_Buffer_OUT(73),Execute_Call,Execute_MemW,Execute_MemSrc,Execute_Mem_to_Reg);
 ----------------------------------OUTPUTS----------------------------------------------------------------------------------------------------------------------------------------------------------
 Load_Out<=Load_Out_Signal;
 JMP_FLAG        <= Controller_Out_Signal(13);
