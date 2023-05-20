@@ -17,7 +17,10 @@ ENTITY fetch_stage IS
         IMM_OR_IN : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
         RDST_ADD : OUT STD_LOGIC_VECTOR(2 DOWNTO 0);
         RSRC1_ADD : OUT STD_LOGIC_VECTOR(2 DOWNTO 0);
-        RSRC2_ADD : OUT STD_LOGIC_VECTOR(2 DOWNTO 0)
+        RSRC2_ADD : OUT STD_LOGIC_VECTOR(2 DOWNTO 0);
+        ---------------------------------Load Add------------------------------------------------------
+        Load_IN : IN STD_LOGIC
+
     );
 END fetch_stage;
 
@@ -132,7 +135,7 @@ BEGIN
     IMM_OR_IN <= FETCH_REG_OUT(15 DOWNTO 0);
     ---------------------------------------LOGIC--------------------------------------
     AND_OUT <= IS_MEM1_OUT AND IS_MEM2_OUT;
-    OR1_OUT <= JMP_FLAG OR AND_OUT;
+    OR1_OUT <= JMP_FLAG OR AND_OUT OR Load_IN;
     OR2_OUT <= OR1_OUT OR RST;
     FETCH_REG_IN <= PC_PLUS_ONE & INST_CACHE_OUT(31 DOWNTO 16) & MUX1_OUTPUT;
     NOT_CLK <= NOT CLK;

@@ -1,23 +1,13 @@
 
 add wave -position end  sim:/pipelined/EXECUTE_STAGE_BOX/ALU_BOX/outAlu
-add wave -position end  sim:/pipelined/EXECUTE_STAGE_BOX/MUX_4X1_BOX_ALU_Input1/out1
-add wave -position end  sim:/pipelined/EXECUTE_STAGE_BOX/MUX_4X1_BOX_ALU_Input1/sel
-add wave -position end  sim:/pipelined/EXECUTE_STAGE_BOX/MUX_4X1_BOX_ALU_Input2/out1
-add wave -position end  sim:/pipelined/EXECUTE_STAGE_BOX/MUX_4X1_BOX_ALU_Input2/sel
-force -freeze sim:/pipelined/RST 1 0
+add wave -position end  sim:/pipelined/DECODE_STAGE_BOX/Load_Unit/OUT1
+add wave -position end  sim:/pipelined/DECODE_STAGE_BOX/Load_Unit/Fet_Dec_Rt
+add wave -position end  sim:/pipelined/DECODE_STAGE_BOX/Load_Unit/Fet_Dec_Rs
+add wave -position end  sim:/pipelined/DECODE_STAGE_BOX/Load_Unit/Exec_Mem1_Rt
+add wave -position end  sim:/pipelined/DECODE_STAGE_BOX/Load_Unit/Exec_Mem1_MemRead
+add wave -position end  sim:/pipelined/DECODE_STAGE_BOX/Load_Unit/Dec_Exec_Rt
+add wave -position end  sim:/pipelined/DECODE_STAGE_BOX/Load_Unit/Dec_Exec_MemRead
 
-force -freeze sim:/pipelined/RST 0 0
-
-force -freeze sim:/pipelined/RST 0 0
-
-add wave -position end  sim:/pipelined/EXECUTE_STAGE_BOX/Forwarding_Unit/Rt
-add wave -position end  sim:/pipelined/EXECUTE_STAGE_BOX/Forwarding_Unit/Rs
-add wave -position end  sim:/pipelined/EXECUTE_STAGE_BOX/Forwarding_Unit/RegWr_Mem2_Wb
-add wave -position end  sim:/pipelined/EXECUTE_STAGE_BOX/Forwarding_Unit/RegWr_Mem1_Mem2
-add wave -position end  sim:/pipelined/EXECUTE_STAGE_BOX/Forwarding_Unit/RegWr_Ex_Mem1
-add wave -position end  sim:/pipelined/EXECUTE_STAGE_BOX/Forwarding_Unit/RegDst_Mem2_Wb
-add wave -position end  sim:/pipelined/EXECUTE_STAGE_BOX/Forwarding_Unit/RegDst_Mem1_Mem2
-add wave -position end  sim:/pipelined/EXECUTE_STAGE_BOX/Forwarding_Unit/RegDst_Ex_Mem1
 add wave -position end  sim:/pipelined/FETCH_STAGE_BOX/PC_BOX/pc_val
 add wave -position 0  sim:/pipelined/RST
 add wave -position 1  sim:/pipelined/CLK

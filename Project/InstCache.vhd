@@ -12,7 +12,7 @@ END ENTITY inst_cache;
 
 ARCHITECTURE inst_cach_arch OF inst_cache IS
 
-	TYPE inst_cache_type IS ARRAY(0 TO 2**10) OF std_logic_vector(15 DOWNTO 0);
+	TYPE inst_cache_type IS ARRAY(0 TO 2**10 -1) OF std_logic_vector(15 DOWNTO 0);
 	SIGNAL inst_cache : inst_cache_type ;
 	
 	BEGIN
