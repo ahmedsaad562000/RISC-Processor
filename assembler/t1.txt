@@ -7,11 +7,16 @@
 # ---------- Don't forget to Reset before you start anything ---------- #
 .org 0                        # means the code start at address zero, this could be written in 
                         # several places in the file and the assembler should handle it in Phase 2
+
+INC R3,R3
 INC R1,R1
 INC R1,R1
 INC R2,R2
-STD R2,R1 
-LDD R7,R2
+IADD R1,R1,5
+STD R2,R1
+LDD R7,R3
 INC R7,R7
+
+
 
 

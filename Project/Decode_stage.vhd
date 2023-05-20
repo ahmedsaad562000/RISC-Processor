@@ -111,7 +111,7 @@ REG_FILE       : RAM generic map(8 , 3) port map(CLK , Write_back_Enable, RST, W
 Controller_BOX : Controlller port map(CAT_IN , OP_CODE , FLAGS,Load_Out_Signal , Controller_Out_Signal); 
 Decode_Buffer  : RegisterBuffer generic map(88) port map(NOT_CLK , RST , Decode_Buffer_IN , Decode_Buffer_OUT);
 --mmkn nrg3 in
-Load_Unit:       LoadDetection port map(Decode_Buffer_OUT(73),Exec_Mem1_Mem_to_Register,Decode_Buffer_OUT(53 downto 51), Exec_Memory1_Rt,RSRC1_ADD ,RSRC2_ADD,Load_Out_Signal,Decode_Buffer_OUT(74),Decode_Buffer_OUT(81),Decode_Buffer_OUT(84),Decode_Buffer_OUT(73),Execute_Call,Execute_MemW,Execute_MemSrc,Execute_Mem_to_Reg);
+Load_Unit:       LoadDetection port map(Decode_Buffer_OUT(73),Exec_Mem1_Mem_to_Register,Decode_Buffer_OUT(50 downto 48), Exec_Memory1_Rt,RSRC1_ADD ,RSRC2_ADD,Load_Out_Signal,Decode_Buffer_OUT(74),Decode_Buffer_OUT(81),Decode_Buffer_OUT(84),Decode_Buffer_OUT(73),Execute_Call,Execute_MemW,Execute_MemSrc,Execute_Mem_to_Reg);
 ----------------------------------OUTPUTS----------------------------------------------------------------------------------------------------------------------------------------------------------
 Load_Out<=Load_Out_Signal;
 JMP_FLAG        <= Controller_Out_Signal(13);

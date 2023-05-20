@@ -157,7 +157,7 @@ BEGIN
     MUX_4X1_BOX_ALU_Input2: Mux4 GENERIC MAP(16) PORT MAP(RSRC2_Value,ALUData_Ex_Mem1,ALUData_Mem1_Mem2,ALUData_Mem2_Wb,Forwarding_Second_Selector,MUX4X1_Second_OUTPUT );
     Forwarding_Unit: ForwardingUnit GENERIC MAP(16) PORT MAP(RegDst_Ex_Mem1,RegDst_Mem1_Mem2,RegDst_Mem2_Wb,RSRC1_ADD,RSRC2_ADD,RegWr_Ex_Mem1,RegWr_Mem1_Mem2,RegWr_Mem2_Wb,Forwarding_First_Selector,Forwarding_Second_Selector);
 
-    ALU_BOX : Alu GENERIC MAP(16) PORT MAP(ALU_Operation,MUX4X1_First_OUTPUT , MUX4X1_Second_OUTPUT, CIN_Signal , CF_VALUE, ZF_VALUE, NF_VALUE, CF_WE, ZF_WE, NF_WE, ALU_RESULT);
+    ALU_BOX : Alu GENERIC MAP(16) PORT MAP(ALU_Operation,MUX4X1_First_OUTPUT , MUX_OUTPUT, CIN_Signal , CF_VALUE, ZF_VALUE, NF_VALUE, CF_WE, ZF_WE, NF_WE, ALU_RESULT);
     ZF_BOX : flag_reg PORT MAP(CLK ,ZF_WE, ZF_VALUE, RST, ZF_OUT);
     CF_BOX : flag_reg PORT MAP(CLK ,CF_WE_OR_OUT, CF_VAL_OR_OUT, RST, CF_OUT);
     NF_BOX : flag_reg PORT MAP(CLK ,NF_WE, NF_VALUE, RST, NF_OUT);
