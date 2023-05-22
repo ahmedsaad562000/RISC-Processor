@@ -4,12 +4,13 @@ USE ieee.numeric_std.ALL;
 
 ENTITY fetch_stage IS
     PORT (
-        RST : IN STD_LOGIC;
+        BUFFER_RST : IN STD_LOGIC;
+        PC_RESET : IN STD_LOGIC;
         CLK : IN STD_LOGIC;
         JMP_FLAG : IN STD_LOGIC;
         JMP_VALUE : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
-        OP_CODE_DECODE_OUT : IN STD_LOGIC_VECTOR(4 DOWNTO 0);
-        CAT_DECODE_OUT : IN STD_LOGIC_VECTOR(1 DOWNTO 0);
+        --OP_CODE_DECODE_OUT : IN STD_LOGIC_VECTOR(4 DOWNTO 0);
+        --CAT_DECODE_OUT : IN STD_LOGIC_VECTOR(1 DOWNTO 0);
         IN_PORT : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
         PC_PLUS_ONE_FETCH_OUT : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
         OP_CODE_OUT : OUT STD_LOGIC_VECTOR(4 DOWNTO 0);
@@ -20,7 +21,7 @@ ENTITY fetch_stage IS
         RSRC2_ADD : OUT STD_LOGIC_VECTOR(2 DOWNTO 0);
         ---------------------------------Load Add------------------------------------------------------
         Load_IN : IN STD_LOGIC
-
+        ------------------------------------------------------------------------------------------------
     );
 END fetch_stage;
 
@@ -31,7 +32,8 @@ ARCHITECTURE fetch_stage_arch OF fetch_stage IS
             clk, rst, enable, sel1, sel2, sel3 : IN STD_LOGIC;
             jmp_value : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
             pc_val : OUT STD_LOGIC_VECTOR(15 DOWNTO 0) := (OTHERS => '0');
-            pc_plus_one : OUT STD_LOGIC_VECTOR(15 DOWNTO 0) := (OTHERS => '0')
+            pc_plus_one : OUT STD_LOGIC_VECTOR(15 DOWNTO 0) := (OTHERS => '0');
+            rst_value : IN std_logic_vector(15 downto 0) := (others => '0')
         );
     END COMPONENT;
 
@@ -110,12 +112,12 @@ ARCHITECTURE fetch_stage_arch OF fetch_stage IS
     SIGNAL INST_CACHE_OUT : STD_LOGIC_VECTOR(31 DOWNTO 0);
     SIGNAL M0 : STD_LOGIC_VECTOR(15 DOWNTO 0);
     SIGNAL M1 : STD_LOGIC_VECTOR(15 DOWNTO 0);
-    SIGNAL IS_MEM1_OUT : STD_LOGIC;
-    SIGNAL IS_MEM2_OUT : STD_LOGIC;
+    -- SIGNAL IS_MEM1_OUT : STD_LOGIC;
+    -- SIGNAL IS_MEM2_OUT : STD_LOGIC;
     SIGNAL USE_IMM_OUT : STD_LOGIC;
     SIGNAL AND_OUT : STD_LOGIC;
     SIGNAL OR1_OUT : STD_LOGIC;
-    SIGNAL OR2_OUT : STD_LOGIC;
+    --SIGNAL OR2_OUT : STD_LOGIC;
     SIGNAL IS_IN_OUT : STD_LOGIC;
     SIGNAL MUX1_OUTPUT : STD_LOGIC_VECTOR(15 DOWNTO 0);
     SIGNAL NOT_CLK : STD_LOGIC;
@@ -123,17 +125,20 @@ ARCHITECTURE fetch_stage_arch OF fetch_stage IS
     SIGNAL FETCH_REG_OUT : STD_LOGIC_VECTOR(47 DOWNTO 0);
 
     ---------------------------------------------------------------------------------
+    ----------------------------for reseting------------------------------------------
+    SIGNAL BUFFER_RST_SIGNAL : STD_LOGIC := '0';
+    SIGNAL BUFFER_STALL_SIGNAL : STD_LOGIC := '0';
 
 BEGIN
     ------------------------------------COMPONENTS-----------------------------------
-    PC_BOX : PC PORT MAP(CLK, RST, '1', USE_IMM_OUT, JMP_FLAG, OR1_OUT, JMP_VALUE, PC_OUT, PC_PLUS_ONE);
+    PC_BOX : PC PORT MAP(CLK, PC_RESET, '1', USE_IMM_OUT, JMP_FLAG, OR1_OUT, JMP_VALUE, PC_OUT, PC_PLUS_ONE , M0);
     INST_CACHE_BOX : inst_cache PORT MAP(PC_OUT, INST_CACHE_OUT, M0, M1);
-    IS_MEM1_BOX : is_mem PORT MAP(CAT_DECODE_OUT, OP_CODE_DECODE_OUT, IS_MEM1_OUT);
-    IS_MEM2_BOX : is_mem PORT MAP(INST_CACHE_OUT(31 DOWNTO 30), INST_CACHE_OUT(20 DOWNTO 16), IS_MEM2_OUT);
+    --IS_MEM1_BOX : is_mem PORT MAP(CAT_DECODE_OUT, OP_CODE_DECODE_OUT, IS_MEM1_OUT);
+    --IS_MEM2_BOX : is_mem PORT MAP(INST_CACHE_OUT(31 DOWNTO 30), INST_CACHE_OUT(20 DOWNTO 16), IS_MEM2_OUT);
     USE_IMM_BOX : uses_imm PORT MAP(INST_CACHE_OUT(31 DOWNTO 30), INST_CACHE_OUT(20 DOWNTO 16), USE_IMM_OUT);
     IS_IN_BOX : is_in_inst PORT MAP(INST_CACHE_OUT(31 DOWNTO 30), INST_CACHE_OUT(20 DOWNTO 16), IS_IN_OUT);
     MUX1 : MUX_2X1 GENERIC MAP(16) PORT MAP(INST_CACHE_OUT(15 DOWNTO 0), IN_PORT, IS_IN_OUT, MUX1_OUTPUT);
-    FETCH_REG : RegisterBufferFetch GENERIC MAP(48) PORT MAP(NOT_CLK, RST,Load_IN,FETCH_REG_IN, FETCH_REG_OUT);
+    FETCH_REG : RegisterBufferFetch GENERIC MAP(48) PORT MAP(NOT_CLK, BUFFER_RST_SIGNAL,BUFFER_STALL_SIGNAL,FETCH_REG_IN, FETCH_REG_OUT);
     ---------------------------------------OUTPUTS------------------------------------
     PC_PLUS_ONE_FETCH_OUT <= FETCH_REG_OUT(47 DOWNTO 32);
     CAT_OUT <= FETCH_REG_OUT(31 DOWNTO 30);
@@ -146,8 +151,14 @@ BEGIN
     --AND_OUT <= IS_MEM1_OUT AND IS_MEM2_OUT;
     AND_OUT <= '0';
     OR1_OUT <= JMP_FLAG OR AND_OUT OR Load_IN;
-    OR2_OUT <= OR1_OUT OR RST;
+    --OR2_OUT <= OR1_OUT OR RST;
     FETCH_REG_IN <= PC_PLUS_ONE & INST_CACHE_OUT(31 DOWNTO 16) & MUX1_OUTPUT;
     NOT_CLK <= NOT CLK;
+    
+    
+    -- BUFFER_STALL_SIGNAL <= Load_IN OR BUFFER_RST ;
+    BUFFER_STALL_SIGNAL <= Load_IN ;
+    BUFFER_RST_SIGNAL <= PC_RESET OR BUFFER_RST;
+
 
 END ARCHITECTURE fetch_stage_arch;

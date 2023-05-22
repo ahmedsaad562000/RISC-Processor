@@ -7,7 +7,8 @@ entity PC is
         clk , rst , enable , sel1 , sel2 , sel3 : IN std_logic;
         jmp_value : IN std_logic_vector(15 downto 0);
         pc_val            : OUT std_logic_vector(15 downto 0) := (others => '0');
-        pc_plus_one            : OUT std_logic_vector(15 downto 0) := (others => '0')
+        pc_plus_one            : OUT std_logic_vector(15 downto 0) := (others => '0');
+        rst_value : IN std_logic_vector(15 downto 0) := (others => '0')
     );
 end PC;
 
@@ -42,7 +43,7 @@ begin
 
     
     IF rst = '1' THEN
-        temp_address <= (others => '0');
+        temp_address <= rst_value;
     Elsif rising_edge(clk) AND enable = '1' THEN
 	temp_address <= mux3_output;
     End IF;

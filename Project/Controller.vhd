@@ -76,13 +76,13 @@ else '0';
 --------------------------------------
 --SP_INC
 
-OUT_SIGNALS (10) <= (not(CAT(1)) and not(CAT(0)) and OP(3)) or (not(CAT(1)) and CAT(0) and OP(4) and OP(2)) WHEN rst = '0'
+OUT_SIGNALS (10) <= (((not(CAT(1)) and not(CAT(0)) and OP(3)) or (not(CAT(1)) and CAT(0) and OP(4) and OP(2))) or (not(CAT(1)) and not(CAT(0)) and OP(3))) WHEN rst = '0'
 else '0';
 
 --------------------------------------
 --SP_DEC
 
-OUT_SIGNALS (9) <= not(CAT(1)) and CAT(0) and not(OP(4)) and OP(2) and not(OP(3)) WHEN rst = '0'
+OUT_SIGNALS (9) <= (not(CAT(1)) and CAT(0) and not(OP(4)) and OP(2) and not(OP(3))) or (not(CAT(1)) and CAT(0) and not(OP(4)) and OP(2) and (OP(3)) and OP(1) and OP(0)) WHEN rst = '0'
 else '0';
 
 --------------------------------------

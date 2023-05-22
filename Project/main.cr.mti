@@ -15,6 +15,14 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Compiling entity my_nadder
 -- Compiling architecture a_my_adder of my_nadder
 
+} {} {}} {D:/Computer arch/Project/Project/forwardingunit.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Computer arch/Project/Project/forwardingunit.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity ForwardingUnit
+-- Compiling architecture ForwardingUnitImp of ForwardingUnit
+
 } {} {}} {D:/Computer arch/Project/Project/tb_Decode_stage.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Computer arch/Project/Project/tb_Decode_stage.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
@@ -41,14 +49,6 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Compiling entity my_adder
 -- Compiling architecture a_my_adder of my_adder
 
-} {} {}} {D:/Computer arch/Project/Project/ArithmaticPart.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Computer arch/Project/Project/ArithmaticPart.vhd}
-Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity ArithmaticPart
--- Compiling architecture partaimp of ArithmaticPart
-
 } {} {}} {D:/Computer arch/Project/Project/Logicpart.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Computer arch/Project/Project/Logicpart.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
@@ -56,6 +56,14 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Loading package std_logic_1164
 -- Compiling entity Logicpart
 -- Compiling architecture Logicpartimp of Logicpart
+
+} {} {}} {D:/Computer arch/Project/Project/ArithmaticPart.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Computer arch/Project/Project/ArithmaticPart.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity ArithmaticPart
+-- Compiling architecture partaimp of ArithmaticPart
 
 } {} {}} {D:/Computer arch/Project/Project/WbRegister.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Computer arch/Project/Project/WbRegister.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
@@ -82,6 +90,14 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Compiling entity RegisterBuffer
 -- Compiling architecture RegisterBuffer_arch of RegisterBuffer
 
+} {} {}} {D:/Computer arch/Project/Project/flag_reg.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Computer arch/Project/Project/flag_reg.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity flag_reg
+-- Compiling architecture flag_reg_arch of flag_reg
+
 } {} {}} {D:/Computer arch/Project/Project/Decode_stage.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Computer arch/Project/Project/Decode_stage.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
@@ -90,14 +106,6 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Loading package NUMERIC_STD
 -- Compiling entity Decode_stage
 -- Compiling architecture Decode_stage_arch of Decode_stage
-
-} {} {}} {D:/Computer arch/Project/Project/flag_reg.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Computer arch/Project/Project/flag_reg.vhd}
-Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity flag_reg
--- Compiling architecture flag_reg_arch of flag_reg
 
 } {} {}} {D:/Computer arch/Project/Project/RAM.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Computer arch/Project/Project/RAM.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
@@ -117,22 +125,13 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Compiling entity is_in_inst
 -- Compiling architecture is_in_inst_arch of is_in_inst
 
-} {} {}} {D:/Computer arch/Project/Project/is_mem.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Computer arch/Project/Project/is_mem.vhd}
+} {} {}} {D:/Computer arch/Project/Project/uses_imm.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Computer arch/Project/Project/uses_imm.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
--- Compiling entity is_mem
--- Compiling architecture is_mem_arch of is_mem
-
-} {} {}} {D:/Computer arch/Project/Project/InstCache.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Computer arch/Project/Project/InstCache.vhd}
-Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package NUMERIC_STD
--- Compiling entity inst_cache
--- Compiling architecture inst_cach_arch of inst_cache
+-- Compiling entity uses_imm
+-- Compiling architecture uses_imm_arch of uses_imm
 
 } {} {}} {D:/Computer arch/Project/Project/Pipelined.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Computer arch/Project/Project/Pipelined.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
@@ -150,13 +149,30 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Loading entity MemoryStage2
 -- Loading entity WbRegister
 
-} {} {}} {D:/Computer arch/Project/Project/uses_imm.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Computer arch/Project/Project/uses_imm.vhd}
+} {} {}} {D:/Computer arch/Project/Project/is_mem.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Computer arch/Project/Project/is_mem.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
--- Compiling entity uses_imm
--- Compiling architecture uses_imm_arch of uses_imm
+-- Compiling entity is_mem
+-- Compiling architecture is_mem_arch of is_mem
+
+} {} {}} {D:/Computer arch/Project/Project/InstCache.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Computer arch/Project/Project/InstCache.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity inst_cache
+-- Compiling architecture inst_cach_arch of inst_cache
+
+} {} {}} {D:/Computer arch/Project/Helping_Parts/MUXS/Mux4.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Computer arch/Project/Helping_Parts/MUXS/Mux4.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Mux4
+-- Compiling architecture mux of Mux4
 
 } {} {}} {D:/Computer arch/Project/Project/PC.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Computer arch/Project/Project/PC.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
@@ -203,6 +219,14 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Compiling entity MemoryStage2
 -- Compiling architecture MemoryStage2_arch of MemoryStage2
 
+} {} {}} {D:/Computer arch/Project/Project/LoadDetection.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Computer arch/Project/Project/LoadDetection.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity LoadDetection
+-- Compiling architecture LoadDetection_arch of LoadDetection
+
 } {} {}} {D:/Computer arch/Project/Project/MEM_ONE.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Computer arch/Project/Project/MEM_ONE.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
@@ -211,6 +235,15 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Loading package NUMERIC_STD
 -- Compiling entity MEM_ONE
 -- Compiling architecture MEM_ONE_ARCH of MEM_ONE
+
+} {} {}} {D:/Computer arch/Project/Project/RegisterBufferFetch.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Computer arch/Project/Project/RegisterBufferFetch.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity RegisterBufferFetch
+-- Compiling architecture RegisterBufferFetch_arch of RegisterBufferFetch
 
 } {} {}} {D:/Computer arch/Project/Project/Memory.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Computer arch/Project/Project/Memory.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020

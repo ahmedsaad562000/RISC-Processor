@@ -52,10 +52,17 @@ ENTITY Execute_stage IS
         RegDst_Ex_Mem1,RegDst_Mem1_Mem2,RegDst_Mem2_Wb: IN STD_LOGIC_VECTOR(2 DOWNTO 0); 
         
         
-        RegWr_Ex_Mem1,RegWr_Mem1_Mem2,RegWr_Mem2_Wb:IN STD_LOGIC 
+        RegWr_Ex_Mem1,RegWr_Mem1_Mem2,RegWr_Mem2_Wb:IN STD_LOGIC ;
       
+    -------------------------------------Additional part of Branching ---------------------------------------------------------
+        Branch_Signal : IN STD_LOGIC;
+        Branch_Value_OUT : OUT STD_LOGIC_VECTOR(15 downto 0);
+        Branch_Signal_OUT : OUT STD_LOGIC;
+        RET_FLAG_IN : IN STD_LOGIC;
+        RET_FLAG_OUT : OUT STD_LOGIC
 
     );
+    
 END Execute_stage;
 
 ARCHITECTURE Execute_stage_arch OF Execute_stage IS
@@ -125,14 +132,12 @@ END component ForwardingUnit;
     SIGNAL ZF_WE : STD_LOGIC;
     SIGNAL CF_WE : STD_LOGIC;
     SIGNAL NF_WE : STD_LOGIC;
-    SIGNAL EX_MEM1_REG_IN : STD_LOGIC_VECTOR(64 DOWNTO 0);
-    SIGNAL EX_MEM1_REG_OUT : STD_LOGIC_VECTOR(64 DOWNTO 0);
+    SIGNAL EX_MEM1_REG_IN : STD_LOGIC_VECTOR(65 DOWNTO 0);
+    SIGNAL EX_MEM1_REG_OUT : STD_LOGIC_VECTOR(65 DOWNTO 0);
     SIGNAL CF_WE_OR_OUT : STD_LOGIC;
     SIGNAL CF_VAL_OR_OUT : STD_LOGIC;
 
     signal NOT_CLK : STD_LOGIC;
-
-
 
     -- SIGNAL ZF_VALUE_OUT_TEMP : STD_LOGIC;
     -- SIGNAL NF_VALUE_OUT_TEMP : STD_LOGIC;
@@ -150,6 +155,10 @@ END component ForwardingUnit;
     SIGNAL MUX4X1_Second_OUTPUT : STD_LOGIC_VECTOR(15 DOWNTO 0);
 
     ---------------------------------------------------------------------------------
+    --------------------------------------Branching intermediate signals-------------------------------
+     SIGNAL Branch_Signal_intermediate : STD_LOGIC;
+    SIGNAL BRANCH_BUFF_IN : STD_LOGIC_VECTOR(16 DOWNTO 0);
+    SIGNAL BRANCH_BUFF_OUT : STD_LOGIC_VECTOR(16 DOWNTO 0);
 BEGIN
     ----------------------------------------- BOXES ---------------------------------------------------------------------------------------------------------------------------------------------------
     MUX_2X1_BOX : MUX_2X1 GENERIC MAP(16) PORT MAP(RSRC2_Value, IMM_OR_IN, ALU_SRC, MUX_OUTPUT);
@@ -162,7 +171,12 @@ BEGIN
     CF_BOX : flag_reg PORT MAP(CLK ,CF_WE_OR_OUT, CF_VAL_OR_OUT, RST, CF_OUT);
     NF_BOX : flag_reg PORT MAP(CLK ,NF_WE, NF_VALUE, RST, NF_OUT);
 
-    EX_MEM1_REG : RegisterBuffer GENERIC MAP(65) PORT MAP(NOT_CLK, RST, EX_MEM1_REG_IN, EX_MEM1_REG_OUT);
+    EX_MEM1_REG : RegisterBuffer GENERIC MAP(66) PORT MAP(NOT_CLK, RST, EX_MEM1_REG_IN, EX_MEM1_REG_OUT);
+    
+    
+    
+    ---------------------------------------------------------------------------------
+    BRANCH_DELAY_BUFFER : RegisterBuffer GENERIC MAP(17) PORT MAP(CLK, RST, BRANCH_BUFF_IN, BRANCH_BUFF_OUT);
     ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
     ----------------------------------------- Connections ---------------------------------------------------------------------------------------------------------------------------------------------
@@ -173,7 +187,8 @@ BEGIN
     --     CF_OUT <= CF_VALUE_OUT_TEMP;
     --     NF_OUT <= NF_VALUE_OUT_TEMP;   
     -- Replaced rsrc2 value with output of mux
-    EX_MEM1_REG_IN <= PC_PLUS_ONE & Write_back & MEM_SRC & SP_INC & SP_DEC & MEM_WRITE & Out_Signal & CALL_Signal & MEM_TO_REG & ALU_RESULT & MUX4X1_Second_OUTPUT & RSRC1_ADD & RSRC2_ADD & RDST_ADD;
+    EX_MEM1_REG_IN <= RET_FLAG_IN & PC_PLUS_ONE & Write_back & MEM_SRC & SP_INC & SP_DEC & MEM_WRITE & Out_Signal & CALL_Signal & MEM_TO_REG & ALU_RESULT & MUX4X1_Second_OUTPUT & RSRC1_ADD & RSRC2_ADD & RDST_ADD;
+    RET_FLAG_OUT <= EX_MEM1_REG_OUT(65);
     PC_PLUS_ONE_OUT <= EX_MEM1_REG_OUT(64 DOWNTO 49);
     Write_back_OUT <= EX_MEM1_REG_OUT(48);
     MEM_SRC_OUT <= EX_MEM1_REG_OUT(47);
@@ -188,5 +203,16 @@ BEGIN
     RSRC1_ADD_OUT <= EX_MEM1_REG_OUT(8 DOWNTO 6);
     RSRC2_ADD_OUT <= EX_MEM1_REG_OUT(5 DOWNTO 3);
     RDST_ADD_OUT <= EX_MEM1_REG_OUT(2 DOWNTO 0);
+    
+    
+    
+    
+    
+    
+    BRANCH_BUFF_IN <= Branch_Signal_intermediate & ALU_RESULT;
+    Branch_Value_OUT <= BRANCH_BUFF_OUT(15 downto 0);
+    --Branch_Value_OUT <= MUX_OUTPUT;
+    Branch_Signal_OUT <= BRANCH_BUFF_OUT(16);
+    Branch_Signal_intermediate <= Branch_Signal or CALL_Signal;
 
 END ARCHITECTURE Execute_stage_arch;

@@ -1,6 +1,7 @@
 
 
-
+# 000000000
+# UUUUUUUUU
 instructions_OPCODE = {
     "NOP" : "0000000000000000",
     "SETC" : "0000000000000100",
@@ -8,29 +9,29 @@ instructions_OPCODE = {
     "RET": "0000000000001000",
     "RTI": "0000000000011000",
     ############################
-    "OUT": "0100000000000000",
-    "PUSH": "0100000000000100",
-    "JZ": "0100000000001010",
-    "JC": "0100000000001001",
-    "JMP": "0100000000001011",
-    "CALL": "0100000000001111",
+    "OUT": "01UUUUUUUUU00000",
+    "PUSH": "01UUUUUUUUU00100",
+    "JZ": "01UUUUUUUUU01010",
+    "JC": "01UUUUUUUUU01001",
+    "JMP": "01UUUUUUUUU01011",
+    "CALL": "01UUUUUUUUU01111",
     ###########################
-    "IN": "0100000000010000",
-    "POP": "0100000000010100",
+    "IN": "01UUUUUUUUU10000",
+    "POP": "01UUUUUUUUU10100",
     ###########################
-    "MOV": "1000000000000000",
-    "NOT": "1000000000000100",
-    "INC": "1000000000001000",
-    "DEC": "1000000000011000",
-    "LDM": "1000000000001110",
-    "LDD": "1000000000001100",
-    "STD": "1000000000011100",
+    "MOV": "10UUUUUUUUU00000",
+    "NOT": "10UUUUUUUUU00100",
+    "INC": "10UUUUUUUUU01000",
+    "DEC": "10UUUUUUUUU11000",
+    "LDM": "10UUUUUUUUU01110",
+    "LDD": "10UUUUUUUUU01100",
+    "STD": "10UUUUUUUUU11100",
     ###########################
-    "ADD": "1100000000000000",
-    "IADD": "1100000000000010",
-    "SUB": "1100000000000100",
-    "AND": "1100000000001000",
-    "OR": "1100000000001100"
+    "ADD": "11UUUUUUUUU00000",
+    "IADD": "11UUUUUUUUU00010",
+    "SUB": "11UUUUUUUUU00100",
+    "AND": "11UUUUUUUUU01000",
+    "OR": "11UUUUUUUUU01100"
 }
 RegistersCodes = {
     "R0": "000",
@@ -59,9 +60,13 @@ def getInstructionMachineCode(line):
         Registers = Instruction[1].split(",")
     if Instruction[0] == "NOP" or Instruction[0] == "SETC" or Instruction[0] == "CLRC" or Instruction[0] == "RET" or Instruction[0] == "RTI":
         returnVal =instructions_OPCODE[Instruction[0]]
-    elif Instruction[0] == "OUT" or Instruction[0] == "PUSH" or Instruction[0] == "JZ" or Instruction[0] == "JC" or Instruction[0] == "JMP" or Instruction[0] == "CALL":
+    elif Instruction[0] == "OUT" or Instruction[0] == "JZ" or Instruction[0] == "JC" or Instruction[0] == "JMP" or Instruction[0] == "CALL":
         tempVariable = instructions_OPCODE[Instruction[0]]
         Code = tempVariable[:5] + RegistersCodes[Registers[0]] + tempVariable[8:]
+        returnVal =Code
+    elif Instruction[0] == "PUSH":
+        tempVariable = instructions_OPCODE[Instruction[0]]
+        Code = tempVariable[:8] + RegistersCodes[Registers[0]] + tempVariable[11:]
         returnVal =Code
     elif Instruction[0] == "IN" or Instruction[0] == "POP" or Instruction[0] == "LDM":
         tempVariable = instructions_OPCODE[Instruction[0]]
