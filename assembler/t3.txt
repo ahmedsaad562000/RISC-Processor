@@ -30,7 +30,7 @@ OUT R4					# m1-alu forward
 #test case 3, load use test
 PUSH R1
 POP R7					#structural hazard
-# AND R1,R5,R7				#load use
+AND R1,R5,R7				#load use
 OR R2,R1,R7				#load use and forward
 
 #test case 4, structural hazard with data hazard

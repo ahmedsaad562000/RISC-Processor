@@ -161,7 +161,7 @@ END component ForwardingUnit;
     SIGNAL BRANCH_BUFF_OUT : STD_LOGIC_VECTOR(16 DOWNTO 0);
 BEGIN
     ----------------------------------------- BOXES ---------------------------------------------------------------------------------------------------------------------------------------------------
-    MUX_2X1_BOX : MUX_2X1 GENERIC MAP(16) PORT MAP(RSRC2_Value, IMM_OR_IN, ALU_SRC, MUX_OUTPUT);
+    MUX_2X1_BOX : MUX_2X1 GENERIC MAP(16) PORT MAP(MUX4X1_Second_OUTPUT, IMM_OR_IN, ALU_SRC, MUX_OUTPUT);
     MUX_4X1_BOX_ALU_Input1: Mux4 GENERIC MAP(16) PORT MAP(RSRC1_Value, ALUData_Ex_Mem1,ALUData_Mem1_Mem2 ,ALUData_Mem2_Wb,Forwarding_First_Selector,MUX4X1_First_OUTPUT);
     MUX_4X1_BOX_ALU_Input2: Mux4 GENERIC MAP(16) PORT MAP(RSRC2_Value,ALUData_Ex_Mem1,ALUData_Mem1_Mem2,ALUData_Mem2_Wb,Forwarding_Second_Selector,MUX4X1_Second_OUTPUT );
     Forwarding_Unit: ForwardingUnit GENERIC MAP(16) PORT MAP(RegDst_Ex_Mem1,RegDst_Mem1_Mem2,RegDst_Mem2_Wb,RSRC1_ADD,RSRC2_ADD,RegWr_Ex_Mem1,RegWr_Mem1_Mem2,RegWr_Mem2_Wb,Forwarding_First_Selector,Forwarding_Second_Selector);
