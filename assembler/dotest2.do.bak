@@ -11,31 +11,3 @@ force -freeze sim:/pipelined/RST 1 0
 force -freeze sim:/pipelined/CLK 1 0, 0 {5000 ps} -r 10ns
 run
 force -freeze sim:/pipelined/RST 0 0
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run

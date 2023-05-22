@@ -1,4 +1,4 @@
-mem load -i D:/project_arc_2/Computer-Architecture-Project/assembler/r1.mem /pipelined/FETCH_STAGE_BOX/INST_CACHE_BOX/inst_cache
+mem load -i G:/Computer-Architecture-Project/assembler/r1.mem /pipelined/FETCH_STAGE_BOX/INST_CACHE_BOX/inst_cache
 add wave -position end  sim:/pipelined/RST
 add wave -position end  sim:/pipelined/OUT_PORT
 add wave -position end  sim:/pipelined/CLK
@@ -12,3 +12,34 @@ force -freeze sim:/pipelined/RST 1 0
 force -freeze sim:/pipelined/CLK 1 0, 0 {5000 ps} -r 10ns
 run
 force -freeze sim:/pipelined/RST 0 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
