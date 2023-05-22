@@ -138,6 +138,8 @@ Controller_BOX : Controlller port map(CAT_IN , OP_CODE , FLAGS,Load_Out_Signal ,
 Decode_Buffer  : RegisterBuffer generic map(90) port map(NOT_CLK , RESET_DECODE_EXECUTE_BUFFER , Decode_Buffer_IN , Decode_Buffer_OUT);
 --mmkn nrg3 in
 Load_Unit:       LoadDetection port map(Decode_Buffer_OUT(73),Exec_Mem1_Mem_to_Register,Decode_Buffer_OUT(50 downto 48), Exec_Memory1_Rt,RSRC1_ADD ,RSRC2_ADD,Load_Out_Signal,Decode_Buffer_OUT(74),Decode_Buffer_OUT(81),Decode_Buffer_OUT(84),Decode_Buffer_OUT(73),Execute_Call,Execute_MemW,Execute_MemSrc,Execute_Mem_to_Reg);
+-- Load_Unit:       LoadDetection port map(Decode_Buffer_OUT(73),Exec_Mem1_Mem_to_Register,Decode_Buffer_OUT(50 downto 48), Exec_Memory1_Rt,RSRC1_ADD ,RSRC2_ADD,Load_Out_Signal,Decode_Buffer_IN(74),Decode_Buffer_IN(81),Decode_Buffer_IN(84),Decode_Buffer_IN(73),Decode_Buffer_OUT(74),Decode_Buffer_OUT(81),Decode_Buffer_OUT(84),Decode_Buffer_OUT(73));
+
 ----------------------------------OUTPUTS----------------------------------------------------------------------------------------------------------------------------------------------------------
 Load_Out<=Load_Out_Signal;
 ---------------------for branching---------------------

@@ -85,11 +85,11 @@ signal WbBufferin : std_logic_vector(43 downto 0):=(others => '0');
 signal WbBufferout : std_logic_vector(43 downto 0):=(others => '0');
 signal memBuffer : std_logic_vector(15 downto 0):=(others => '0');
 SIGNAL NOT_CLK : STD_LOGIC;
---signal BRANCH_BUFF_IN : std_logic:=(others => '0');
---signal BRANCH_BUFF_OUT : std_logic:=(others => '0');
+signal BRANCH_BUFF_IN : std_logic_vector(16 downto 0):=(others => '0');
+signal BRANCH_BUFF_OUT : std_logic_vector(16 downto 0) :=(others => '0');
 
 ---------------------- FOR BRANCHING---------------------------------------------------------------------
-signal RET_FLAG_INTERMEDIATE : STD_LOGIC;
+-- signal RET_FLAG_INTERMEDIATE : STD_LOGIC;
 begin
 NOT_CLK <= NOT CLK;
 The_Memory: Memory generic map(1024,10) port map( clk,MemW,'0',Read_Add_Data(9 downto 0),Write_Data,memBuffer);
@@ -100,7 +100,7 @@ MUX_2X1_BOX : MUX2 GENERIC MAP(16) PORT MAP(Read_Add_Data,memBuffer,M2r,Forwardi
 
 
 ---------------------------------------------------------------------------------
-BRANCH_DELAY_BUFFER : RegisterBufferOneBit PORT MAP(CLK, RST, RET_FLAG_IN, RET_FLAG_OUT);
+BRANCH_DELAY_BUFFER : RegisterBuffer generic map(17) PORT MAP(CLK, RST, BRANCH_BUFF_IN, BRANCH_BUFF_OUT);
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
@@ -121,9 +121,10 @@ Rdst_out<=WbBufferout(2 downto 0);
 
 ---------------------- FOR BRANCHING---------------------------------------------------------------------
 --RET_FLAG_INTERMEDIATE <= RET_FLAG_IN;
---RET_FLAG_OUT <= RET_FLAG_INTERMEDIATE;
-MEM_READ_VALUE <=memBuffer ;
+RET_FLAG_OUT <= BRANCH_BUFF_OUT(16);
+MEM_READ_VALUE <=BRANCH_BUFF_OUT(15 downto 0)  ;
 
---BRANCH_BUFF_IN <=  RET_FLAG_IN;
+BRANCH_BUFF_IN <=  RET_FLAG_IN & memBuffer ;
+
 
 END MemoryStage2_arch;
