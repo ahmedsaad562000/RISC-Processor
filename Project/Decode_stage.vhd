@@ -54,10 +54,11 @@ entity Decode_stage is
     ---------------------------------------------------------------------------------------------------------------
     ---------------------------Branch Additional--------------------------------------------------------------------
 
-    DEC_EXEC_RET_OUT : OUT std_logic
+    DEC_EXEC_RET_OUT : OUT std_logic;
 
-
-
+    ----------------------------Memory Additional2--------------------------------------------------------------------
+    Decode_Call,Decode_MemW,Decode_MemSrc,Decode_Mem_to_Reg: out std_logic;
+    IS_TWO_MEMORY: in std_logic
 
     );
 end Decode_stage;
@@ -112,6 +113,7 @@ Signal Decode_Buffer_IN       : std_logic_vector(89 downto 0);
 Signal Decode_Buffer_OUT      : std_logic_vector(89 downto 0);
 Signal NOT_CLK                : std_logic;
 Signal Load_Out_Signal        : std_logic;
+Signal result:                  std_logic;
 
 
 
@@ -131,14 +133,20 @@ SIGNAL RESET_DECODE_EXECUTE_BUFFER : STD_LOGIC;
 
 
 begin
+ result<=Load_Out_Signal or IS_TWO_MEMORY;   
 Decode_Buffer_IN <= Controller_Out_Signal(16) & Controller_Out_Signal(13) & Controller_Out_Signal(15 downto 14) & Controller_Out_Signal(12 downto 0) & PC_PLUS_ONE_IN & RSRC1_ADD & RSRC2_ADD & RDST_ADD & RSRC1_Value_Signal & RSRC2_Value_Signal & IMM_OR_INPUT;
 ----------------------------------------- BOXES ---------------------------------------------------------------------------------------------------------------------------------------------------
 REG_FILE       : RAM generic map(8 , 3) port map(CLK , Write_back_Enable, ALL_RST, Write_back_ADD , RSRC1_ADD , RSRC2_ADD , Write_back_value , RSRC1_Value_Signal , RSRC2_Value_Signal);
-Controller_BOX : Controlller port map(CAT_IN , OP_CODE , FLAGS,Load_Out_Signal , Controller_Out_Signal); 
+Controller_BOX : Controlller port map(CAT_IN , OP_CODE , FLAGS,result , Controller_Out_Signal); 
 Decode_Buffer  : RegisterBuffer generic map(90) port map(NOT_CLK , RESET_DECODE_EXECUTE_BUFFER , Decode_Buffer_IN , Decode_Buffer_OUT);
 --mmkn nrg3 in
 Load_Unit:       LoadDetection port map(Decode_Buffer_OUT(73),Exec_Mem1_Mem_to_Register,Decode_Buffer_OUT(50 downto 48), Exec_Memory1_Rt,RSRC1_ADD ,RSRC2_ADD,Load_Out_Signal,Decode_Buffer_OUT(74),Decode_Buffer_OUT(81),Decode_Buffer_OUT(84),Decode_Buffer_OUT(73),Execute_Call,Execute_MemW,Execute_MemSrc,Execute_Mem_to_Reg);
 -- Load_Unit:       LoadDetection port map(Decode_Buffer_OUT(73),Exec_Mem1_Mem_to_Register,Decode_Buffer_OUT(50 downto 48), Exec_Memory1_Rt,RSRC1_ADD ,RSRC2_ADD,Load_Out_Signal,Decode_Buffer_IN(74),Decode_Buffer_IN(81),Decode_Buffer_IN(84),Decode_Buffer_IN(73),Decode_Buffer_OUT(74),Decode_Buffer_OUT(81),Decode_Buffer_OUT(84),Decode_Buffer_OUT(73));
+
+Decode_Call<=Decode_Buffer_IN(74);
+Decode_MemW<=Decode_Buffer_IN(81);
+Decode_MemSrc<=Decode_Buffer_IN(84);
+Decode_Mem_to_Reg<=Decode_Buffer_IN(73);
 
 ----------------------------------OUTPUTS----------------------------------------------------------------------------------------------------------------------------------------------------------
 Load_Out<=Load_Out_Signal;
